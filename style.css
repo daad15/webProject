@@ -1,13 +1,19 @@
+    @font-face {
+    font-family: 'Dubai Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Dubai Light'), url('Dubai-Light.woff') format('woff');
+    }
 /* Primary Styles */
 *, *::before, *::after {
    box-sizing: border-box;
 }
 
 body {
-   font-family:'Droid Arabic Naskh', serif;
+   font-family:'Dubai Light';
    font-size: 1em;
    color: white;
-   background-color:whiteSmoke;
+   background-color:#EFE5DC;
 }
 
 h1 {
@@ -20,38 +26,39 @@ em {
 
 a {
    text-decoration: none;
-   color: inherit;
+   color: #EFE5DC;
 } 
 /* Layout */
-.s-layout {
+.layout {
 
    width: 100%;
    min-height: 100vh;
 }
 
-.s-layout__content {
+.layout__content {
    align-items: center;
 
 }
 
 /* Sidebar */
-.s-sidebar__trigger {
+.sidebar__trigger {
    z-index: 2;
    position: fixed;
    top: 0;
    right: 0;
    width: 100%;
    height: 4em;
-   background: #192b3c;
+   background: #C1A19A;
 }
 
-.s-sidebar__trigger > i {
+.sidebar__trigger > i {
    display: inline-block;
-   margin: 1.5em 0 0 1.5em;
-   color: #f07ab0;
+   margin: 1.5em ;
+   color: #716969;
+   background-color: #C1A19A;
 }
 
-.s-sidebar__nav {
+.sidebar__nav {
    position: fixed;
    top: 0;
    right: -15em;
@@ -59,18 +66,18 @@ a {
    transition: all .3s ease-in;
    width: 15em;
    height: 100%;
-   background: #243e56;
-   color: rgba(255, 255, 255, 0.7);
+   background-color: #C1A19A;
+   color:#716969;
 }
 
-.s-sidebar__nav:hover,
-.s-sidebar__nav:focus,
-.s-sidebar__trigger:focus + .s-sidebar__nav,
-.s-sidebar__trigger:hover + .s-sidebar__nav {
+.sidebar__nav:hover,
+.sidebar__nav:focus,
+.sidebar__trigger:focus + .sidebar__nav,
+.sidebar__trigger:hover + .sidebar__nav {
    right: 0;
 }
 
-.s-sidebar__nav ul {
+.sidebar__nav ul {
    position: absolute;
    top: 4em;
    right: 0;
@@ -79,29 +86,29 @@ a {
    width: 15em;
 }
 
-.s-sidebar__nav ul li {
+.sidebar__nav ul li {
    width: 100%;
 }
 
-.s-sidebar__nav-link {
+.sidebar__nav-link {
    position: relative;
    display: inline-block;
    width: 100%;
    height: 4em;
 }
 
-.s-sidebar__nav-link em {
+.sidebar__nav-link em {
    position: absolute;
    top: 50%;
    right: 4em;
    transform: translateY(-50%);
 }
 
-.s-sidebar__nav-link:hover {
-   background: #4d6276;
+.sidebar__nav-link:hover {
+   background: #716969;
 }
 
-.s-sidebar__nav-link > i {
+.sidebar__nav-link > i {
    position: absolute;
    top: 0;
    right: 0;
@@ -110,7 +117,7 @@ a {
    height: 4em;
 }
 
-.s-sidebar__nav-link > i::before {
+.sidebar__nav-link > i::before {
    position: absolute;
    top: 50%;
    right: 50%;
@@ -119,43 +126,43 @@ a {
 
 /* Mobile First */
 @media (min-width: 42em) {
-   .s-layout__content {
+   .layout__content {
       margin-right: 4em;
    }
    
    /* Sidebar */
-   .s-sidebar__trigger {
+   .sidebar__trigger {
       width: 4em;
    }
    
-   .s-sidebar__nav {
+   .sidebar__nav {
       width: 4em;
-      right: 0;
+      right:0;
    }
    
-   .s-sidebar__nav:hover,
-   .s-sidebar__nav:focus,
-   .s-sidebar__trigger:hover + .s-sidebar__nav,
-   .s-sidebar__trigger:focus + .s-sidebar__nav {
+   .sidebar__nav:hover,
+   .sidebar__nav:focus,
+   .sidebar__trigger:hover + .sidebar__nav,
+   .sidebar__trigger:focus + .sidebar__nav {
       width: 15em;
    }
 }
 
 @media (min-width: 68em) {
-   .s-layout__content {
+   .layout__content {
       margin-right: 15em;
    }
    
    /* Sidebar */
-   .s-sidebar__trigger {
-      display: none
+   .sidebar__trigger {
+      display: none;
    }
    
-   .s-sidebar__nav {
+   .sidebar__nav {
       width: 15em;
    }
    
-   .s-sidebar__nav ul {
+   .sidebar__nav ul {
       top: 1.3em;
    }
 }
@@ -172,10 +179,11 @@ a {
 }
 
 .blog-card {
-	background-color: white;
+	background-color: whitesmoke;
 	border-radius: 1px;
 	box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
-	height: 450px;
+	min-height: 450px;
+	max-height: auto;
 	margin: 0 auto;
 	margin-top: 2%;
 	margin-bottom: 1.6%;
@@ -187,7 +195,8 @@ a {
 }
 @media (max-width: 580px) {
 	.blog-card {
-		height: 350px;
+		min-height: 350px;
+		max-height: auto;
 		overflow: visible;
 	}
 }
@@ -199,13 +208,13 @@ a {
 }
 
 .card-body {
-	color: grey;
+	color: #716969;
 	height: 100%;
 	padding: 30px 20px 50px;
 }
 @media (max-width: 530px) {
 	.card-body{
-		background-color: white;
+		background-color: whitesmoke;
 	}
 }
 
@@ -216,7 +225,7 @@ a {
 
 .title {
 	color: black;
-	font-family: "Playfair Display SC";
+	font-family: 'Dubai Light';
 	font-size: 30px;
 	font-weight: 400;
 }
@@ -233,7 +242,7 @@ a {
 }
 	
 .fa:hover,.fa:focus {
-		color: black;
+		color: #E2D2CB;
 		text-decoration: none;
 	}
 
@@ -241,4 +250,35 @@ a {
 	.col-xs-6 {
 		width: 100%;
 	}
+}
+footer {
+	position: relative;
+	z-index: -1;
+	text-align: center;
+	color: black;
+	height: 0;
+	margin-top: 2%; 
+}
+/* temporary table Style*/
+#customers {
+  font-family: 'Dubai Light';
+  border-collapse: collapse;
+  width: 70%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 5px;
+}
+
+#customers tr:nth-child(even){background-color: #EFE5DC;}
+
+#customers tr:hover {background-color: #C1A19A;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 15px;
+  text-align: center;
+  background-color: #716969;
+  color: white;
 }
