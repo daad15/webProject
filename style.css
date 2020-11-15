@@ -1,0 +1,244 @@
+/* Primary Styles */
+*, *::before, *::after {
+   box-sizing: border-box;
+}
+
+body {
+   font-family:'Droid Arabic Naskh', serif;
+   font-size: 1em;
+   color: white;
+   background-color:whiteSmoke;
+}
+
+h1 {
+  font-size: 1.4em;
+}
+
+em {
+   font-style: normal;
+}
+
+a {
+   text-decoration: none;
+   color: inherit;
+} 
+/* Layout */
+.s-layout {
+
+   width: 100%;
+   min-height: 100vh;
+}
+
+.s-layout__content {
+   align-items: center;
+
+}
+
+/* Sidebar */
+.s-sidebar__trigger {
+   z-index: 2;
+   position: fixed;
+   top: 0;
+   right: 0;
+   width: 100%;
+   height: 4em;
+   background: #192b3c;
+}
+
+.s-sidebar__trigger > i {
+   display: inline-block;
+   margin: 1.5em 0 0 1.5em;
+   color: #f07ab0;
+}
+
+.s-sidebar__nav {
+   position: fixed;
+   top: 0;
+   right: -15em;
+   overflow: hidden;
+   transition: all .3s ease-in;
+   width: 15em;
+   height: 100%;
+   background: #243e56;
+   color: rgba(255, 255, 255, 0.7);
+}
+
+.s-sidebar__nav:hover,
+.s-sidebar__nav:focus,
+.s-sidebar__trigger:focus + .s-sidebar__nav,
+.s-sidebar__trigger:hover + .s-sidebar__nav {
+   right: 0;
+}
+
+.s-sidebar__nav ul {
+   position: absolute;
+   top: 4em;
+   right: 0;
+   margin: 0;
+   padding: 0;
+   width: 15em;
+}
+
+.s-sidebar__nav ul li {
+   width: 100%;
+}
+
+.s-sidebar__nav-link {
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 4em;
+}
+
+.s-sidebar__nav-link em {
+   position: absolute;
+   top: 50%;
+   right: 4em;
+   transform: translateY(-50%);
+}
+
+.s-sidebar__nav-link:hover {
+   background: #4d6276;
+}
+
+.s-sidebar__nav-link > i {
+   position: absolute;
+   top: 0;
+   right: 0;
+   display: inline-block;
+   width: 4em;
+   height: 4em;
+}
+
+.s-sidebar__nav-link > i::before {
+   position: absolute;
+   top: 50%;
+   right: 50%;
+   transform: translate(-50%, -50%);
+}
+
+/* Mobile First */
+@media (min-width: 42em) {
+   .s-layout__content {
+      margin-right: 4em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      width: 4em;
+   }
+   
+   .s-sidebar__nav {
+      width: 4em;
+      right: 0;
+   }
+   
+   .s-sidebar__nav:hover,
+   .s-sidebar__nav:focus,
+   .s-sidebar__trigger:hover + .s-sidebar__nav,
+   .s-sidebar__trigger:focus + .s-sidebar__nav {
+      width: 15em;
+   }
+}
+
+@media (min-width: 68em) {
+   .s-layout__content {
+      margin-right: 15em;
+   }
+   
+   /* Sidebar */
+   .s-sidebar__trigger {
+      display: none
+   }
+   
+   .s-sidebar__nav {
+      width: 15em;
+   }
+   
+   .s-sidebar__nav ul {
+      top: 1.3em;
+   }
+}
+
+@media (max-width: 530px) {
+	.container-fluid .center{
+		width: 100%;
+		left: 0;
+		margin: 10px 0;
+		position: relative;
+		top: 0;
+		transform: none;
+	}
+}
+
+.blog-card {
+	background-color: white;
+	border-radius: 1px;
+	box-shadow: 0 0 2px -1px rgba(0, 0, 0, 0.75);
+	height: 450px;
+	margin: 0 auto;
+	margin-top: 2%;
+	margin-bottom: 1.6%;
+	box-shadow: 0 3px 7px -1px rgba(#000, .1);
+	border-radius: 5px;
+	line-height: 1.4;
+	max-width: 80%;
+	overflow: hidden;
+}
+@media (max-width: 580px) {
+	.blog-card {
+		height: 350px;
+		overflow: visible;
+	}
+}
+
+.media {
+	background-position: center;
+	background-size: cover;
+	height: 100%;
+}
+
+.card-body {
+	color: grey;
+	height: 100%;
+	padding: 30px 20px 50px;
+}
+@media (max-width: 530px) {
+	.card-body{
+		background-color: white;
+	}
+}
+
+.tagline {
+	font-size: 8px;
+	text-transform: uppercase;
+}
+
+.title {
+	color: black;
+	font-family: "Playfair Display SC";
+	font-size: 30px;
+	font-weight: 400;
+}
+
+.divider {
+	background: grey;
+	height: 2px;
+	margin: 25px auto;
+	width: 40px;
+}
+
+.paragraph {
+	font-weight: 300;
+}
+	
+.fa:hover,.fa:focus {
+		color: black;
+		text-decoration: none;
+	}
+
+@media (max-width: 530px) {
+	.col-xs-6 {
+		width: 100%;
+	}
+}
