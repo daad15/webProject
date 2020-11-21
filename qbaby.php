@@ -2,12 +2,11 @@
 <html>
 <head>
 	<title>TEST QUERY</title>
-	<link rel="stylesheet" type="text/css" href="tableStyle.css">
 </head>
 <body>
 	<?php
 	//connection
-		$con = mysqli_connect("localhost","root","","baby")
+		$con = mysqli_connect("localhost","root","","size_guide")
 		or die ( mysqli_connect_error());
 	//query_name
 		$ruslt = mysqli_query($con,"SELECT * FROM baby_beany")
@@ -26,7 +25,7 @@
 			echo "<td>".$row['bb_age']."</td>";
 			echo "<td>".$row['bb_head_in']."</td>";
 			echo "<td>".$row['bb_head_cm']."</td>";
-			echo "<td>".$row['>bb_int']."</td>";
+			echo "<td>".$row['bb_int']."</td>";
 
 
 			echo "</tr>";
