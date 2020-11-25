@@ -18,7 +18,7 @@ table td, table th {
 
 table tr:nth-child(even){background-color: #FFFFFF;}
 
-table tr:hover {background-color:rgba(243, 206, 59, 0.70) ;}
+table tr:hover {background-color:rgba(243, 206, 59, 0.40) ;}
 table td:hover {background-color:#F3CE3B; font-weight: bold;}
 
 
