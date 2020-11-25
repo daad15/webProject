@@ -349,43 +349,34 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                         <th>  المقاس الاوروبي  </th>
+            <th>  المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
-                        <th>  المقاس الامريكي </th>
-                        <th> محيط الصدر </th>
-                        <th>  محيط الخصر </th>
-                        <th> محيط الارداف </th>             
-=======
-			<th> international sizes</th>
+            <th>  المقاس الامريكي </th>
+            <th> محيط الصدر </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف </th>             
+			</tr> ";
+/*			<th> international sizes</th>
             <th>  Eur </th>
 			<th>  UK </th>
             <th>  US </th>
             <th> bust, cm</th>
             <th>  WAIST, cm</th>
-            <th> HIPS, cm </th>             
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+            <th> HIPS, cm </th>  
+ */           
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_tops_cm, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
 			echo "<td>".$row['w_int']."</td>";
 			echo "<td>".$row['w_eur']."</td>";
-<<<<<<< HEAD
-                        echo "<td>".$row['w_uk']."</td>";
-                        echo "<td>".$row['w_us']."</td>";
-                        echo "<td>".$row['w_bust_cm']."</td>";
-                        echo "<td>".$row['w_waist_cm']."</td>";
-                        echo "<td>".$row['w_hips_cm']."</td>";
-=======
             echo "<td>".$row['w_uk']."</td>";
             echo "<td>".$row['w_us']."</td>";
             echo "<td>".$row['w_bust_cm']."</td>";
             echo "<td>".$row['w_waist_cm']."</td>";
             echo "<td>".$row['w_hips_cm']."</td>";
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
 			echo "</tr>";
 		} echo "</table>";
 
@@ -397,7 +388,6 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th> المقاس الاوروبي</th>
 			<th>  المقاس البريطاني  </th>
@@ -405,16 +395,16 @@
 			<th> محيط الصدر </th>
 			<th>  محيط الخصر </th>
 			<th> محيط الارداف </th>       
-=======
-			<th> international sizes</th>
+			</tr> ";
+/*			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
 			<th>  US </th>
 			<th> bust, inch</th>
 			<th>  WAIST, INCH</th>
 			<th> HIPS, INCH </th>       
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_tops_inch, MYSQLI_ASSOC) )
 		{
@@ -437,15 +427,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>  المقاس العالمي   </th>
 			<th>  المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
 			<th>  المقاس الامريكي </th>
 			<th> محيط الصدر </th>
 			<th> محيط الخصر</th>
-			<th> محيط الارداف  </th>     
-=======
+			<th> محيط الارداف  </th>
+			</tr> ";     
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
@@ -453,8 +443,8 @@
 			<th> bust IN cm</th>
 			<th>  WAIST IN cm</th>
 			<th> HIPS IN cm </th>     
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_dress_cm, MYSQLI_ASSOC) )
 		{
@@ -477,15 +467,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th>  المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
 			<th>  المقاس الامريكي  </th>
 			<th> محيط الصدر </th>
 			<th>  محيط الخصر </th>
-			<th> محيط الارداف  </th>    
-=======
+			<th> محيط الارداف  </th> 
+			</tr> ";   
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
@@ -493,8 +483,7 @@
 			<th> bust IN inch</th>
 			<th>  WAIST IN INCH</th>
 			<th> HIPS IN INCH </th>    
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/			
 	// result
 		while ( $row = mysqli_fetch_array ($women_dress_inch, MYSQLI_ASSOC) )
 		{
@@ -517,22 +506,22 @@
 	// header 
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th>  المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
 			<th>  المقاس الامريكي  </th>
 			<th>  محيط الخصر </th>
-			<th> محيط الارداف  </th>       
-=======
+			<th> محيط الارداف  </th>
+			</tr> ";       
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
 			<th>  US </th>
 			<th>  WAIST , cm</th>
 			<th> HIPS , cm </th>       
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_skirts_cm, MYSQLI_ASSOC) )
 		{
@@ -554,22 +543,22 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th> المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
 			<th>  المقاس الامريكي </th>
 			<th>  محيط  الخصر </th>
-			<th> محيط الارداف  </th>      
-=======
+			<th> محيط الارداف  </th> 
+			</tr> ";     
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
 			<th>  US </th>
 			<th>  WAIST , INCH</th>
 			<th> HIPS , INCH </th>      
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//  result
 		while ( $row = mysqli_fetch_array ($women_skirts_inch , MYSQLI_ASSOC) )
 		{
@@ -591,15 +580,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
-		       	  <th> المقاس العالمي </th>
-                          <th>  المقاس الاوروبي  </th>
-			  <th>  المقاس البريطاني  </th>
-                          <th>  المقاس الامريكي  </th>
-                          <th>  محيط الخصر </th>
-                          <th> محيط الارداف  </th>
-                          <th> طول الساق </th>
-=======
+			<th> المقاس العالمي </th>
+            <th>  المقاس الاوروبي  </th>
+			<th>  المقاس البريطاني  </th>
+            <th>  المقاس الامريكي  </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف  </th>
+            <th> طول الساق </th>
+            </tr> ";
+/*
 			<th> international sizes</th>
             <th>  Eur </th>
 			<th>  UK </th>
@@ -607,8 +596,7 @@
             <th>  WAIST IN cm</th>
             <th> HIPS IN cm </th>
             <th> LEG IN cm</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/			
 	// result
 		while ( $row = mysqli_fetch_array ($women_pants_cm, MYSQLI_ASSOC) )
 		{
@@ -631,15 +619,16 @@
 	//  hreader
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
+
 			<th> المقاس العالمي </th>
-                        <th>  المقاس الاوروبي  </th>
+            <th>  المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
-                        <th>  المقاس الامريكي  </th>
-                        <th>  محيط الخصر </th>
-                        <th> محيط الارداف  </th>
-                        <th> طول الساق</th>
-=======
+            <th>  المقاس الامريكي  </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف  </th>
+            <th> طول الساق</th>
+            </tr> ";
+/*
 			<th> international sizes</th>
             <th>  Eur </th>
 			<th>  UK </th>
@@ -647,8 +636,8 @@
             <th>  WAIST , inch</th>
             <th> HIPS , inch </th>
             <th> LEG , inch</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_pants_inch, MYSQLI_ASSOC) )
 		{
@@ -671,27 +660,23 @@
 	// headrer
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس العالمي </th>			
 			<th>محيط الارداف </th>
-                        <th> طول الجوارب </th>
-=======
+            <th> طول الجوارب </th>
+            </tr> ";
+/*
 			<th>international size</th>			
 			<th>hips , CM</th>
             <th>hight , inch</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_tight_cm, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
 			echo "<td>".$row['wt_int']."</td>";
 			echo "<td>".$row['wt_hips_cm']."</td>";
-<<<<<<< HEAD
-                        echo "<td>".$row['wt_hight_cm']."</td>";
-=======
-            echo "<td>".$row['wt_hight_cm']."</td>";
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
+			echo "<td>".$row['wt_hight_cm']."</td>";
 			echo "</tr>";
 		} echo "</table>";
 
@@ -703,16 +688,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th> محيط الارداف    </th>
-                        <th>طول الجوارب  </th>
-=======
+            <th>طول الجوارب  </th>
+            </tr> ";
+/*
 			<th>international size</th>
 			<th>hips, inch </th>
             <th>hight, inch</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/			
 	// result
 		while ( $row = mysqli_fetch_array ($women_tight_inch, MYSQLI_ASSOC) )
 		{
@@ -731,18 +715,18 @@
 	// header 
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
-			<th>  المقاس الاوروبي للاحذية</th>
-			<th>  المقاس البريطاني للاحذية  </th>
-                        <th>  المقاس الامريكي للاحذية  </th>
-                        <th>  طول القدم  </th>
-=======
+			<th>  المقاس الاوروبي </th>
+			<th>  المقاس البريطاني   </th>
+            <th>  المقاس الامريكي   </th>
+            <th>  طول القدم  </th>
+            </tr> ";
+/*
 			<th>  shoes size EUR</th>
 			<th>  UK </th>
             <th>  US </th>
             <th>  FEET IN CM </th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//result
 		while ( $row = mysqli_fetch_array ($women_shoes_cm, MYSQLI_ASSOC) )
 		{
@@ -753,6 +737,7 @@
             echo "<td>".$row['wsh_feet_cm']."</td>";
 			echo "</tr>";
 		} echo "</table>";
+
 //QUERY : women shoes (inch)
 	$women_shoes_inch = mysqli_query($con,
 		"SELECT wsh_eur,wsh_uk,wsh_us,wsh_feet_in 
@@ -761,18 +746,18 @@
 	//header 
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
-			<th>  المقاس الاوروبي للاحذية</th>
-			<th>  المقاس البريطاني للاحذية  </th>
-            <th>  المقاس الامريكي للاحذية  </th>
+			<th>  المقاس الاوروبي </th>
+			<th>  المقاس البريطاني   </th>
+            <th>  المقاس الامريكي   </th>
             <th>  طول القدم </th>
-=======
+            </tr> ";
+/*
 			<th>  shoes size EUR</th>
 			<th>  UK </th>
             <th>  US </th>
             <th>  FEET ,inch</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//result
 		while ( $row = mysqli_fetch_array ($women_shoes_inch, MYSQLI_ASSOC) )
 		{
@@ -792,14 +777,14 @@
 	//header 
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس العالمي </th>
 			<th> محيط الخاتم </th>
-=======
+			</tr> ";
+/*			
 			<th>international size</th>
 			<th> Cir in mm </th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//result
 		while ( $row = mysqli_fetch_array ($women_ring_cm, MYSQLI_ASSOC) )
 		{
@@ -808,6 +793,7 @@
 			echo "<td>".$row['wr_cir_mm']."</td>";
 			echo "</tr>";
 		} echo "</table>"; 
+
 //QUERY : women ring (inch)
 	$women_ring_inch = mysqli_query($con,
 		"SELECT wr_int,wr_cir_inch 
@@ -816,14 +802,14 @@
 	//header 
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس العالمي </th>
 			<th> محيط الخاتم </th>
-=======
+			</tr> ";
+/*
 			<th>international size</th>
 			<th> Cir in inch </th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//result
 		while ( $row = mysqli_fetch_array ($women_ring_inch, MYSQLI_ASSOC) )
 		{
@@ -841,14 +827,14 @@
 	//header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس العالمي </th>
 			<th> محيط الخصر </th>
-=======
+			</tr> ";
+/*
 			<th>international size</th>
 			<th> Waist in cm </th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//result
 		while ( $row = mysqli_fetch_array ($women_belt_cm, MYSQLI_ASSOC) )
 		{
@@ -866,14 +852,14 @@
 	//header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس العالمي </th>
 			<th> محيط الخصر  </th>
-=======
+			</tr> ";
+/*
 			<th>international size</th>
 			<th> Waist in inch </th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//result
 		while ( $row = mysqli_fetch_array ($women_belt_inch, MYSQLI_ASSOC) )
 		{
@@ -891,18 +877,18 @@
 	//header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>مقاس العباية </th>
 			<th>طول العباية </th>
 			<th>عرض العباية </th>
 			<th>طول الكم </th>
-=======
+			</tr> ";
+/*
 			<th>Women Abaya sizes</th>
 			<th>lenght IN CM </th>
 			<th>width IN CM</th>
 			<th>sleeve IN CM</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//result
 		while ( $row = mysqli_fetch_array ($women_abaya_cm, MYSQLI_ASSOC) )
 		{
@@ -922,19 +908,18 @@
 	//header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>مقاس العباية </th>
 			<th>طول العباية  </th>
 			<th>عرض العباية </th>
 			<th>طول الكم </th>
-=======
+			</tr> ";
+/*
 			<th>Women Abaya sizes</th>
 			<th>lenght IN INCH </th>
 			<th>width IN INCH</th>
 			<th>sleeve IN INCH</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
-	//result
+*/
+		//result
 		while ( $row = mysqli_fetch_array ($women_abaya_inch, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
@@ -953,33 +938,26 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس العالمي </th>
 			<th>المقاس البريطاني </th>
 			<th>محيط الخصر </th>
 			<th>محيط الارداف </th>
-=======
+			</tr> ";
+/*			
 			<th>waist,cm</th>
 			<th>hips,cm</th>
 			<th>Size UK</th>
 			<th>international size</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_underwear_cm, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
-<<<<<<< HEAD
-                        echo "<td>".$row['wun_int']."</td>";
-                        echo "<td>".$row['wun_uk']."</td>";
-			echo "<td>".$row['wun_waist_cm']."</td>";
-			echo "<td>".$row['wun_hips_cm']."</td>";
-=======
-			echo "<td>".$row['wun_waist_cm']."</td>";
-			echo "<td>".$row['wun_hips_cm']."</td>";
-			echo "<td>".$row['wun_uk']."</td>";
 			echo "<td>".$row['wun_int']."</td>";
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
+            echo "<td>".$row['wun_uk']."</td>";
+			echo "<td>".$row['wun_waist_cm']."</td>";
+			echo "<td>".$row['wun_hips_cm']."</td>";
 			echo "</tr>";
 		} echo "</table>";
 
@@ -991,35 +969,26 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس العالمي </th>
 			<th>المقاس البريطاني </th>
 			<th>محيط الخصر </th>
 			<th>محيط الارداف </th>
-=======
+			</tr> ";
+/*
 			<th>waist,inch</th>
 			<th>hips,inch</th>
 			<th>Size UK</th>
 			<th>international size</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_underwear_inch, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
-<<<<<<< HEAD
-                        echo "<td>".$row['wun_int']."</td>";
-                        echo "<td>".$row['wun_uk']."</td>";
-			echo "<td>".$row['wun_waist_in']."</td>";
-			echo "<td>".$row['wun_hips_in']."</td>";
-			
-			
-=======
-			echo "<td>".$row['wun_waist_in']."</td>";
-			echo "<td>".$row['wun_hips_in']."</td>";
-			echo "<td>".$row['wun_uk']."</td>";
 			echo "<td>".$row['wun_int']."</td>";
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
+            echo "<td>".$row['wun_uk']."</td>";
+			echo "<td>".$row['wun_waist_in']."</td>";
+			echo "<td>".$row['wun_hips_in']."</td>";
 			echo "</tr>";
 		} echo "</table>";
 
@@ -1031,35 +1000,27 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
-                        <th>المقاس </th>
-                        <th>مقاس تكور حمالة الصدر </th>		
+			<th>المقاس </th>
+            <th>مقاس تكور حمالة الصدر </th>		
 			<th>محيط الصدر </th>
-                        <th>محيط اسفل الصدر </th>	
+            <th>محيط اسفل الصدر </th>
+            </tr> ";	
 			
-=======
+/*
 			<th>underbust,cm</th>			
 			<th>Size</th>
 			<th>overbust,cm</th>
 			<th>cup size</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_bra_cm, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
-<<<<<<< HEAD
-			
 			echo "<td>".$row['wbra_size']."</td>";
 			echo "<td>".$row['cup_size']."</td>";
-                        echo "<td>".$row['overbust_cm']."</td>";
-                        echo "<td>".$row['wbra_underbust_cm']."</td>";
-=======
-			echo "<td>".$row['wbra_underbust_cm']."</td>";
-			echo "<td>".$row['wbra_size']."</td>";
-			echo "<td>".$row['overbust_cm']."</td>";
-			echo "<td>".$row['cup_size']."</td>";
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
+            echo "<td>".$row['overbust_cm']."</td>";
+            echo "<td>".$row['wbra_underbust_cm']."</td>";
 			echo "</tr>";
 		} echo "</table>";
 
@@ -1071,34 +1032,26 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس </th>
 			<th>مقاس تكور حمالة الصدر </th>
 			<th>محيط الصدر </th>
 			<th>محيط اسفل الصدر </th>
-=======
+			</tr> ";
+/*
 			<th>underbust,inch</th>
 			<th>Size</th>
 			<th>overbust,inch</th>
 			<th>cup size</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($women_bra_inch, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
-<<<<<<< HEAD
-                        echo "<td>".$row['wbra_size']."</td>";
-                        echo "<td>".$row['cup_size']."</td>";
+            echo "<td>".$row['wbra_size']."</td>";
+            echo "<td>".$row['cup_size']."</td>";
 			echo "<td>".$row['overbust_in']."</td>";
-                        echo "<td>".$row['wbra_underbust_in']."</td>";
-        
-=======
-			echo "<td>".$row['wbra_underbust_in']."</td>";
-			echo "<td>".$row['wbra_size']."</td>";
-			echo "<td>".$row['overbust_in']."</td>";
-			echo "<td>".$row['cup_size']."</td>";
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
+            echo "<td>".$row['wbra_underbust_in']."</td>";
 			echo "</tr>";
 		} echo "</table>";
 
@@ -1111,20 +1064,20 @@
 	//header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس العالمي </th>
 			<th>محيط الصدر  </th>
 			<th>محيط اسفل الصدر </th>
 			<th>محيط الارداف</th>
 			<th>طول الساق </th>
-=======
+			</tr> ";
+/*
 			<th>international sizes</th>
 			<th>BUST IN CM </th>
 			<th>UNDER BUST IN CM</th>
 			<th>HIPS IN CM</th>
 			<th>LEG IN CM</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//result
 		while ( $row = mysqli_fetch_array ($women_maternity_cm, MYSQLI_ASSOC) )
 		{
@@ -1132,11 +1085,7 @@
 			echo "<td>".$row['wm_int']."</td>";
 			echo "<td>".$row['wm_bust_cm']."</td>";
 			echo "<td>".$row['wm_under_bust_cm']."</td>";
-<<<<<<< HEAD
-                        echo "<td>".$row['wm_hips_cm']."</td>";
-=======
             echo "<td>".$row['wm_hips_cm']."</td>";
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
 			echo "<td>".$row['wm_leg_cm']."</td>";
 			echo "</tr>";
 		} echo "</table>";
@@ -1149,20 +1098,20 @@
 	//header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th>المقاس العالمي </th>
 			<th>محيط الصدر </th>
 			<th>محيط اسفل الصدر </th>
 			<th>محيط الارداف </th>
 			<th>طول الساق </th>
-=======
+			</tr> ";
+/*
 			<th>international sizes</th>
 			<th>BUST IN INCH </th>
 			<th>UNDER BUST IN INCH</th>
 			<th>HIPS IN INCH</th>
 			<th>LEG IN INCH</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//result
 		while ( $row = mysqli_fetch_array ($women_maternity_inch,MYSQLI_ASSOC))
 		{
@@ -1170,11 +1119,7 @@
 			echo "<td>".$row['wm_int']."</td>";
 			echo "<td>".$row['wm_bust_in']."</td>";
 			echo "<td>".$row['wm_under_bust_in']."</td>";
-<<<<<<< HEAD
-                        echo "<td>".$row['wm_hips_in']."</td>";
-=======
             echo "<td>".$row['wm_hips_in']."</td>";
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
 			echo "<td>".$row['wm_leg_in']."</td>";
 			echo "</tr>";
 		} echo "</table>";
@@ -1188,15 +1133,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                        <th>  المقاس الاوروبي  </th>
+            <th>  المقاس الاوروبي  </th>
 			<th> المقاس البريطاني </th>
-                        <th> المقاس الامريكي  </th>
-                        <th> محيط الصدر </th>
-                        <th> محيط الخصر </th>
-                        <th> محيط الارداف  </th>             
-=======
+            <th> المقاس الامريكي  </th>
+            <th> محيط الصدر </th>
+            <th> محيط الخصر </th>
+            <th> محيط الارداف  </th>
+            </tr> ";             
+/*
 			<th> international sizes</th>
             <th>  Eur </th>
 			<th>  UK </th>
@@ -1204,27 +1149,18 @@
             <th> bust, cm</th>
             <th>  WAIST, cm</th>
             <th> HIPS, cm </th>             
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/			
 	// result
 		while ( $row = mysqli_fetch_array ($petite_women_tops_cm, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
 			echo "<td>".$row['w_int']."</td>";
 			echo "<td>".$row['w_eur']."</td>";
-<<<<<<< HEAD
-                        echo "<td>".$row['w_uk']."</td>";
-                        echo "<td>".$row['w_us']."</td>";
-                        echo "<td>".$row['w_bust_cm']."</td>";
-                        echo "<td>".$row['w_waist_cm']."</td>";
-                        echo "<td>".$row['w_hips_cm']."</td>";
-=======
             echo "<td>".$row['w_uk']."</td>";
             echo "<td>".$row['w_us']."</td>";
             echo "<td>".$row['w_bust_cm']."</td>";
             echo "<td>".$row['w_waist_cm']."</td>";
             echo "<td>".$row['w_hips_cm']."</td>";
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
 			echo "</tr>";
 		} echo "</table>";
 
@@ -1236,15 +1172,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th>  المقاس الاوروبي   </th>
 			<th>  المقاس البريطاني </th>
 			<th>  المقاس الامريكي  </th>
 			<th> محيط الصدر </th>
 			<th> محيط الخصر </th>
-			<th> محيط الارداف  </th>       
-=======
+			<th> محيط الارداف  </th> 
+			</tr> ";      
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
@@ -1252,8 +1188,8 @@
 			<th> bust, inch</th>
 			<th>  WAIST, INCH</th>
 			<th> HIPS, INCH </th>       
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($petite_women_tops_inch, MYSQLI_ASSOC) )
 		{
@@ -1276,15 +1212,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th>  المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
 			<th>  المقاس الامريكي  </th>
 			<th> محيط الصدر </th>
 			<th>  محيط الخصر </th>
-			<th> محيط الارداف </th>     
-=======
+			<th> محيط الارداف </th>
+			</tr> ";     
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
@@ -1292,8 +1228,8 @@
 			<th> bust IN cm</th>
 			<th>  WAIST IN cm</th>
 			<th> HIPS IN cm </th>     
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($petite_women_dress_cm, MYSQLI_ASSOC) )
 		{
@@ -1316,15 +1252,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th>  المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني </th>
 			<th>  المقاس الامريكي  </th>
 			<th> محيط الصدر </th>
 			<th>  محيط الخصر </th>
-			<th> محيط الارداف </th>    
-=======
+			<th> محيط الارداف </th> 
+			</tr> ";   
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
@@ -1332,8 +1268,8 @@
 			<th> bust IN inch</th>
 			<th>  WAIST IN INCH</th>
 			<th> HIPS IN INCH </th>    
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($petite_women_dress_inch, MYSQLI_ASSOC) )
 		{
@@ -1356,22 +1292,22 @@
 	// header 
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th>  المقاس الاوروبي </th>
 			<th>  المقاس البريطاني  </th>
 			<th> المقاس الامركي  </th>
 			<th> محيط الخصر </th>
-			<th>محيط الارداف  </th>       
-=======
+			<th>محيط الارداف  </th>
+			</tr> ";       
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
 			<th>  US </th>
 			<th>  WAIST , cm</th>
 			<th> HIPS , cm </th>       
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($petite_women_skirts_cm, MYSQLI_ASSOC) )
 		{
@@ -1393,22 +1329,22 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
 			<th>  المقاس الاوروبي  </th>
 			<th> المقاس البريطاني </th>
 			<th> المقاس الامريكي  </th>
 			<th>  محيط الخصر </th>
-			<th>محيط الارداف </th>      
-=======
+			<th>محيط الارداف </th>
+			</tr> ";      
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
 			<th>  US </th>
 			<th>  WAIST , INCH</th>
 			<th> HIPS , INCH </th>      
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//  result
 		while ( $row = mysqli_fetch_array ($petite_women_skirts_inch , MYSQLI_ASSOC) )
 		{
@@ -1430,15 +1366,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                         <th>  المقاس الاوروبي  </th>
+            <th>  المقاس الاوروبي  </th>
 			<th> المقاس البريطاني  </th>
-                         <th>  المقاس الامريكي  </th>
-                         <th>  محيط الخصر </th>
-                        <th> محيط الارداف </th>
-                          <th> طول الساق </th>
-=======
+            <th>  المقاس الامريكي  </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف </th>
+            <th> طول الساق </th>
+            </tr> ";
+/*
 			<th> international sizes</th>
             <th>  Eur </th>
 			<th>  UK </th>
@@ -1446,8 +1382,8 @@
             <th>  WAIST IN cm</th>
             <th> HIPS IN cm </th>
             <th> LEG IN cm</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($petite_women_pants_cm, MYSQLI_ASSOC) )
 		{
@@ -1470,15 +1406,15 @@
 	//  hreader
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                        <th>  المقاس الاوروبي  </th>
+            <th>  المقاس الاوروبي  </th>
 			<th> المقاس البريطاني  </th>
-                        <th> المقاس الامريكي  </th>
-                        <th>  محيط الخصر </th>
-                        <th> محيط الارداف </th>
-                        <th>طول الساق  </th>
-=======
+            <th> المقاس الامريكي  </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف </th>
+            <th>طول الساق  </th>
+            </tr> ";
+/*
 			<th> international sizes</th>
             <th>  Eur </th>
 			<th>  UK </th>
@@ -1486,8 +1422,8 @@
             <th>  WAIST , inch</th>
             <th> HIPS , inch </th>
             <th> LEG , inch</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($petite_women_pants_inch, MYSQLI_ASSOC) )
 		{
@@ -1501,6 +1437,7 @@
             echo "<td>".$row['w_leg_in']."</td>";
 			echo "</tr>";
 		} echo "</table>";
+
 //				 *************	Women -plus- Size 	**************
 //QUERY: women -plus- tops (cm) 
 	$plus_women_tops_cm = mysqli_query($con,
@@ -1510,15 +1447,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                       <th> المقاس الاوروبي  </th>
+            <th> المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
-                        <th> المقاس الامريكي  </th>
-                         <th> محيط الصدر </th>
-                        <th>  محيط الخصر </th>
-                         <th> محيط الارداف  </th>             
-=======
+            <th> المقاس الامريكي  </th>
+            <th> محيط الصدر </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف  </th>
+            </tr> ";             
+/*
 			<th> international sizes</th>
             <th>  Eur </th>
 			<th>  UK </th>
@@ -1526,8 +1463,7 @@
             <th> bust, cm</th>
             <th>  WAIST, cm</th>
             <th> HIPS, cm </th>             
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/			
 	// result
 		while ( $row = mysqli_fetch_array ($plus_women_tops_cm, MYSQLI_ASSOC) )
 		{
@@ -1550,15 +1486,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                       <th> المقاس الاوروبي  </th>
+            <th> المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
-                        <th> المقاس الامريكي  </th>
-                         <th> محيط الصدر </th>
-                        <th>  محيط الخصر </th>
-                         <th> محيط الارداف  </th>             
-=======
+            <th> المقاس الامريكي  </th>
+            <th> محيط الصدر </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف  </th> 
+            </tr> ";            
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
@@ -1566,8 +1502,8 @@
 			<th> bust, inch</th>
 			<th>  WAIST, INCH</th>
 			<th> HIPS, INCH </th>       
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($plus_women_tops_inch, MYSQLI_ASSOC) )
 		{
@@ -1590,15 +1526,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                       <th> المقاس الاوروبي  </th>
+            <th> المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
-                        <th> المقاس الامريكي  </th>
-                         <th> محيط الصدر </th>
-                        <th>  محيط الخصر </th>
-                         <th> محيط الارداف  </th>             
-=======
+            <th> المقاس الامريكي  </th>
+            <th> محيط الصدر </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف  </th>
+            </tr> ";             
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
@@ -1606,8 +1542,8 @@
 			<th> bust IN cm</th>
 			<th>  WAIST IN cm</th>
 			<th> HIPS IN cm </th>     
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($plus_women_dress_cm, MYSQLI_ASSOC) )
 		{
@@ -1630,15 +1566,15 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                       <th> المقاس الاوروبي  </th>
+            <th> المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
-                        <th> المقاس الامريكي  </th>
-                         <th> محيط الصدر </th>
-                        <th>  محيط الخصر </th>
-                         <th> محيط الارداف  </th>             
-=======
+            <th> المقاس الامريكي  </th>
+            <th> محيط الصدر </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف  </th>
+            </tr> ";             
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
@@ -1646,8 +1582,8 @@
 			<th> bust IN inch</th>
 			<th>  WAIST IN INCH</th>
 			<th> HIPS IN INCH </th>    
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($plus_women_dress_inch, MYSQLI_ASSOC) )
 		{
@@ -1670,22 +1606,22 @@
 	// header 
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                       <th> المقاس الاوروبي  </th>
+            <th> المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
-                        <th> المقاس الامريكي  </th>
-                         <th> محيط الصدر </th>
-                        <th>  محيط الخصر </th>           
-=======
+            <th> المقاس الامريكي  </th>
+            <th> محيط الصدر </th>
+            <th>  محيط الخصر </th>
+            </tr> ";           
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
 			<th>  US </th>
 			<th>  WAIST , cm</th>
 			<th> HIPS , cm </th>       
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($plus_women_skirts_cm, MYSQLI_ASSOC) )
 		{
@@ -1707,22 +1643,22 @@
 	// header
 		echo "<table>
 			<tr>
-<<<<<<< HEAD
 			<th> المقاس العالمي </th>
-                       <th> المقاس الاوروبي  </th>
+            <th> المقاس الاوروبي  </th>
 			<th>  المقاس البريطاني  </th>
-                        <th> المقاس الامريكي  </th>
-                         <th> محيط الصدر </th>
-                        <th>  محيط الخصر </th>             
-=======
+            <th> المقاس الامريكي  </th>
+            <th> محيط الصدر </th>
+            <th>  محيط الخصر </th>
+            </tr> ";             
+/*
 			<th> international sizes</th>
 			<th>  Eur </th>
 			<th>  UK </th>
 			<th>  US </th>
 			<th>  WAIST , INCH</th>
 			<th> HIPS , INCH </th>      
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	//  result
 		while ( $row = mysqli_fetch_array ($plus_women_skirts_inch , MYSQLI_ASSOC) )
 		{
@@ -1742,19 +1678,17 @@
 		FROM women_size LIMIT 4 OFFSET 10") 
 	or die( mysqli_connect_error()); 
 	// header
-<<<<<<< HEAD
-	echo "<table>
-			<tr>
-			<th> المقاس العالمي </th>
-                       <th> المقاس الاوروبي  </th>
-			<th>  المقاس البريطاني  </th>
-                        <th> المقاس الامريكي  </th>
-                       <th>  محيط الخصر </th>
-                         <th> محيط الارداف  </th>  
-                         <th> طول الساق  </th>           
-=======
 		echo "<table>
 			<tr>
+			<th> المقاس العالمي </th>
+            <th> المقاس الاوروبي  </th>
+			<th>  المقاس البريطاني  </th>
+            <th> المقاس الامريكي  </th>
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف  </th>  
+            <th> طول الساق  </th>
+            </tr> ";           
+/*
 			<th> international sizes</th>
             <th>  Eur </th>
 			<th>  UK </th>
@@ -1762,8 +1696,8 @@
             <th>  WAIST IN cm</th>
             <th> HIPS IN cm </th>
             <th> LEG IN cm</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($plus_women_pants_cm, MYSQLI_ASSOC) )
 		{
@@ -1784,20 +1718,17 @@
 		FROM women_size LIMIT 4 OFFSET 10") 
 	or die( mysqli_connect_error()); 
 	//  hreader
-<<<<<<< HEAD
-	echo "<table>
-			<tr>
-			<th> المقاس العالمي </th>
-                       <th> المقاس الاوروبي  </th>
-			<th>  المقاس البريطاني  </th>
-                        <th> المقاس الامريكي  </th>
-                       
-                        <th>  محيط الخصر </th>
-                         <th> محيط الارداف  </th>  
-                              <th> طول الساق  </th>           
-=======
 		echo "<table>
 			<tr>
+			<th> المقاس العالمي </th>
+            <th> المقاس الاوروبي  </th>
+			<th>  المقاس البريطاني  </th>
+            <th> المقاس الامريكي  </th>          
+            <th>  محيط الخصر </th>
+            <th> محيط الارداف  </th>  
+            <th> طول الساق  </th>
+            </tr> ";           
+/*
 			<th> international sizes</th>
             <th>  Eur </th>
 			<th>  UK </th>
@@ -1805,8 +1736,8 @@
             <th>  WAIST , inch</th>
             <th> HIPS , inch </th>
             <th> LEG , inch</th>
->>>>>>> 005a89fb2a6f1c19b57828b01f85c18f5cc78261
-			</tr> ";
+*/
+			
 	// result
 		while ( $row = mysqli_fetch_array ($plus_women_pants_inch, MYSQLI_ASSOC) )
 		{
