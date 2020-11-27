@@ -80,7 +80,7 @@ html { scroll-behavior: smooth; }
   display: none;
 }
 /*women tap style */
-#wt1:checked ~ .panels #wtop,
+#wt1:checked ~ .panels #w_top,
 #wt2:checked ~ .panels #petite_top,
 #wt3:checked ~ .panels #plus_top,
 
