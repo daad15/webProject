@@ -21,7 +21,7 @@
          </div>
 
          <div class="panels"> 
-         	<div class="panel" id="wtop" >
+         	<div class="panel" id="w_top" >
          		<?php require 'table_queries.php';
          		// header
 				echo "<table id='women_tops_cm'>
