@@ -48,7 +48,7 @@
 			} echo "</table>";
 
 			?>
-			<button id="clk_baby" class="button" onclick='tableSwitch("baby_cm","baby_inch"),highlight("clk_baby")'>inch</button>
+			<button id="clk_baby" class="buttonSwitch" onclick='tableSwitch("baby_cm","baby_inch"),highlight("clk_baby")'>inch</button>
 	</div> <!--end tableContainer -->
 
 	<h3>قبعات المواليد </h3>
@@ -88,7 +88,7 @@
 			} echo "</table>";
 
 		?>
-		<button id="clk_baby_beany" class="button" onclick='tableSwitch("baby_beany_cm","baby_beany_inch"),highlight("clk_baby_beany")'>inch</button>
+		<button id="clk_baby_beany" class="buttonSwitch" onclick='tableSwitch("baby_beany_cm","baby_beany_inch"),highlight("clk_baby_beany")'>inch</button>
 	</div> <!--end tableContainer -->
 
 	<h3> الأطفال </h3>
@@ -140,7 +140,7 @@
 				echo "</tr>";
 			} echo "</table>";
 			?>
-			<button id="clk_toddler" class="button" onclick='tableSwitch("toddler_cm","toddler_inch"),highlight("clk_toddler")'>inch</button>
+			<button id="clk_toddler" class="buttonSwitch" onclick='tableSwitch("toddler_cm","toddler_inch"),highlight("clk_toddler")'>inch</button>
 	</div> <!--end tableContainer -->
 
 	<h3> الأولاد أكبر من 8 سنوات </h3>
@@ -201,7 +201,7 @@
 			} echo "</table>";
 
 			?>
-			<button id="clk_boy" class="button" onclick='tableSwitch("boy_cm","boy_inch"),highlight("clk_boy")'>inch</button>
+			<button id="clk_boy" class="buttonSwitch" onclick='tableSwitch("boy_cm","boy_inch"),highlight("clk_boy")'>inch</button>
 	</div> <!--end tableContainer -->
 
 	<h3> البنات أكثر من 8 سنوات </h3>
@@ -219,7 +219,7 @@
 			<th>الصدر </th>
 			<th>الطول </th>
 			</tr> ";
-	// result
+		// result
 		while ( $row = mysqli_fetch_array ($girl_cm, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
@@ -233,7 +233,7 @@
 			echo "<td>".$row['g_height_cm']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-	// header
+		// header
 		echo "<table id='girl_inch' style='display:none;'>
 			<tr>
 			<th>المقاس العالمي</th>
@@ -245,7 +245,7 @@
 			<th>الصدر </th>
 			<th>الطول </th>
 			</tr> ";
-	// result
+		// result
 		while ( $row = mysqli_fetch_array ($girl_inch, MYSQLI_ASSOC) )
 		{
 			echo "<tr>";
@@ -260,7 +260,7 @@
 			echo "</tr>";
 		} echo "</table>";
 			?>
-			<button id="clk_girl" class="button" onclick='tableSwitch("girl_cm","girl_inch"),highlight("clk_girl")'>inch</button>
+		<button id="clk_girl" class="buttonSwitch" onclick='tableSwitch("girl_cm","girl_inch"),highlight("clk_girl")'>inch</button>
 	</div> <!--end tableContainer -->
 
 	<h3> أحذية الأطفال </h3>
@@ -312,7 +312,7 @@
 		} echo "</table>";
 		
 			?>
-			<button id="clk_child_shoes" class="button" onclick='tableSwitch("child_shoes_cm","child_shoes_inch"),highlight("clk_child_shoes")'>inch</button>
+			<button id="clk_child_shoes" class="buttonSwitch" onclick='tableSwitch("child_shoes_cm","child_shoes_inch"),highlight("clk_child_shoes")'>inch</button>
 	</div> <!--end tableContainer -->
 
 <script type="text/javascript">

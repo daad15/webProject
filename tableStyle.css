@@ -8,7 +8,7 @@ html { scroll-behavior: smooth; }
         url("font/Questv1-Bold_0.woff2") format("woff2");}
 
 /* button (cm/inch) Style*/
-.button {
+.buttonSwitch {
   background-color: #FFFFFF; 
   border: none;
   color: black;
@@ -21,10 +21,10 @@ html { scroll-behavior: smooth; }
   outline:none;
   cursor: pointer;
   border-radius: 20px;
-  margin-right: 10em;
+  margin-right: 88%;
 
 }
-.button:hover{
+.buttonSwitch:hover{
     background-color: rgba(243, 206, 59, 0.50) !important ;
 }
 /* Tabs (normal/short-long/petite-plus) Style*/
@@ -42,7 +42,9 @@ html { scroll-behavior: smooth; }
   background: #DDB715;
   display: inline-flex;
   color: #fff;
-  border-radius: 3px 3px 0px 0px;  
+  border-radius: 3px 3px 0px 0px;
+  font-family: Questv1; 
+  font-size: small; 
 
 
 }
@@ -74,45 +76,70 @@ html { scroll-behavior: smooth; }
   }
 }
 
-.panel-title {
-  font-size: 1.5em;
-  font-weight: bold;
-}
-
 .radio {
   display: none;
 }
 
-#one:checked ~ .panels #normal_top,
-#two:checked ~ .panels #short_top,
-#three:checked ~ .panels #three-panel {
+#wt1:checked ~ .panels #top,
+#wt2:checked ~ .panels #petite_top,
+#wt3:checked ~ .panels #plus_top,
+
+#wd1:checked ~ .panels #dress,
+#wd2:checked ~ .panels #petite_dress,
+#wd3:checked ~ .panels #plus_dress,
+
+#ws1:checked ~ .panels #skirt,
+#ws2:checked ~ .panels #petite_skirt,
+#ws3:checked ~ .panels #plus_skirt,
+
+#wp1:checked ~ .panels #pants,
+#wp2:checked ~ .panels #petite_pants,
+#wp3:checked ~ .panels #plus_pants {
   display: block;
 }
 
-#one:checked ~ .tabs #one-tab,
-#two:checked ~ .tabs #two-tab,
-#three:checked ~ .tabs #three-tab {
+#wt1:checked ~ .tabs #t_wt1,
+#wt2:checked ~ .tabs #t_wt2,
+#wt3:checked ~ .tabs #t_wt3,
+
+#wd1:checked ~ .tabs #t_wd1,
+#wd2:checked ~ .tabs #t_wd2,
+#wd3:checked ~ .tabs #t_wd3,
+
+#ws1:checked ~ .tabs #t_ws1,
+#ws2:checked ~ .tabs #t_ws2,
+#ws3:checked ~ .tabs #t_ws3,
+
+#wp1:checked ~ .tabs #t_wp1,
+#wp2:checked ~ .tabs #t_wp2,
+#wp3:checked ~ .tabs #t_wp3 {
   background: #383836;
-  color: #000;
+  color: #FFFFFF;
   border-right: 3px solid #F3BC3E;
-   border-left: 3px solid #F3BC3E;
+  border-left: 3px solid #F3BC3E;
 }
-.container{
-  padding: 2em;
+.tableContainer{
+  min-height: 200px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 3px;
+  overflow: hidden;
+  padding: 1em;
 }
 
 table {
   font-family: Questv1;
   border-collapse: collapse;
   text-align: center;
-  min-width: 20em;
+  min-width: 5em;
   width: auto;
   margin-left:auto; 
-
   background-color: none ;  
   border-radius: 0.25em;
 }
-
+table th{
+  font-size: medium;
+}
 table td, table th {
   border: none;
   padding: 7px;  
