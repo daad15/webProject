@@ -1,14 +1,116 @@
+html { scroll-behavior: smooth; } 
+@font-face {
+  font-family: 'Questv1';
+  src: local('Questv1-Bold_0'),
+       local('Questv1 Bold 0'),
+        url("font/Questv1-Bold_0.otf") format("OpenType"),
+        url("font/Questv1-Bold_0.woff") format("woff"),
+        url("font/Questv1-Bold_0.woff2") format("woff2");}
+
+/* button (cm/inch) Style*/
+.button {
+  background-color: #FFFFFF; 
+  border: none;
+  color: black;
+  font-weight: normal;
+  padding: .75em;
+  text-align: center;
+  text-decoration: none;
+  display: inline; 
+  font-size: 16px;
+  outline:none;
+  cursor: pointer;
+  border-radius: 20px;
+  margin-right: 10em;
+
+}
+.button:hover{
+    background-color: rgba(243, 206, 59, 0.50) !important ;
+}
+/* Tabs (normal/short-long/petite-plus) Style*/
+/* source (https://sharkcoder.com/blocks/tabs)*/
+.warpper {
+  display: flex;
+  flex-direction: column;
+  align-items: right;
+
+}
+
+.tab {
+  cursor: pointer;
+  padding: 10px 20px;
+  background: #DDB715;
+  display: inline-flex;
+  color: #fff;
+  border-radius: 3px 3px 0px 0px;  
+
+
+}
+.tab:hover {
+  background: #F3CB3E;
+}
+
+.panels {
+  background: none;
+  min-height: 200px;
+  width: 100%;
+  max-width: 500px;
+  border-radius: 3px;
+  overflow: hidden;
+
+}
+
+.panel {
+  display: none;
+  animation: fadein 0.8s;
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.panel-title {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.radio {
+  display: none;
+}
+
+#one:checked ~ .panels #normal_top,
+#two:checked ~ .panels #short_top,
+#three:checked ~ .panels #three-panel {
+  display: block;
+}
+
+#one:checked ~ .tabs #one-tab,
+#two:checked ~ .tabs #two-tab,
+#three:checked ~ .tabs #three-tab {
+  background: #383836;
+  color: #000;
+  border-right: 3px solid #F3BC3E;
+   border-left: 3px solid #F3BC3E;
+}
+.container{
+  padding: 2em;
+}
 
 table {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Questv1;
   border-collapse: collapse;
   text-align: center;
   min-width: 20em;
   width: auto;
   margin-left:auto; 
-  margin-right:auto;
-  background-color: #DAD4D4 ;
-  margin: 5em;
+
+  background-color: none ;  
+  border-radius: 0.25em;
 }
 
 table td, table th {
@@ -16,9 +118,14 @@ table td, table th {
   padding: 7px;  
 }
 
-table tr:nth-child(even){background-color: #FFFFFF;}
+table tr:nth-child(even){
+  background-color: #FFFFFF;
+}
+table tr:nth-child(odd){
+  background-color: #DAD4D4;
+}
 
-table tr:hover {background-color:rgba(243, 206, 59, 0.40) ;}
+table tr:hover {background-color:rgba(243, 206, 59, 0.40);}
 table td:hover {background-color:#F3CE3B; font-weight: bold;}
 
 
@@ -28,3 +135,4 @@ table th {
   background-color: #383836;
   color: white;
 }
+

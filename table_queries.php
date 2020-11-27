@@ -2,7 +2,9 @@
 <html dir="rtl">
 <head>
 	<title>Suize Guide</title>
+<!--
 	<link rel="stylesheet" type="text/css" href="tableStyle.css">
+-->
 </head>
 <body>
 
@@ -14,18 +16,16 @@
 //						 *************	Children Size 	**************
 //QUERY: baby (cm)
 		$baby_cm = mysqli_query($con,
-			"SELECT b_age,b_weight_kg,b_height_cm,b_us,b_uk,b_eur
+			"SELECT b_age,b_weight_kg,b_height_cm,b_us
 			FROM baby")
 		or die ( mysqli_connect_error());
 	// header
-		echo "<table> 
+/*		echo "<table> 
 			<tr>
 			<th> العمر </th>
 			<th> الوزن </th>
 			<th> الطول </th>
 			<th> المقاس الأمريكي<br>UK </th>
-			<th> المقاس البريطاني<br>US </th>
-			<th> المقاس الأوروبي<br>EUR </th>
 			</tr> ";
 	// result
 		while ( $row = mysqli_fetch_array ($baby_cm, MYSQLI_ASSOC) )
@@ -35,25 +35,22 @@
 			echo "<td>".$row['b_weight_kg']."</td>";
 			echo "<td>".$row['b_height_cm']."</td>";
 			echo "<td>".$row['b_us']."</td>";
-			echo "<td>".$row['b_uk']."</td>";
-			echo "<td>".$row['b_eur']."</td>";
+
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: baby (inch)
 		$baby_inch = mysqli_query($con,
-			"SELECT b_age,b_weight_lb,b_height_in,b_us,b_uk,b_eur
+			"SELECT b_age,b_weight_lb,b_height_in,b_us
 			FROM baby")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th> العمر </th>
 			<th> الوزن </th>
 			<th> الطول </th>
 			<th> المقاس الأمريكي<br>UK </th>
-			<th> المقاس البريطاني<br>US </th>
-			<th> المقاس الأوروبي<br>EUR </th>
 			</tr> ";
 	// result
 		while ( $row = mysqli_fetch_array ($baby_inch, MYSQLI_ASSOC) )
@@ -63,17 +60,15 @@
 			echo "<td>".$row['b_weight_lb']."</td>";
 			echo "<td>".$row['b_height_in']."</td>";
 			echo "<td>".$row['b_us']."</td>";
-			echo "<td>".$row['b_uk']."</td>";
-			echo "<td>".$row['b_eur']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: babay beany (cm)
 		$baby_beany_cm = mysqli_query($con,
 			"SELECT bb_age,bb_head_cm,bb_int
 			FROM baby_beany")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th> العمر </th>
@@ -89,13 +84,13 @@
 			echo "<td>".$row['bb_int']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: babay beany (inch)
 		$baby_beany_inch = mysqli_query($con,
 			"SELECT bb_age,bb_head_in,bb_int
 			FROM baby_beany")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th> العمر </th>
@@ -111,13 +106,13 @@
 			echo "<td>".$row['bb_int']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: toddler (cm)
 		$toddler_cm = mysqli_query($con,
 			"SELECT t_age,t_height_cm,t_weight_kg,t_us,t_uk,t_eur
 			FROM toddler")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th>العمر </th>
@@ -139,13 +134,13 @@
 			echo "<td>".$row['t_eur']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: toddler (inch)
 		$toddler_inch = mysqli_query($con,
 			"SELECT t_age,t_height_in,t_weight_lb,t_us,t_uk,t_eur
 			FROM toddler")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th>العمر </th>
@@ -167,13 +162,13 @@
 			echo "<td>".$row['t_eur']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: boys (cm)
 		$boy_cm = mysqli_query($con,
 			"SELECT b_height_cm,b_chest_cm,b_waist_cm,b_hips_cm,b_us,b_uk,b_eur,b_int
 			FROM ch_boy")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th>المقاس العالمي</th>
@@ -199,13 +194,13 @@
 			echo "<td>".$row['b_height_cm']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: boys (inch)
 		$boy_inch = mysqli_query($con,
 			"SELECT b_height_in,b_chest_in,b_waist_in,b_hips_in,b_us,b_uk,b_eur,b_int
 			FROM ch_boy")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th>المقاس العالمي</th>
@@ -231,13 +226,13 @@
 			echo "<td>".$row['b_height_in']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: girls (cm)
 		$girl_cm = mysqli_query($con,
 			"SELECT g_height_cm,g_chest_cm,g_waist_cm,g_hips_cm,g_us,g_uk,g_eur,g_int
 			FROM ch_girl")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th>المقاس العالمي</th>
@@ -263,13 +258,13 @@
 			echo "<td>".$row['g_height_cm']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: girls (inch)
 		$girl_inch = mysqli_query($con,
 			"SELECT g_height_in,g_chest_in,g_waist_in,g_hips_in,g_us,g_uk,g_eur,g_int
 			FROM ch_girl")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th>المقاس العالمي</th>
@@ -295,13 +290,13 @@
 			echo "<td>".$row['g_height_in']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: children shoes (cm)
 		$child_shoes_cm = mysqli_query($con,
 			"SELECT chsh_age,chsh_feet_cm,chsh_us,chsh_uk,chsh_eur,chsh_jp
 			FROM ch_shoes")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th>العمر</th>
@@ -323,13 +318,13 @@
      	 	echo "<td>".$row['chsh_jp']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //QUERY: children shoes (inch)
 		$child_shoes_inch = mysqli_query($con,
 			"SELECT chsh_age,chsh_feet_in,chsh_us,chsh_uk,chsh_eur,chsh_jp
 			FROM ch_shoes")
 		or die ( mysqli_connect_error());
-	// header
+/*	// header
 		echo "<table>
 			<tr>
 			<th>العمر</th>
@@ -351,7 +346,7 @@
 			echo "<td>".$row['chsh_jp']."</td>";
 			echo "</tr>";
 		} echo "</table>";
-
+*/
 //						 *************	Women Size 	**************
 //QUERY: women tops (cm)
 	$women_tops_cm = mysqli_query($con,
