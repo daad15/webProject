@@ -98,7 +98,19 @@ html { scroll-behavior: smooth; }
 
 #mt1:checked ~ .panels #mtop,
 #mt2:checked ~ .panels #long_top,
-#mt3:checked ~ .panels #short_top {
+#mt3:checked ~ .panels #short_top,
+
+#mshr1:checked ~ .panels #mshirt,
+#mshr2:checked ~ .panels #long_shirt,
+#mshr3:checked ~ .panels #short_shirt,
+
+#mp1:checked ~ .panels #mpants,
+#mp2:checked ~ .panels #long_pants,
+#mp3:checked ~ .panels #short_pants,
+
+#mth1:checked ~ .panels #m_thoub,
+#mth2:checked ~ .panels #y_thoub,
+#mth3:checked ~ .panels #ch_thoub {
    display: block;
 }
 #wt1:checked ~ .tabs #t_wt1,
@@ -119,7 +131,19 @@ html { scroll-behavior: smooth; }
 
 #mt1:checked ~ .tabs #t_mt1,
 #mt2:checked ~ .tabs #t_mt2,
-#mt3:checked ~ .tabs #t_mt3 {
+#mt3:checked ~ .tabs #t_mt3,
+
+#mshr1:checked ~ .tabs #t_mshr1,
+#mshr2:checked ~ .tabs #t_mshr2,
+#mshr3:checked ~ .tabs #t_mshr3,
+
+#mp1:checked ~ .tabs #t_mp1,
+#mp2:checked ~ .tabs #t_mp2,
+#mp3:checked ~ .tabs #t_mp3,
+
+#mth1:checked ~ .tabs #t_mth1,
+#mth2:checked ~ .tabs #t_mth2,
+#mth3:checked ~ .tabs #t_mth3 {
   background: #383836;
   color: #FFFFFF;
   border-right: 3px solid #F3BC3E;
@@ -139,7 +163,7 @@ table {
   font-family: Questv1;
   border-collapse: collapse;
   text-align: center;
-  min-width: 5em;
+  min-width: 10em;
   width: auto;
   margin-left:auto; 
   background-color: none ;  
@@ -147,6 +171,7 @@ table {
 }
 table th{
   font-size: medium;
+  min-width: 4.5em;
 }
 table td, table th {
   border: none;
