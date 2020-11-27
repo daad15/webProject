@@ -56,7 +56,7 @@ html { scroll-behavior: smooth; }
   background: none;
   min-height: 200px;
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   border-radius: 3px;
   overflow: hidden;
 
@@ -79,8 +79,8 @@ html { scroll-behavior: smooth; }
 .radio {
   display: none;
 }
-
-#wt1:checked ~ .panels #top,
+/*women tap style */
+#wt1:checked ~ .panels #wtop,
 #wt2:checked ~ .panels #petite_top,
 #wt3:checked ~ .panels #plus_top,
 
@@ -94,10 +94,13 @@ html { scroll-behavior: smooth; }
 
 #wp1:checked ~ .panels #pants,
 #wp2:checked ~ .panels #petite_pants,
-#wp3:checked ~ .panels #plus_pants {
-  display: block;
-}
+#wp3:checked ~ .panels #plus_pants,
 
+#mt1:checked ~ .panels #mtop,
+#mt2:checked ~ .panels #long_top,
+#mt3:checked ~ .panels #short_top {
+   display: block;
+}
 #wt1:checked ~ .tabs #t_wt1,
 #wt2:checked ~ .tabs #t_wt2,
 #wt3:checked ~ .tabs #t_wt3,
@@ -112,16 +115,21 @@ html { scroll-behavior: smooth; }
 
 #wp1:checked ~ .tabs #t_wp1,
 #wp2:checked ~ .tabs #t_wp2,
-#wp3:checked ~ .tabs #t_wp3 {
+#wp3:checked ~ .tabs #t_wp3,
+
+#mt1:checked ~ .tabs #t_mt1,
+#mt2:checked ~ .tabs #t_mt2,
+#mt3:checked ~ .tabs #t_mt3 {
   background: #383836;
   color: #FFFFFF;
   border-right: 3px solid #F3BC3E;
   border-left: 3px solid #F3BC3E;
 }
+
 .tableContainer{
   min-height: 200px;
   width: 100%;
-  max-width: 500px;
+  max-width: 700px;
   border-radius: 3px;
   overflow: hidden;
   padding: 1em;
