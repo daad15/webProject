@@ -17,42 +17,82 @@
  Copyright (c) 2015 by Tarek Atrissi Design. All rights reserved. */
 
   	html { scroll-behavior: smooth; }
-		
 .sectionOne {
   height: 700px;
     position: relative;
-}
+      border: black dotted 2px;
+
+  }
  
- /**adject section height here*/
+		
 .sectionTwo {
-  height: 2000px;
-  background-color: #f2eeec;
-} 
+  height: 700px;
+}
+
+ /**adject section height here*/
 .sectionThree {
+  background-color: #f2eeec; 
+  height:  2000px; 
+
+} 
+.sectionFour {
    height: 120px;
+ }
+ .container{
+  position: absolute;
+  height: 270px;
+  width: 800px;
+  left: 265px;
+  top: 230px;
  }
 
  #logo{
     display: block;
     margin-left: auto;
     margin-right: auto;
- }
+    width: 120px;
+    height: auto; }
 
+/**gender**/
+#womanIcon{
+   width: 225px;
+    height: auto;
+    position: absolute;
+    left: 10px;
+  }
+ 
+#manIcon{
+   width: 185px;
+    height: auto;
+    position: absolute;
+    left: 310px;
+  
+  }
 
-#navBarBorder{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px; 
- }
- #navBar{
+ #childIcon{
+   width: 200px;
+    height: auto;
+    position: absolute;
+    left: 550px;
+      }
+#label1{left:115px;}  
+#label2{left:365px;}  
+#label3{left:610px;}  
+
+.container p{
+  font-family: Questv1;
+  font-size: 28px;
+  color: #474745; 
   position: absolute;
-  right: 90px;
-  top:-5px;
-   }
+  top: 180px;} 
+#bar{
+  position: absolute;
+  top: 550px;
+  left: 0px;
+  width: 1330px;
+  height: auto;
 
-
-
+}
 </style>
 
 
@@ -60,21 +100,54 @@
 <body>
 
 <div calss=mainPage>
- <div class=sectionOne>
-   <img src="images/navBarBorders.jpg" name="Navigation Bar Borders" id=navBarBorder >
-   <img src="images/navBar.jpg" name="Burger menue" id=navBar>
-   <img src="images/logo.jpg" name="Rakez Logo" id=logo >
-  
-     </div> 
 
-      <div class=sectionTwo> 
+ <div class=sectionOne>
+   <img src="images/logo.jpg" alt="Rakez Logo" id=logo  >
+   <div class= container>
+      <img src="images/woman.jpg" alt="woman icon" id=womanIcon >
+    <img src="images/man.jpg" alt="man icon" id=manIcon>
+    <img src="images/child.jpg" alt="child icon" id=childIcon>
+    <p id=label1 onclick="smoothScroll(document.getElementById('sectionTwo'))"> نساء </p>
+    <p id=label2>رجـال</p>
+    <p id=label3>أطفال</p>
+   </div>
+       <img src="images/bar.jpg" alt="bar" id=bar >
+    
+     </div> 
+      <div class=sectionTwo id="sectionTwo"> 
+           <!--icons-->
+</div>
+      <div class=sectionThree> 
          <!--insert schudels here-->
       </div>  
-         <div class=sectionThree> 
+         <div class=sectionFour> 
          <!--footer-->
            </div>
   
   </div> <!--end of mainPage-->
+<script>
+window.smoothScroll = function(target) {
+    var scrollContainer = target;
+    do { //find scroll container
+        scrollContainer = scrollContainer.parentNode;
+        if (!scrollContainer) return;
+        scrollContainer.scrollTop += 1;
+    } while (scrollContainer.scrollTop == 0);
 
+    var targetY = 0;
+    do { //find the top of target relatively to the container
+        if (target == scrollContainer) break;
+        targetY += target.offsetTop;
+    } while (target = target.offsetParent);
+
+    scroll = function(c, a, b, i) {
+        i++; if (i > 30) return;
+        c.scrollTop = a + (b - a) / 30 * i;
+        setTimeout(function(){ scroll(c, a, b, i); }, 20);
+    }
+    // start scrolling
+    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
+
+</script>
 </body>
 </html>

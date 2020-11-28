@@ -1,10 +1,12 @@
-<!DOCTYPE html>
-<html lang="en" dir="rtl">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-    <style>
-      @font-face {
+
+@font-face {
+  font-family: 'Questv1';
+  src: local('Questv1-Bold_0'),
+       local('Questv1 Bold 0'),
+        url("font/Questv1-Bold_0.otf") format("OpenType"),
+        url("font/Questv1-Bold_0.woff") format("woff"),
+        url("font/Questv1-Bold_0.woff2") format("woff2");} 
+@font-face {
           font-family: 'Hacen Promoter';
           src: local('ArbFONTS-Hacen-Promoter-Lt'),
           local('ArbFONTS Hacen Promoter Lt'),
@@ -13,28 +15,25 @@
           url("font/ArbFONTS-Hacen-Promoter-Lt.woff") format("woff"),
           url("font/ArbFONTS-Hacen-Promoter-Lt.svg") format("svg");}
 
-      body {
-          margin: 0;
-          padding: 0;
-          font-size: 100%;
-      }
-
-      #nav {
-          position: fixed;
+/* font credit goes to www.atrissi.com
+ Copyright (c) 2015 by Tarek Atrissi Design. All rights reserved. */
+#nav {
+          position: relative;
           height: 68px;
           border-bottom: 1px solid #666666;
-          margin: 0 auto;
+          margin-top: 0px;   
        }
 
       #menu {
-          display: inline-block;
+          display: block;
           list-style-type: none;
-          padding-top: 13px;
+          padding-top: 4px;
        }
 
       #menu li {
           float: right;
           font-family: Hacen Promoter;
+          font-size: 23px;
           padding-top: 16px;
           margin-right: 35px;
           margin-left: 35px;
@@ -58,19 +57,3 @@
       #menu a:hover{
          color: #87c6bd;
         }
-    </style>
-  </head>
-  <body>
-    <div id="nav">
-		     <ul id="menu">
-				     <li><a href="#">الرئيسية</a></li>
-				     <li class="divline"></li>
-             <li><a href="findSize.html">جِد مقاسي</a></li>
-             <li class="divline"></li>
-			       <li><a href="care.html">العناية</a></li>
-			       <li class="divline"></li>
-             <li><a href="about.html">عن راكز</a></li>
-				  </ul>
-     </div>
-  </body>
-</html>
