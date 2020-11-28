@@ -757,7 +757,7 @@
          		<?php require 'table_queries.php';
          		//header
 				echo "<table>
-					<tr>
+					<tr >
 					<th>العرض</th>
 					<th>الطول</th>
 					<th>المقاس</th>
@@ -770,8 +770,34 @@
 					echo "<td>".$row['mth_length']."</td>";
 					echo "<td>".$row['mth_size']."</td>";
 					echo "</tr>";
-				} echo "</table>";
-         		?>
+				} 
+				echo "<tr id='tr_mthoub_clkMore'><td colspan='3'>
+						<a onclick=\"loadmore('tr_mthoub_clkMore','m_thoub_more')\">عرض المزيد</a></td></tr>";
+				echo "</table>";
+				?>
+				<span id='m_thoub_more' style='display:none'>
+					<?php require 'table_queries.php';
+					//header
+					echo "<table>
+						<tr>
+						<th>العرض</th>
+						<th>الطول<sup>> 150</sup></th>
+						<th>المقاس</th>
+						</tr> ";
+					//more rows when click button
+						while ( $row = mysqli_fetch_array ($men_thoub_more, MYSQLI_ASSOC) )
+						{
+							echo "<tr>";
+							echo "<td>".$row['mth_chest']."</td>";
+							echo "<td>".$row['mth_length']."</td>";
+							echo "<td>".$row['mth_size']."</td>";
+							echo "</tr>";
+						}
+					echo "<tr><td colspan='3'>
+						<a onclick=\"less('m_thoub_more')\">عرض أقل</a></td></tr>"; 
+					echo "</table>";
+		        	?>
+	        	 </span>
          	</div> <!-- end panel 1 -->
 
         	<div class="panel" id="y_thoub" >
@@ -791,9 +817,33 @@
 					echo "<td>".$row['mth_length']."</td>";
 					echo "<td>".$row['mth_size']."</td>";
 					echo "</tr>";
-				} echo "</table>";
+				}echo "<tr id='tr_ythoub_clkMore'><td colspan='3'>
+						<a onclick=\"loadmore('tr_ythoub_clkMore','y_thoub_more')\">عرض المزيد</a></td></tr>"; 
+				echo "</table>";
 		        		
         		 ?> 
+        		 <span id='y_thoub_more' style='display:none'>
+					<?php require 'table_queries.php';
+					//header
+					echo "<table>
+						<tr>
+						<th>العرض</th>
+						<th>الطول<sup>> 120</sup></th>
+						<th>المقاس</th>
+						</tr> ";
+					//more rows when click button
+						while ( $row = mysqli_fetch_array ($youth_thoub_more, MYSQLI_ASSOC) )
+						{
+							echo "<tr>";
+							echo "<td>".$row['mth_chest']."</td>";
+							echo "<td>".$row['mth_length']."</td>";
+							echo "<td>".$row['mth_size']."</td>";
+							echo "</tr>";
+						}echo "<tr><td colspan='3'>
+						<a onclick=\"less('y_thoub_more')\">عرض أقل</a></td></tr>"; 
+					echo "</table>";
+		        	 ?>
+	        	 </span>
          	</div> <!-- end panel 2 -->
 
     		<div class="panel" id="ch_thoub" >
@@ -813,8 +863,33 @@
 					echo "<td>".$row['mth_length']."</td>";
 					echo "<td>".$row['mth_size']."</td>";
 					echo "</tr>";
-				} echo "</table>";
-    			?>  
+				}
+				echo "<tr id='tr_chthoub_clkMore'><td colspan='3'>
+						<a onclick=\"loadmore('tr_chthoub_clkMore','ch_thoub_more')\">عرض المزيد</a></td></tr>"; 
+				echo "</table>";
+    			?> 
+    			<span id='ch_thoub_more' style='display:none'>
+					<?php require 'table_queries.php';
+					//header
+					echo "<table>
+						<tr>
+						<th>العرض</th>
+						<th>الطول<sup>> 70</sup></th>
+						<th>المقاس</th>
+						</tr> ";
+					//more rows when click button
+						while ( $row = mysqli_fetch_array ($child_thoub_more, MYSQLI_ASSOC) )
+						{
+							echo "<tr>";
+							echo "<td>".$row['mth_chest']."</td>";
+							echo "<td>".$row['mth_length']."</td>";
+							echo "<td>".$row['mth_size']."</td>";
+							echo "</tr>";
+						}echo "<tr><td colspan='3'>
+						<a onclick=\"less('ch_thoub_more')\">عرض أقل</a></td></tr>"; 
+					echo "</table>";
+		        	 ?>
+	        	 </span> 
     		</div><!-- end panel 3 -->
 	  </div> <!-- end panels -->
 	</div><!-- end warpper -->
@@ -823,9 +898,20 @@
 
 <script type="text/javascript">
 
+function less (r){
+	var spanLess = document.getElementById(r);
+	spanLess.style.display = "none";
+}
+function loadmore (clk_r,rows){
+	var clkRow = document.getElementById(clk_r); 
+	var spanMore = document.getElementById(rows);
+	clkRow.hidden = true ;
+	spanMore.style.display = "block";
+}
+
 function tableSwitch(cm,inch) {
    var tcm = document.getElementById(cm); 
-   var tinch = document.getElementById(inch);
+   var tinch = document.getElementsById(inch);
 
    tcm.style.display = (
        tcm.style.display == "none" ? "block" : "none"); 

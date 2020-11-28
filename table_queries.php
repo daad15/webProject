@@ -431,19 +431,31 @@
 //QUERY: men thoub
 		$men_thoub = mysqli_query($con,
 			"SELECT mth_size, mth_length, mth_chest
-			FROM men_thoub")
+			FROM men_thoub limit 34")
+		or die ( mysqli_connect_error());
+		$men_thoub_more = mysqli_query($con,
+			"SELECT mth_size, mth_length, mth_chest
+			FROM men_thoub limit 30 OFFSET 34")
 		or die ( mysqli_connect_error());
 
 //QUERY: youth thoub
 		$youth_thoub = mysqli_query($con,
 			"SELECT mth_size, mth_length, mth_chest
-			FROM youth_thoub")
+			FROM youth_thoub limit 42")
+		or die ( mysqli_connect_error());
+		$youth_thoub_more = mysqli_query($con,
+			"SELECT mth_size, mth_length, mth_chest
+			FROM youth_thoub limit 17 offset 42")
 		or die ( mysqli_connect_error());
 
 //QUERY: child thoub
 		$child_thoub = mysqli_query($con,
 			"SELECT mth_size, mth_length, mth_chest
-			FROM child_thoub")
+			FROM child_thoub limit 12")
+		or die ( mysqli_connect_error());
+		$child_thoub_more = mysqli_query($con,
+			"SELECT mth_size, mth_length, mth_chest
+			FROM child_thoub limit 18 offset 12")
 		or die ( mysqli_connect_error());
 
 //						 *************	Men long Size 	**************
