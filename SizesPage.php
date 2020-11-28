@@ -132,6 +132,9 @@
 #top{
   margin-top: 0px;
 }
+#pregnantCon{
+ border-left: #383836 dashed 3px;
+}
 </style>
 
 
@@ -170,7 +173,9 @@
       <div class=iconsBackground id=bottom>
        <div class=iconContainer><img src="images/ring.png" alt="ring icon" id="Wring"><p id=ringtxt>خاتم</p></div>
        <div class=iconContainer><img src="images/heels.png" alt="heels icon" id="Wheels"><p id=heelstxt>أحذية</p></div>        
-       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="Wbelt"><p id=belttxt>أحزمة</p></div>        
+       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="Wbelt"><p id=belttxt>أحزمة</p></div>  
+       <div class=iconContainer id=pregnantCon><img src="images/pregnant.png" alt="pregnancy clothes icon" id="Wpregnant"><p id=pregnanttxt>قياسات حوامل</p></div>
+      
         
       </div>
       </div> <!--end of BgContainer-->
