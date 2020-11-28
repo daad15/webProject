@@ -562,7 +562,7 @@
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	<h3> الأحذية </h3>
+	<h3 id="t_mshoes"> الأحذية </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		// header

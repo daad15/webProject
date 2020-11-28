@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="tableStyle.css">
 </head>
 <body>
-	<h3>ملابس المواليد </h3>
+	<h3 id="t_babycloth">ملابس المواليد </h3>
 	<div class="tableContainer">
 		<?php require 'table_queries.php';
 		//header
@@ -51,7 +51,7 @@
 			<button id="clk_baby" class="buttonSwitch" onclick='tableSwitch("baby_cm","baby_inch"),highlight("clk_baby")'>inch</button>
 	</div> <!--end tableContainer -->
 
-	<h3>قبعات المواليد </h3>
+	<h3 id="t_kbeany">قبعات المواليد </h3>
 	<div class="tableContainer">
 		<?php require 'table_queries.php';
 		// header
@@ -91,7 +91,7 @@
 		<button id="clk_baby_beany" class="buttonSwitch" onclick='tableSwitch("baby_beany_cm","baby_beany_inch"),highlight("clk_baby_beany")'>inch</button>
 	</div> <!--end tableContainer -->
 
-	<h3> الأطفال </h3>
+	<h3 id="t_onesie"> ملابس الأطفال من 1-7 سنوات </h3>
 	<div class="tableContainer">
 		<?php require 'table_queries.php';
 		// header
@@ -143,7 +143,7 @@
 			<button id="clk_toddler" class="buttonSwitch" onclick='tableSwitch("toddler_cm","toddler_inch"),highlight("clk_toddler")'>inch</button>
 	</div> <!--end tableContainer -->
 
-	<h3> الأولاد أكبر من 8 سنوات </h3>
+	<h3 id="t_kboy"> الأولاد أكبر من 8 سنوات </h3>
 	<div class="tableContainer">
 		<?php require 'table_queries.php';
 		// header
@@ -204,7 +204,7 @@
 			<button id="clk_boy" class="buttonSwitch" onclick='tableSwitch("boy_cm","boy_inch"),highlight("clk_boy")'>inch</button>
 	</div> <!--end tableContainer -->
 
-	<h3> البنات أكثر من 8 سنوات </h3>
+	<h3 id="t_kgirl"> البنات أكثر من 8 سنوات </h3>
 	<div class="tableContainer">
 		<?php require 'table_queries.php';
 		// header
@@ -263,7 +263,7 @@
 		<button id="clk_girl" class="buttonSwitch" onclick='tableSwitch("girl_cm","girl_inch"),highlight("clk_girl")'>inch</button>
 	</div> <!--end tableContainer -->
 
-	<h3> أحذية الأطفال </h3>
+	<h3 id="t_kshoes"> أحذية الأطفال </h3>
 	<div class="tableContainer">
 		<?php require 'table_queries.php';
 		// header
