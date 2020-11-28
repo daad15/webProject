@@ -8,7 +8,9 @@ html { scroll-behavior: smooth; }
         url("font/Questv1-Bold_0.woff2") format("woff2");
 }
 
-
+h3{
+  font-family: 'Questv1';
+}
 /* button (cm/inch) Style*/
 .buttonSwitch {
   background-color: #FFFFFF; 
