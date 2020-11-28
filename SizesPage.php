@@ -133,7 +133,7 @@
   margin-top: 0px;
 }
 #pregnantCon{
- border-left: #383836 dashed 3px;
+ border-left: #383836 dashed 3bpx;
 }
 </style>
 
@@ -160,10 +160,10 @@
       <div class=BgContainer> 
      <div class=iconsBackground id=top>
        <div class=iconContainer><img src="images/abaya.png" alt="abaya icon" id="Wabaya"><p id=abayatxt>عباءة</p></div>
-       <div class=iconContainer><img src="images/shirt.png" alt="shirt icon" id="Wshirt"><p id=shirttxt>ملابس علوية</p></div>
+       <div class=iconContainer><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt"><p id=shirttxt>ملابس علوية</p></div>
        <div class=iconContainer><img src="images/dress.png" alt="dress icon" id="Wdress"><p id=dresstxt>فساتين</p></div>
        <div class=iconContainer><img src="images/slit-skirt.png" alt="skirt icon" id="Wskirt"><p id=skirttxt>تنانير</p></div>
-       <div class=iconContainer><img src="images/pants.png" alt="pants icon" id="Wpanst"><p id=pantstxt>بناطيل</p></div>
+       <div class=iconContainer><img src="images/pants.png" alt="pants icon" id="panst"><p id=pantstxt>بناطيل</p></div>
      </div>
      <div class=iconsBackground id=middle>
        <div class=iconContainer><img src="images/tights.png" alt="tights icon" id="Wtights"><p id=tighttxt>جوارب طويلة</p></div>
@@ -173,7 +173,7 @@
       <div class=iconsBackground id=bottom>
        <div class=iconContainer><img src="images/ring.png" alt="ring icon" id="Wring"><p id=ringtxt>خاتم</p></div>
        <div class=iconContainer><img src="images/heels.png" alt="heels icon" id="Wheels"><p id=heelstxt>أحذية</p></div>        
-       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="Wbelt"><p id=belttxt>أحزمة</p></div>  
+       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="belt"><p id=belttxt>أحزمة</p></div>  
        <div class=iconContainer id=pregnantCon><img src="images/pregnant.png" alt="pregnancy clothes icon" id="Wpregnant"><p id=pregnanttxt>قياسات حوامل</p></div>
       
         
