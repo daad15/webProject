@@ -8,15 +8,12 @@
           font-family: 'Hacen Promoter';
           src: local('ArbFONTS-Hacen-Promoter-Lt'),
           local('ArbFONTS Hacen Promoter Lt'),
-          url("font/ArbFONTS-Hacen-Promoter-Lt.ttf") format("ttf"),
+          url("font/ArbFONTS-Hacen-Promoter-Lt.ttf") format("truetype"),
           url("font/ArbFONTS-Hacen-Promoter-Lt.otf") format("OpenType"),
           url("font/ArbFONTS-Hacen-Promoter-Lt.woff") format("woff"),
           url("font/ArbFONTS-Hacen-Promoter-Lt.svg") format("svg");}
 
       body {
-          margin: 0;
-          padding: 0;
-          font-size: 100%;
           background-color: #F2EEEC;
       }
 
@@ -24,13 +21,16 @@
           position: fixed;
           height: 68px;
           border-bottom: 1px solid #666666;
-          margin: 0 auto;
+          width: 100%;
+          overflow: auto;
+          margin: auto;
        }
 
       #menu {
           display: inline-block;
           list-style-type: none;
-          padding-top: 13px;
+          padding-top: 6px;
+          padding-right: 310px;
        }
 
       #menu li {
@@ -43,15 +43,18 @@
 
       #menu li.divline {
           padding: 0;
+          margin: 0 auto;
           border-right: thin solid #666666;
-          height: 13px;
-          margin: 26px 0 0;
+          height: 20px;
+          margin: 26px 0 ;
         }
 
       #menu a {
          font-family: Hacen Promoter;
          padding: 9px;
          color: #7c7c7b;
+         font-size: 23px;
+         margin: 0 auto;
          text-align: center;
          text-decoration: none;
         }
@@ -71,6 +74,7 @@
 			       <li><a href="care.html">العناية</a></li>
 			       <li class="divline"></li>
              <li><a href="about.html">عن راكز</a></li>
+
 				  </ul>
      </div>
   </body>
