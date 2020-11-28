@@ -6,7 +6,7 @@
 	<link rel="stylesheet" type="text/css" href="tableStyle.css">
 </head>
 <body>
-	<h3>الملابس العلوية </h3>
+	<h3 id="t_mtops">الملابس العلوية </h3>
     <div class="tableContainer">
          <div class="warpper">
             <input class="radio" id="mt1" name="mtop" type="radio" checked>
@@ -198,7 +198,7 @@
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	<h3> القمصان </h3>
+	<h3 id="t_mshirt"> القمصان </h3>
     <div class="tableContainer">
          <div class="warpper">
             <input class="radio" id="mshr1" name="mshirt" type="radio" checked>
@@ -382,7 +382,7 @@
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	<h3> البناطيل </h3>
+	<h3 id="t_mpants"> البناطيل </h3>
     <div class="tableContainer">
          <div class="warpper">
             <input class="radio" id="mp1" name="mpants" type="radio" checked>
@@ -605,7 +605,7 @@
          		<button id="clk1_mshoes" class="buttonSwitch" onclick='tableSwitch("men_shoes_cm","men_shoes_inch"),highlight("clk1_mshoes")'>inch</button>
 	</div> <!--end container -->
 
-	<h3> الأحزمة </h3>
+	<h3 id="t_mbelt"> الأحزمة </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		// header
@@ -640,7 +640,7 @@
          		<button id="clk1_mbelt" class="buttonSwitch" onclick='tableSwitch("men_belt_cm","men_belt_inch"),highlight("clk1_mbelt")'>inch</button>
 	</div> <!--end container -->
 
-	<h3> القبعة </h3>
+	<h3 id="t_mhat"> القبعة </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		// header
@@ -676,7 +676,7 @@
          		<button id="clk1_mhat" class="buttonSwitch" onclick='tableSwitch("men_hat_cm","men_hat_inch"),highlight("clk1_mhat")'>inch</button>
 	</div> <!--end container -->
 
-	<h3> الملابس الداخلية </h3>
+	<h3 id="t_munderwear"> الملابس الداخلية </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		// header
@@ -716,10 +716,10 @@
 					echo "</tr>";
 				} echo "</table>";
          		?>
-         		<button id="clk1_munder" class="buttonSwitch" onclick='tableSwitch("men_underwear_cm","men_underwear_inch"),highlight("clk1_munder")'>inch</button>
+         		<button id="clk1_munder" class="buttonSwitch" onclick="tableSwitch('men_underwear_cm','men_underwear_inch'),highlight('clk1_munder')">inch</button>
 	</div> <!--end container -->
 
-	<h3> الشماغ  </h3>
+	<h3 id="t_mshmagh"> الشماغ  </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		// header
@@ -739,7 +739,7 @@
          		?>
 	</div> <!--end container -->
 
-	<h3> الثوب السعودي </h3>
+	<h3 id="t_mthoub"> الثوب  </h3>
     <div class="tableContainer">
          <div class="warpper">
             <input class="radio" id="mth1" name="mthoub" type="radio" checked>
@@ -911,7 +911,7 @@ function loadmore (clk_r,rows){
 
 function tableSwitch(cm,inch) {
    var tcm = document.getElementById(cm); 
-   var tinch = document.getElementsById(inch);
+   var tinch = document.getElementById(inch);
 
    tcm.style.display = (
        tcm.style.display == "none" ? "block" : "none"); 
