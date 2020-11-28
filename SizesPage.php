@@ -71,9 +71,18 @@
   width: 0%;
   padding: 2px;
   display: table-cell;
-
+ text-align: center;
 }
-
+.iconContainer p{
+ font-family: Questv1;
+  font-size: 19px;
+  color: #474745; 
+  margin: 0; 
+}
+.iconContainer img{
+  width: 110px;
+  height: auto;
+}
 
  #logo{
     display: block;
@@ -95,7 +104,6 @@
     height: auto;
     position: absolute;
     left: 310px;
-  
   }
 
  #childIcon{
@@ -115,9 +123,15 @@
   left: 0px;
   width: 1330px;
   height: auto;
-
 }
-
+/**overwrite some styles**/
+#Wring{
+  width: 70px;
+  height: auto;
+}
+#top{
+  margin-top: 0px;
+}
 </style>
 
 
@@ -142,21 +156,21 @@
   <div class=sectionTwo id=sectionTwo>
       <div class=BgContainer> 
      <div class=iconsBackground id=top>
-       <div class=iconContainer><img src="images/abaya.png" alt="abaya icon" id="Wabaya"></div>
-       <div class=iconContainer><img src="images/shirt.png" alt="shirt icon" id="Wshirt"></div>
-       <div class=iconContainer><img src="images/dress.png" alt="dress icon" id="Wdress"></div>
-       <div class=iconContainer><img src="images/slit-skirt.png" alt="skirt icon" id="Wskirt"></div>
-       <div class=iconContainer><img src="images/pants.png" alt="pants icon" id="Wpanst"></div>
+       <div class=iconContainer><img src="images/abaya.png" alt="abaya icon" id="Wabaya"><p id=abayatxt>عباءة</p></div>
+       <div class=iconContainer><img src="images/shirt.png" alt="shirt icon" id="Wshirt"><p id=shirttxt>ملابس علوية</p></div>
+       <div class=iconContainer><img src="images/dress.png" alt="dress icon" id="Wdress"><p id=dresstxt>فساتين</p></div>
+       <div class=iconContainer><img src="images/slit-skirt.png" alt="skirt icon" id="Wskirt"><p id=skirttxt>تنانير</p></div>
+       <div class=iconContainer><img src="images/pants.png" alt="pants icon" id="Wpanst"><p id=pantstxt>بناطيل</p></div>
      </div>
      <div class=iconsBackground id=middle>
-      <img src="images/tights.png" alt="tights icon" id="Wtights">
-      <img src="images/brassiere.png" alt="brassiere icon" id="Wbra">
-      <img src="images/underwear.png" alt="underwear icon" id="Wunderwear">
+       <div class=iconContainer><img src="images/tights.png" alt="tights icon" id="Wtights"><p id=tighttxt>جوارب طويلة</p></div>
+       <div class=iconContainer><img src="images/brassiere.png" alt="brassiere icon" id="Wbra"><p id=bratxt>ملابس داخلية علوية</p></div>
+       <div class=iconContainer><img src="images/underwear.png" alt="underwear icon" id="Wunderwear"><p id=underweartxt>ملابس داخلية سفلية</p></div>
      </div>
       <div class=iconsBackground id=bottom>
-      <img src="images/ring.png" alt="ring icon" id="Wring">
-            <img src="images/heels.png" alt="heels icon" id="Wheels">        
-      <img src="images/belt.png" alt="belt icon" id="Wbelt">        
+       <div class=iconContainer><img src="images/ring.png" alt="ring icon" id="Wring"><p id=ringtxt>خاتم</p></div>
+       <div class=iconContainer><img src="images/heels.png" alt="heels icon" id="Wheels"><p id=heelstxt>أحذية</p></div>        
+       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="Wbelt"><p id=belttxt>أحزمة</p></div>        
         
       </div>
       </div> <!--end of BgContainer-->
