@@ -7,7 +7,7 @@
 	<link rel="stylesheet" type="text/css" href="tableStyle.css">
 </head>
 <body>
-	<h3>ملابس علوية</h3>
+	<h3 id="t_wshirt">ملابس علوية</h3>
     <div class="tableContainer">
          <div class="warpper">
             <input class="radio" id="wt1" name="wtop" type="radio" checked>
@@ -190,7 +190,7 @@
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	<h3> الفساتين </h3>
+	<h3 id="t_wdress"> الفساتين </h3>
     <div class="tableContainer">
           <div class="warpper">
             <input class="radio" id="wd1" name="wdress" type="radio" checked>
@@ -372,7 +372,7 @@
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	<h3> التنانير </h3>
+	<h3 id="t_wskirt"> التنانير </h3>
     <div class="tableContainer">
           <div class="warpper">
             <input class="radio" id="ws1" name="wskirt" type="radio" checked>
@@ -542,7 +542,7 @@
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	<h3> البناطيل </h3>
+	<h3 id="t_wpants"> البناطيل </h3>
     <div class="tableContainer">
           <div class="warpper">
             <input class="radio" id="wp1" name="wpants" type="radio" checked>
@@ -724,7 +724,7 @@
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	<h3> tight </h3>
+	<h3 id="t_tights"> الجوارب الطويلة </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		// headrer
@@ -764,7 +764,7 @@
          		<button id="clk1_wtight" class="buttonSwitch" onclick='tableSwitch("women_tight_cm","women_tight_inch"),highlight("clk1_wtight")'>inch</button>
 	</div> <!--end container -->
 
-	<h3> الأحذية </h3>
+	<h3 id="t_wshoes"> الأحذية </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		// header
@@ -808,7 +808,7 @@
          		<button id="clk1_wshoes" class="buttonSwitch" onclick='tableSwitch("women_shoes_cm","women_shoes_inch"),highlight("clk1_wshoes")'>inch</button>
 	</div> <!--end container -->
 
-	<h3> خاتم </h3>
+	<h3 id="t_wring"> الخواتم </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		//header
@@ -844,7 +844,7 @@
          		<button id="clk1_wring" class="buttonSwitch" onclick='tableSwitch("women_ring_cm","women_ring_inch"),highlight("clk1_wring")'>inch</button>
 	</div> <!--end container -->
 
-	<h3> أحزمة </h3>
+	<h3 id="t_wbelt"> الأحزمة </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		//header
@@ -880,7 +880,7 @@
          		<button id="clk1_wbelt" class="buttonSwitch" onclick='tableSwitch("women_belt_cm","women_belt_inch"),highlight("clk1_wbelt")'>inch</button>
 	</div> <!--end container -->
 
-	<h3> عباءة </h3>
+	<h3 id="t_abaya"> عباءة </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
 		         //header
@@ -923,7 +923,7 @@
          		<button id="clk1_wabaya" class="buttonSwitch" onclick='tableSwitch("women_abaya_cm","women_abaya_inch"),highlight("clk1_wabaya")'>inch</button>
 	</div> <!--end container -->
 
-	<h3> الملابس الداخلية </h3>
+	<h3 id="t_wuderwear"> الملابس الداخلية </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
 		         // header
@@ -966,7 +966,7 @@
          		<button id="clk1_wunder" class="buttonSwitch" onclick='tableSwitch("women_underwear_cm","women_underwear_inch"),highlight("clk1_wunder")'>inch</button>
 	</div> <!--end container -->
 
-	<h3>  الحمالات الصدرية </h3>
+	<h3 id="t_wbra"> ملابسداخلية علوية </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		// header
@@ -1009,7 +1009,7 @@
          		<button id="clk1_wbra" class="buttonSwitch" onclick='tableSwitch("women_bra_cm","women_bra_inch"),highlight("clk1_wbra")'>inch</button>
 	</div> <!--end container -->
 
-	<h3>  الحمل </h3>
+	<h3 id="t_wperg">  الحمل </h3>
     <div class="tableContainer">
          		<?php require 'table_queries.php';
          		//header
