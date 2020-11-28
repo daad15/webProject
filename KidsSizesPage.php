@@ -178,8 +178,9 @@ height: auto;
 <div class=sectionThree id=sectionThree> 
          <!--insert schudels here-->
 <!--top schudels -->       
-  <h3 id="t_babycloth">ملابس المواليد </h3>
+  
   <div class="tableContainer">
+    <h3 id="t_babycloth">ملابس المواليد </h3>
     <?php require 'table_queries.php';
     //header
         echo "<table id='baby_cm'> 
@@ -222,8 +223,9 @@ height: auto;
       <button id="clk_baby" class="buttonSwitch" onclick='tableSwitch("baby_cm","baby_inch"),highlight("clk_baby")'>inch</button>
   </div> <!--end tableContainer -->
 
-  <h3 id="t_onesie"> ملابس الأطفال من 1-7 سنوات </h3>
+ 
   <div class="tableContainer">
+   <h3 id="t_onesie"> ملابس الأطفال من 1-7 سنوات </h3>
     <?php require 'table_queries.php';
     // header
       echo "<table id='toddler_cm'>
@@ -274,8 +276,9 @@ height: auto;
       <button id="clk_toddler" class="buttonSwitch" onclick='tableSwitch("toddler_cm","toddler_inch"),highlight("clk_toddler")'>inch</button>
   </div> <!--end tableContainer -->
 
-  <h3 id="t_kboy"> الأولاد أكبر من 8 سنوات </h3>
-  <div class="tableContainer">
+ 
+  <div class="tableContainer"> 
+    <h3 id="t_kboy"> الأولاد أكبر من 8 سنوات </h3>
     <?php require 'table_queries.php';
     // header
       echo "<table id='boy_cm'>
@@ -335,8 +338,9 @@ height: auto;
       <button id="clk_boy" class="buttonSwitch" onclick='tableSwitch("boy_cm","boy_inch"),highlight("clk_boy")'>inch</button>
   </div> <!--end tableContainer -->
 
-  <h3 id="t_kgirl"> البنات أكثر من 8 سنوات </h3>
-  <div class="tableContainer">
+
+  <div class="tableContainer">  
+    <h3 id="t_kgirl"> البنات أكثر من 8 سنوات </h3>
     <?php require 'table_queries.php';
     // header
     echo "<table id='girl_cm'>
@@ -395,8 +399,9 @@ height: auto;
   </div> <!--end tableContainer -->
 
  <!--bottom schudels -->
-  <h3 id="t_kshoes"> أحذية الأطفال </h3>
+ 
   <div class="tableContainer">
+   <h3 id="t_kshoes"> أحذية الأطفال </h3>
     <?php require 'table_queries.php';
     // header
     echo "<table id='child_shoes_cm'>
@@ -447,8 +452,9 @@ height: auto;
       <button id="clk_child_shoes" class="buttonSwitch" onclick='tableSwitch("child_shoes_cm","child_shoes_inch"),highlight("clk_child_shoes")'>inch</button>
   </div> <!--end tableContainer -->
   
-  <h3 id="t_kbeany">قبعات المواليد </h3>
+  
   <div class="tableContainer">
+    <h3 id="t_kbeany">قبعات المواليد </h3>
     <?php require 'table_queries.php';
     // header
       echo "<table id='baby_beany_cm'>
