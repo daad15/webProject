@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Javascript</title>
+
+    <style type="text/css">
+        #women {
+            display: inline;
+        }
+
+        #men {
+            display: inline;
+        }
+
+        #kids {
+            display: inline;
+        }
+
+        #img {
+          display: block;
+        }
+
+        #circle {
+            background-color: #196F3D;
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            float: left;
+            margin-right: 50px;
+            display: none;
+        }
+
+        #rounded {
+            background-color: #5DADE2;
+            width: 130px;
+            height: 130px;
+            border-radius: 25%;
+            float: left;
+            margin-right: 50px;
+            display: none;
+        }
+
+        #square {
+            background-color: #58D68D;
+            width: 130px;
+            height: 130px;
+            border-radius: 0%;
+            float: left;
+            margin-right: 50px;
+            display: none;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p> If you click on the woman icon, a circle will appear.<br>
+        if you click on the man icon, a rounded square will appear.<br>
+        If you click on the children icon, a square will appear.</p>
+    <div id="img"><img id="women" src="https://www.clker.com/cliparts/w/o/O/8/C/N/grey-woman-hi.png"
+         height="300" width="250">
+    <img id="men" src="https://www.clker.com//cliparts/0/a/e/s/y/2/grey-icon-man-02-hi.png"
+         height="300" width="250">
+    <img id="kids" src="https://icon-library.com/images/children-icon-png/children-icon-png-22.jpg"
+         height="300" width="250"><div>
+
+    <div id="circle"></div>
+    <div id="rounded"></div>
+    <div id="square"></div>
+
+    <script type="text/javascript">
+        document.getElementById("women").onclick = function() {
+
+            document.getElementById("circle").style.display = "block";
+            document.getElementById("rounded").style.display = "none";
+            document.getElementById("square").style.display = "none";
+
+        }
+
+        document.getElementById("men").onclick = function() {
+
+            document.getElementById("rounded").style.display = "block";
+            document.getElementById("circle").style.display = "none";
+            document.getElementById("square").style.display = "none";
+
+        }
+
+        document.getElementById("kids").onclick = function() {
+
+            document.getElementById("square").style.display = "block";
+            document.getElementById("rounded").style.display = "none";
+            document.getElementById("circle").style.display = "none";
+
+        }
+    </script>
+
+</body>
+
+</html>
