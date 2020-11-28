@@ -5,7 +5,9 @@ html { scroll-behavior: smooth; }
        local('Questv1 Bold 0'),
         url("font/Questv1-Bold_0.otf") format("OpenType"),
         url("font/Questv1-Bold_0.woff") format("woff"),
-        url("font/Questv1-Bold_0.woff2") format("woff2");}
+        url("font/Questv1-Bold_0.woff2") format("woff2");
+}
+
 
 /* button (cm/inch) Style*/
 .buttonSwitch {
@@ -22,11 +24,13 @@ html { scroll-behavior: smooth; }
   cursor: pointer;
   border-radius: 20px;
   margin-right: 88%;
+  text-decoration: underline;
 
 }
 .buttonSwitch:hover{
     background-color: rgba(243, 206, 59, 0.50) !important ;
 }
+
 /* Tabs (normal/short-long/petite-plus) Style*/
 /* source (https://sharkcoder.com/blocks/tabs)*/
 .warpper {
@@ -194,5 +198,8 @@ table th {
   padding-bottom: 15px;
   background-color: #383836;
   color: white;
+}
+table td a {
+  text-decoration: underline;
 }
 
