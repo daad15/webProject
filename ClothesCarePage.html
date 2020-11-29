@@ -51,7 +51,6 @@
   position: relative;
       content: "";
   clear: both;
-  display: table;
       margin-left: auto;
     margin-right: auto;
    margin-top: 20px;
@@ -59,8 +58,7 @@
   background: #f0f0e8;
   padding: 20px;
   width: 900px;
-  height: 120px;
-  overflow: auto;
+  height: 420px;
 
 }
 .sectionTwo p {
@@ -70,7 +68,30 @@
      margin: 0px;
      color: #474745; 
 }
-
+.imgContainer{
+   width: 0%;
+  padding: 2px;
+  display: table-cell;
+  border-width: 30px;
+ border: red dotted 2px;
+}
+.txtContainer{
+   width: 0%;
+  padding: 2px;
+  display: table-cell;
+ border: blue dotted 2px;
+ text-align: center;
+ vertical-align: middle;
+}
+.sec1Container{
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgContainer img{
+  width: 50px;
+  height: auto;
+}
 #Quote1{
      font-family: Questv1;
      font-size: 40px;
@@ -92,6 +113,9 @@
     margin-right: auto;
     margin-top: 30px; 
 }    
+#icon{
+
+}
 
 p {cursor: pointer;}
 p:hover {color: #87c6bd;}
@@ -124,11 +148,24 @@ a {text-decoration: none;}
    </div>
      </div> 
   <div class=sectionTwo> 
-    <div class=lbl1> 
+<div class=bleachlbl>  
       <img src="images/label-1.png" alt="label" id=label>
-      <div class=labelBg id=label-1Bg>
-        <img src="images/bleach.png"><p>استخدم المبيض</p>
-      </div>
+    <div class=labelBg id=label-1Bg>
+       <div class= sec1Container>
+          <div class=imgContainer><img src="images/bleach.png" ></div> 
+          <div class=txtContainer> <p>استخدم المبيض ــــــ</p></div> </div>
+      <div class=imgContainer><img src="images/bleach.png" ></div>  
+      <div class=txtContainer><p>استخدم المبيض</p></div>   
+        <div class=imgContainer><img src="images/bleach.png" ></div>
+        <div class=txtContainer><p>استخدم المبيض</p></div>    
+    </div>  
+</div>
+          <div class=labelBg id=label-2Bg></div>
+          <div class=labelBg id=label-3Bg></div>
+          <div class=labelBg id=label-4Bg>    </div>
+
+
+            
     </div>
    </div>
   <div class=sectionThree></div>
