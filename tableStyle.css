@@ -20,7 +20,7 @@ h3{
   padding: .75em;
   text-align: center;
   text-decoration: none;
-  display: inline; 
+  display: block; 
   font-size: 1vw;
   outline:none;
   cursor: pointer;
@@ -175,10 +175,12 @@ table {
   font-family: Questv1;
   border-collapse: collapse;
   text-align: center;
-  width: 100% ;
+  width: auto ;
+  min-width: 50%;
   background-color: none ;
   font-size: 1vw;  
 }
+
 table th{
   font-size: medium;
   font-size: 1vw; 
