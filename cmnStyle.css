@@ -35,6 +35,8 @@ body{
 #menu{
     display: inline-block;
     list-style-type: none;
+    text-align: center;
+    position:relative;
     padding-top: 6px;
     padding-right: 25%;
     padding-left:25%;}
