@@ -18,7 +18,7 @@ body {
 }
 
 #nav {
-    position: fixed;
+    position: relative;
     height: 68px;
     border-bottom: 1px solid #666666;
     width: 100%;
@@ -64,11 +64,11 @@ body {
 
 #myBtn {
    background-color: white;
-   display: none;
    position: fixed;
    bottom: 20px;
    left: 30px;
    border: none;
    cursor: pointer;
    border-radius: 50%;
+   z-index: 1000;
   }

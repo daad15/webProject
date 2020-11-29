@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rakez</title>
+	<title>Rakez - Women</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
+	<script src="btn.js"></script>
   <link rel="mainStyle" href="mainStyle.css">
   <link rel="stylesheet" type="text/css" href="tableStyle.css">
+	<link rel="stylesheet" type="text/css" href="cmnStyle.css">
 	<style>
 
 
 .sectionOne {
-  height: 670px;
+	height: 670px;
   position: relative;
   }
- 
+
 /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
 .sectionTwo {
   height: 670px;
@@ -23,11 +25,11 @@
 
  /**adject section height here*/
 .sectionThree {
-  background-color: #f2eeec; 
+  background-color: #f2eeec;
   position: relative;
-  height:  2000px; 
+  height:  2000px;
 
-} 
+}
 .sectionFour {
    height: 120px;
  }
@@ -38,19 +40,19 @@
    margin-top: 90px;
       height: 270px;
   width: 800px;
- 
+
  }
  /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
  .BgContainer{ /**to center the three icon containers "iconBackground" **/
     display: table-cell;
     vertical-align: middle;
-    width: 70%; 
+    width: 70%;
 }
 .iconsBackground { /**sectionTwo icons container with background color**/
   position: relative;
       content: "";
   clear: both;
-  display: table; 
+  display: table;
       margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -61,12 +63,12 @@
   height: 120px;
 }
 
- .categoryContainer p { /**labels style for sectionOne's icons**/ 
+ .categoryContainer p { /**labels style for sectionOne's icons**/
   font-family: Questv1;
   font-size: 28px;
-  color: #474745; 
+  color: #474745;
   position: absolute;
-  top: 180px;} 
+  top: 180px;}
 
 .iconContainer{ /**container for each clothes icon**/
   width: 0%;
@@ -77,8 +79,8 @@
 .iconContainer p{
  font-family: Questv1;
   font-size: 19px;
-  color: #474745; 
-  margin: 0; 
+  color: #474745;
+  margin: 0;
 }
 .iconContainer img{
   width: 110px;
@@ -99,7 +101,7 @@
     position: absolute;
     left: 10px;
   }
- 
+
 #manIcon{
    width: 185px;
     height: auto;
@@ -113,10 +115,10 @@
     position: absolute;
     left: 550px;
       }
-#label1{left:70px;}  
-#label2{left:320px;}  
-#label3{left:565px;}  
 
+	#label1{left:120px;}
+	#label2{left:370px;}
+	#label3{left:610px;}
 
 #bar{
   position: absolute;
@@ -137,28 +139,35 @@
  border-left: #383836 dashed 3bpx;
 }
 </style>
-
-
 </head>
 <body>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top-arrow.png" height="25" width="25"></button>
 <div calss=mainPage>
-
+	<div id="nav">
+			 <ul id="menu">
+					 <li><a href="home.html">الرئيسية</a></li>
+					 <li class="divline"></li>
+					 <li><a href="#">جِد مقاسي</a></li>
+					 <li class="divline"></li>
+					 <li><a href="care.html">العناية</a></li>
+					 <li class="divline"></li>
+					 <li><a href="about.html">عن راكز</a></li>
+				</ul>
+	 </div>
 <div class=sectionOne id=sectionOne>
-
-   <img src="images/logo.jpg" alt="Rakez Logo" id=logo  >
+   <a href="home.html"><img src="images/logo.jpg" alt="Rakez Logo" id=logo></a>
    <div class= categoryContainer>
-      <img src="images/woman.jpg" alt="woman icon" id=womanIcon onclick="smoothScroll(document.getElementById('sectionTwo'))" >
-    <img src="images/man.jpg" alt="man icon" id=manIcon onclick="smoothScroll(document.getElementById('sectionTwo'))">
-    <img src="images/child.jpg" alt="child icon" id=childIcon onclick="smoothScroll(document.getElementById('sectionTwo'))">
-    <p id=label1 onclick="smoothScroll(document.getElementById('sectionTwo'))">مقاسات نساء</p>
-    <p id=label2 onclick="smoothScroll(document.getElementById('sectionTwo'))">مقاسات رجـال</p>
-    <p id=label3 onclick="smoothScroll(document.getElementById('sectionTwo'))">مقاسات أطفال</p>
+		 <a href="#"><img src="images/woman.jpg" alt="woman icon" id=womanIcon></a>
+		 <a href="MenSizePage.php"><img src="images/man.jpg" alt="man icon" id=manIcon></a>
+		 <a href="KidsSizesPage.php"><img src="images/child.jpg" alt="child icon" id=childIcon></a>
+    <p id=label1 onclick="smoothScroll(document.getElementById('sectionTwo'))">نساء</p>
+    <p id=label2 onclick="smoothScroll(document.getElementById('sectionTwo'))">رجال</p>
+    <p id=label3 onclick="smoothScroll(document.getElementById('sectionTwo'))">أطفال</p>
    </div>
        <img src="images/bar.jpg" alt="bar" id=bar >
-     </div> 
+     </div>
   <div class=sectionTwo id=sectionTwo>
-      <div class=BgContainer> 
+      <div class=BgContainer>
      <div class=iconsBackground id=top>
        <div class=iconContainer><img src="images/abaya.png" alt="abaya icon" id="Wabaya" onclick="smoothScroll(document.getElementById('t_abaya'))" ><p id=abayatxt onclick="smoothScroll(document.getElementById('t_abaya'))">عباءة</p></div>
        <div class=iconContainer><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt" onclick="smoothScroll(document.getElementById('t_wshirt'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_wshirt'))">ملابس علوية</p></div>
@@ -173,18 +182,18 @@
      </div>
       <div class=iconsBackground id=bottom>
        <div class=iconContainer><img src="images/ring.png" alt="ring icon" id="Wring" onclick="smoothScroll(document.getElementById('t_wring'))"><p id=ringtxt onclick="smoothScroll(document.getElementById('t_wring'))">خاتم</p></div>
-       <div class=iconContainer><img src="images/heels.png" alt="heels icon" id="Wheels" onclick="smoothScroll(document.getElementById('t_wshoes'))"><p id=heelstxt onclick="smoothScroll(document.getElementById('t_wshoes'))">أحذية</p></div>        
-       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_wbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_wbelt'))">أحزمة</p></div>  
+       <div class=iconContainer><img src="images/heels.png" alt="heels icon" id="Wheels" onclick="smoothScroll(document.getElementById('t_wshoes'))"><p id=heelstxt onclick="smoothScroll(document.getElementById('t_wshoes'))">أحذية</p></div>
+       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_wbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_wbelt'))">أحزمة</p></div>
        <div class=iconContainer id=pregnantCon><img src="images/pregnant.png" alt="pregnancy clothes icon" id="Wpregnant" onclick="smoothScroll(document.getElementById('t_wperg'))"><p id=pregnanttxt onclick="smoothScroll(document.getElementById('t_wperg'))">قياسات حوامل</p></div>
-      
-        
+
+
       </div>
       </div> <!--end of BgContainer-->
      </div> <!--end of sectionTwo-->
 
-<div class=sectionThree id=sectionThree> 
+<div class=sectionThree id=sectionThree>
          <!--insert schudels here-->
-    
+
     <div class="tableContainer">
     	<h3 id="t_wshirt">ملابس علوية</h3>
          <div class="warpper">
@@ -198,7 +207,7 @@
               <label class="tab" id="t_wt3" for="wt3">مقاسات كبيرة</label>
          </div>
 
-         <div class="panels"> 
+         <div class="panels">
          	<div class="panel" id="w_top" >
          		<?php require 'table_queries.php';
          		// header
@@ -304,10 +313,10 @@
 		            echo "<td>".$row['w_waist_in']."</td>";
 		            echo "<td>".$row['w_hips_in']."</td>";
 					echo "</tr>";
-				} echo "</table>"; 
+				} echo "</table>";
         		?>
 
-        		<button id="clk2_wtop" class="buttonSwitch" onclick='tableSwitch("petite_women_tops_cm","petite_women_tops_inch"),highlight("clk2_wtop")'>inch</button>   
+        		<button id="clk2_wtop" class="buttonSwitch" onclick='tableSwitch("petite_women_tops_cm","petite_women_tops_inch"),highlight("clk2_wtop")'>inch</button>
          	</div> <!-- end panel 2 -->
 
     		<div class="panel" id="plus_top" >
@@ -362,13 +371,13 @@
 				} echo "</table>";
 
     			 ?>
-               <button id="clk3_wtop" class="buttonSwitch" onclick='tableSwitch("plus_women_tops_cm","plus_women_tops_inch"),highlight("clk3_wtop")'>inch</button>   
+               <button id="clk3_wtop" class="buttonSwitch" onclick='tableSwitch("plus_women_tops_cm","plus_women_tops_inch"),highlight("clk3_wtop")'>inch</button>
     		</div><!-- end panel 3 -->
 	  </div> <!-- end panels -->
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_wdress"> الفساتين </h3>
           <div class="warpper">
@@ -382,7 +391,7 @@
               <label class="tab" id="t_wd3" for="wd3">مقاسات كبيرة</label>
          </div>
 
-         <div class="panels"> 
+         <div class="panels">
          	<div class="panel" id="dress" >
          		<?php require 'table_queries.php';
 		        // header
@@ -490,7 +499,7 @@
 				} echo "</table>";
 
         		?>
-        		<button id="clk2_wdress" class="buttonSwitch" onclick='tableSwitch("petite_women_dress_cm","petite_women_dress_inch"),highlight("clk2_wdress")'>inch</button>   
+        		<button id="clk2_wdress" class="buttonSwitch" onclick='tableSwitch("petite_women_dress_cm","petite_women_dress_inch"),highlight("clk2_wdress")'>inch</button>
          	</div> <!-- end panel 2 -->
 
     		<div class="panel" id="plus_dress" >
@@ -543,15 +552,15 @@
 		            echo "<td>".$row['w_hips_in']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-    			
+
     			 ?>
-               <button id="clk3_wdress" class="buttonSwitch" onclick='tableSwitch("plus_women_dress_cm","plus_women_dress_inch"),highlight("clk3_wdress")'>inch</button>   
+               <button id="clk3_wdress" class="buttonSwitch" onclick='tableSwitch("plus_women_dress_cm","plus_women_dress_inch"),highlight("clk3_wdress")'>inch</button>
     		</div><!-- end panel 3 -->
   		</div> <!-- end panels -->
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_wskirt"> التنانير </h3>
           <div class="warpper">
@@ -565,7 +574,7 @@
               <label class="tab" id="t_ws3" for="ws3">مقاسات كبيرة</label>
          </div>
 
-         <div class="panels"> 
+         <div class="panels">
          	<div class="panel" id="skirt" >
          		<?php require 'table_queries.php';
          		// header
@@ -612,7 +621,7 @@
 					echo "<td>".$row['w_hips_in']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-		        
+
          		?>
          		<button id="clk1_wskirt" class="buttonSwitch" onclick='tableSwitch("women_skirts_cm","women_skirts_inch"),highlight("clk1_wskirt")'>inch</button>
          	</div> <!-- end panel 1 -->
@@ -663,9 +672,9 @@
 					echo "<td>".$row['w_hips_in']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-        		
+
         		?>
-        		<button id="clk2_wskirt" class="buttonSwitch" onclick='tableSwitch("petite_women_skirts_cm","petite_women_skirts_inch"),highlight("clk2_wskirt")'>inch</button>   
+        		<button id="clk2_wskirt" class="buttonSwitch" onclick='tableSwitch("petite_women_skirts_cm","petite_women_skirts_inch"),highlight("clk2_wskirt")'>inch</button>
          	</div> <!-- end panel 2 -->
 
     		<div class="panel" id="plus_skirt" >
@@ -714,15 +723,15 @@
 					echo "<td>".$row['w_hips_in']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-		    			
+
     			 ?>
-               <button id="clk3_wskirt" class="buttonSwitch" onclick='tableSwitch("plus_women_skirts_cm","plus_women_skirts_inch"),highlight("clk3_wskirt")'>inch</button>   
+               <button id="clk3_wskirt" class="buttonSwitch" onclick='tableSwitch("plus_women_skirts_cm","plus_women_skirts_inch"),highlight("clk3_wskirt")'>inch</button>
     		</div><!-- end panel 3 -->
 		 </div> <!-- end panels -->
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_wpants"> البناطيل </h3>
           <div class="warpper">
@@ -736,7 +745,7 @@
               <label class="tab" id="t_wp3" for="wp3">مقاسات كبيرة</label>
          </div>
 
-         <div class="panels"> 
+         <div class="panels">
          	<div class="panel" id="pants" >
          		<?php require 'table_queries.php';
          		// header
@@ -788,7 +797,7 @@
 		            echo "<td>".$row['w_leg_in']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-		        
+
          		?>
          		<button id="clk1_wpants" class="buttonSwitch" onclick='tableSwitch("women_pants_cm","women_pants_inch"),highlight("clk1_wpants")'>inch</button>
          	</div> <!-- end panel 1 -->
@@ -843,9 +852,9 @@
 		            echo "<td>".$row['w_leg_in']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-        		
+
         		?>
-        		<button id="clk2_wpants" class="buttonSwitch" onclick='tableSwitch("petite_women_pants_cm","petite_women_pants_inch"),highlight("clk2_wpants")'>inch</button>   
+        		<button id="clk2_wpants" class="buttonSwitch" onclick='tableSwitch("petite_women_pants_cm","petite_women_pants_inch"),highlight("clk2_wpants")'>inch</button>
          	</div> <!-- end panel 2 -->
 
     		<div class="panel" id="plus_pants" >
@@ -897,15 +906,15 @@
 		            echo "<td>".$row['w_hips_in']."</td>";
 		            echo "<td>".$row['w_leg_in']."</td>";
 					echo "</tr>";
-				} echo "</table>";	
+				} echo "</table>";
     			 ?>
-               <button id="clk3_wpants" class="buttonSwitch" onclick='tableSwitch("plus_women_pants_cm","plus_women_pants_inch"),highlight("clk3_wpants")'>inch</button>   
+               <button id="clk3_wpants" class="buttonSwitch" onclick='tableSwitch("plus_women_pants_cm","plus_women_pants_inch"),highlight("clk3_wpants")'>inch</button>
     		</div><!-- end panel 3 -->
 		 </div> <!-- end panels -->
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_abaya"> عباءة </h3>
          		<?php require 'table_queries.php';
@@ -951,7 +960,7 @@
 
 <!--middle part -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_tights"> الجوارب الطويلة </h3>
          		<?php require 'table_queries.php';
@@ -977,7 +986,7 @@
 					<th> المقاس العالمي </th>
 					<th> محيط الارداف    </th>
 		            <th>طول الجوارب  </th>
-		            </tr> ";       
+		            </tr> ";
 				// result
 				while ( $row = mysqli_fetch_array ($women_tight_inch, MYSQLI_ASSOC) )
 				{
@@ -992,7 +1001,7 @@
          		<button id="clk1_wtight" class="buttonSwitch" onclick='tableSwitch("women_tight_cm","women_tight_inch"),highlight("clk1_wtight")'>inch</button>
 	</div> <!--end container -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_wbra"> الملابس الداخلية العلوية  </h3>
          		<?php require 'table_queries.php';
@@ -1036,7 +1045,7 @@
          		<button id="clk1_wbra" class="buttonSwitch" onclick='tableSwitch("women_bra_cm","women_bra_inch"),highlight("clk1_wbra")'>inch</button>
 	</div> <!--end container -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_wuderwear"> الملابس الداخلية </h3>
          		<?php require 'table_queries.php';
@@ -1081,7 +1090,7 @@
 	</div> <!--end container -->
 
  <!--bottom part -->
- 	
+
     <div class="tableContainer">
     	<h3 id="t_wring"> الخواتم </h3>
          		<?php require 'table_queries.php';
@@ -1113,12 +1122,12 @@
 					echo "<td>".$row['wr_cir_inch']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-         		
+
          		?>
          		<button id="clk1_wring" class="buttonSwitch" onclick='tableSwitch("women_ring_cm","women_ring_inch"),highlight("clk1_wring")'>inch</button>
 	</div> <!--end container -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_wshoes"> الأحذية </h3>
          		<?php require 'table_queries.php';
@@ -1158,12 +1167,12 @@
 		            echo "<td>".$row['wsh_feet_in']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-         		
+
          		?>
          		<button id="clk1_wshoes" class="buttonSwitch" onclick='tableSwitch("women_shoes_cm","women_shoes_inch"),highlight("clk1_wshoes")'>inch</button>
 	</div> <!--end container -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_wbelt"> الأحزمة </h3>
          		<?php require 'table_queries.php';
@@ -1195,12 +1204,12 @@
 					echo "<td>".$row['wb_waist_in']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-         			
+
          		?>
          		<button id="clk1_wbelt" class="buttonSwitch" onclick='tableSwitch("women_belt_cm","women_belt_inch"),highlight("clk1_wbelt")'>inch</button>
 	</div> <!--end container -->
 
-	
+
     <div class="tableContainer">
     	<h3 id="t_wperg">  الحمل </h3>
          		<?php require 'table_queries.php';
@@ -1244,21 +1253,21 @@
 					echo "<td>".$row['wm_leg_in']."</td>";
 					echo "</tr>";
 				} echo "</table>";
-         		
+
          		?>
          		<button id="clk1_wmen" class="buttonSwitch" onclick='tableSwitch("women_maternity_cm","women_maternity_inch"),highlight("clk1_wmen")'>inch</button>
 	</div> <!--end container -->
 
 
 
-</div>  
-         <div class=sectionFour> 
+</div>
+         <div class=sectionFour>
          <!--footer-->
            </div>
-  
+
   </div> <!--end of mainPage-->
 <script>
-  //code credit: http://jsfiddle.net/rjSfP/ 
+  //code credit: http://jsfiddle.net/rjSfP/
 window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
@@ -1280,20 +1289,20 @@ window.smoothScroll = function(target) {
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-    //end of code credit 
+    //end of code credit
 }
 
 
 function tableSwitch(cm,inch) {
-   var tcm = document.getElementById(cm); 
+   var tcm = document.getElementById(cm);
    var tinch = document.getElementById(inch);
 
    tcm.style.display = (
-       tcm.style.display == "none" ? "block" : "none"); 
+       tcm.style.display == "none" ? "block" : "none");
    tinch.style.display = (
-       tinch.style.display == "none" ? "block" : "none"); 
+       tinch.style.display == "none" ? "block" : "none");
 }
- 
+
 function highlight(btn) {
 
     var element = document.getElementById(btn);
