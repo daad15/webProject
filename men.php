@@ -22,7 +22,7 @@
 					 <li class="divline"></li>
 					 <li><a href="#">جد مقاسي</a></li>
 					 <li class="divline"></li>
-					 <li><a href="ClothesCarePage.html">العناية</a></li>
+					 <li><a href="ClothesCare.php">العناية بالملابس</a></li>
 					 <li class="divline"></li>
 					 <li><a href="about.html">عن راكز</a></li>
 				</ul>
@@ -963,7 +963,7 @@
 </div>
          <div class=sectionFour style="text-align: center !important; font-family: 'Questv1';font-size: medium;">
          <!--footer-->
-          © كل الحقوق محفوظة , 2020 
+          © كل الحقوق محفوظة , 2020
            </div>
 
 </div> <!--end of mainPage-->

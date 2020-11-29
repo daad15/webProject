@@ -9,7 +9,7 @@
   <link rel="stylesheet" type="text/css" href="tableStyle.css">
 
   <style>
-		
+
 .sectionOne {
   height: 600px;
     position: relative;
@@ -22,7 +22,7 @@
 .sectionFour{
   height:50px;
   width: 100%;
-} 
+}
 #label{
   margin-top: 30px;
   margin-bottom: 20px;
@@ -58,9 +58,9 @@
 .sectionTwo p {
    font-family: Questv1;
      font-size: 25px;
-     text-align: center; 
+     text-align: center;
      margin: 0px;
-     color: #474745; 
+     color: #474745;
 }
 .imgContainer{
    width: 0%;
@@ -91,17 +91,17 @@
 #Quote1{
      font-family: Questv1;
      font-size: 40px;
-     text-align: center; 
+     text-align: center;
      margin: 0px;
      color: #474745;}
 #Quote2{
      font-family: Questv1;
      font-size: 30px;
-     text-align: center; 
+     text-align: center;
      color: #474745;
      margin: 15px 0px 0px  auto;
 }
-    
+
 #label-4Bg{
   margin-bottom: 20px;
 }
@@ -126,74 +126,74 @@
        <ul id="menu">
            <li><a href="home.html">الرئيسية</a></li>
            <li class="divline"></li>
-           <li><a href="#">جد مقاسي</a></li>
+           <li><a href="women.php">جد مقاسي</a></li>
            <li class="divline"></li>
-           <li><a href="care.html">العناية</a></li>
+           <li><a href="#">العناية بالملابس</a></li>
            <li class="divline"></li>
            <li><a href="about.html">عن راكز</a></li>
         </ul>
    </div>
  <div class=sectionOne>
    <img src="images/logo.jpg" name="Rakez Logo" id=logo >
-  <div class=Quotescontainer> 
+  <div class=Quotescontainer>
     <p id=Quote1>لقيت لبس راكز عليك؟</p>
  <p id=Quote2>التزامك بإرشادات العناية يحفظ لك القطعة لأطول وقت</p>
    </div>
-     </div> 
-  <div class=sectionTwo> 
-<div class=bleachlbl>  
+     </div>
+  <div class=sectionTwo>
+<div class=bleachlbl>
       <img src="images/label1.png" alt="label" id=label>
     <div class=labelBg id=label-1Bg>
        <div class= sec1Container id=sec>
-          <div class=imgContainer><img src="images/bleach.png" ></div> 
+          <div class=imgContainer><img src="images/bleach.png" ></div>
          <div class=txtContainer> <p>استخدم المبيض ــــــ</p></div> </div>
-      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/non-chlorine.png" ></div>  
-      <div class=txtContainer><p>لا تستخدم كلور التبييض ــــــ</p></div> </div>  
+      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/non-chlorine.png" ></div>
+      <div class=txtContainer><p>لا تستخدم كلور التبييض ــــــ</p></div> </div>
        <div class= sec3Container id=sec> <div class=imgContainer><img src="images/no-bleaching.png" ></div>
-        <div class=txtContainer><p>لا تستخدم مبيض ــــــ</p></div>    
-    </div>  
+        <div class=txtContainer><p>لا تستخدم مبيض ــــــ</p></div>
+    </div>
 </div>
-</div>    
+</div>
 <div class=washlbl>
- <img src="images/label2.png" alt="label" id=label> 
+ <img src="images/label2.png" alt="label" id=label>
         <div class=labelBg id=label-2Bg>
  <div class= sec1Container id=sec>
-          <div class=imgContainer><img src="images/hand-wash.png" ></div> 
+          <div class=imgContainer><img src="images/hand-wash.png" ></div>
          <div class=txtContainer> <p>غسيل يدوي ــــــ</p></div> </div>
-      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/machine-wash.png" ></div>  
-      <div class=txtContainer><p>غسيل آلي ــــــ</p></div> </div>  
+      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/machine-wash.png" ></div>
+      <div class=txtContainer><p>غسيل آلي ــــــ</p></div> </div>
        <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-wash.png" ></div>
-        <div class=txtContainer><p>لا تغسل ــــــ</p></div>              
+        <div class=txtContainer><p>لا تغسل ــــــ</p></div>
 
 
-        </div></div> 
+        </div></div>
 
 <div class=ironlbl>
- <img src="images/label3.png" alt="label" id=label> 
+ <img src="images/label3.png" alt="label" id=label>
         <div class=labelBg id=label-3Bg>
  <div class= sec1Container id=sec>
-          <div class=imgContainer><img src="images/iron.png" ></div> 
+          <div class=imgContainer><img src="images/iron.png" ></div>
          <div class=txtContainer> <p>كوي ــــــ</p></div> </div>
-      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/iron2.png" ></div>  
-      <div class=txtContainer><p>كوي بدرجة حرارة متوسطة ــــــ</p></div> </div>  
+      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/iron2.png" ></div>
+      <div class=txtContainer><p>كوي بدرجة حرارة متوسطة ــــــ</p></div> </div>
        <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-iron.png" ></div>
-        <div class=txtContainer><p>لا تكوي ــــــ</p></div>                       
+        <div class=txtContainer><p>لا تكوي ــــــ</p></div>
 
-        </div></div> 
-  
+        </div></div>
+
   <div class=drylbl>
- <img src="images/label4.png" alt="label" id=label> 
+ <img src="images/label4.png" alt="label" id=label>
         <div class=labelBg id=label-4Bg>
-          
+
           <div class= sec1Container id=sec>
-          <div class=imgContainer><img src="images/drying1.png" ></div> 
+          <div class=imgContainer><img src="images/drying1.png" ></div>
          <div class=txtContainer> <p>التجفيف على الحبل ــــــ</p></div> </div>
-      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/drying.png" ></div>  
-      <div class=txtContainer><p>التجفيف في الظل ــــــ</p></div> </div>  
+      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/drying.png" ></div>
+      <div class=txtContainer><p>التجفيف في الظل ــــــ</p></div> </div>
        <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-dry.png" ></div>
-        <div class=txtContainer><p>لا تجفف ــــــ</p></div>              
-        </div></div>   
-    
+        <div class=txtContainer><p>لا تجفف ــــــ</p></div>
+        </div></div>
+
    </div>
   <div class=sectionThree></div>
     <div class=sectionFour>
