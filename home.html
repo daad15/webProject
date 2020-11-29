@@ -1,40 +1,32 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rakez</title>
+	<title>Rakez - Home</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
+	<script src="common.js"></script>
+	<link rel="stylesheet" type="text/css" href="cmnStyle.css">
 	<style>
 
-@font-face {
-  font-family: 'Questv1';
-  src: local('Questv1-Bold_0'),
-       local('Questv1 Bold 0'),
-        url("font/Questv1-Bold_0.otf") format("OpenType"),
-        url("font/Questv1-Bold_0.woff") format("woff"),
-        url("font/Questv1-Bold_0.woff2") format("woff2");}
-/* font credit goes to www.atrissi.com
- Copyright (c) 2015 by Tarek Atrissi Design. All rights reserved. */
-
   	html { scroll-behavior: smooth; }
-		
+
 .sectionOne {
   height: 600px;
     position: relative;
 }
 
 .sectionTwo {
-  height: 600px;} 
+  height: 600px;}
 
   .sectionThree {
   height: 600px;
   position: relative;
-} 
+}
 /**footer**/
 .sectionFour{
   height: 120px;
   background-color: #f2eeec;
-} 
+}
 
  #logo{
     display: block;
@@ -47,33 +39,21 @@
 #Quote1{
      font-family: Questv1;
      font-size: 45px;
-     text-align: center; 
+     text-align: center;
      color: #474745;}
-
-
-#navBarBorder{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px; 
- }
- #navBar{
-  position: absolute;
-  right: 90px;
-  top:-5px;
-   }
 
 #measuringTape {
    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 20px; }
+
 #QTag{
   display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px; 
-}    
+    margin-top: 30px;
+}
 .Quote2{
        font-family: Questv1;
      font-size: 28px;
@@ -109,34 +89,41 @@
   font-family: Questv1;
      font-size: 55px;
      text-align: center;
-     color: #474745;}               
-
+     color: #474745;}
 </style>
-
-
 </head>
 <body>
 
-<div calss=mainPage>
+	<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top-arrow.png" height="25" width="25"></button>
+	<div calss=mainPage>
+		<div id="nav">
+				 <ul id="menu">
+						 <li><a href="#">الرئيسية</a></li>
+						 <li class="divline"></li>
+						 <li><a href="women.php">جد مقاسي</a></li>
+						 <li class="divline"></li>
+						 <li><a href="ClothesCarePage.html">العناية</a></li>
+						 <li class="divline"></li>
+						 <li><a href="about.html">عن راكز</a></li>
+					</ul>
+		 </div>
  <div class=sectionOne>
-   <img src="images/navBarBorders.jpg" name="Navigation Bar Borders" id=navBarBorder >
-   <img src="images/navBar.jpg" name="Burger menue" id=navBar>
    <img src="images/logo.jpg" name="Rakez Logo" id=logo >
    <p id=Quote1>الحياة مع مقاسك المناسب <br> أريح وأركز عليك</p>
     <img src="images/measuringTape.jpg" id=measuringTape>
-     </div> 
+     </div>
   <div class=sectionTwo>
     <img src="images/QTag.jpg" id=QTag name="Question tag">
     <p class=Quote2> تستطيع ايجاد القياس المناسب لك<br> ولـــجـــمـــيـــع أفـراد عــــائــــلــــتـــك</p>
     <p class=Quote2> ونقدم نصائح للعناية بقطع الملابس <br>لتدوم معنا الذكريات</p>
     <p id="Quote3"> يتكون الموقع من: 70% قياسات 20% نصائح 10% ابداع </p>
-  </div>  
-  <div class=sectionThree> 
+  </div>
+  <div class=sectionThree>
     <div id=Quotescontainer>
       <p id=Quote4>ابدأ الآن</p>
       <p id=Quote5>في طريقك إلى الراحة</p>
-       <p id=Quote6>ابدأ هنا</p> </div>
-   </div> 
+       <a id=Quote6 href="women.php">إبدأ هنا</a> </div>
+   </div>
    <div class=sectionFour>
      <!--Footer-->
    </div>
