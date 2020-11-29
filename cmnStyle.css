@@ -30,14 +30,14 @@ body{
     position: relative;
     height: 68px;
     border-bottom: 1px solid #666666;
-    width: 100%;
-    margin: auto;}
+    width: 100%;}
 
 #menu{
     display: inline-block;
     list-style-type: none;
     padding-top: 6px;
-    padding-right: 310px;}
+    padding-right: 25%;
+    padding-left:25%;}
 
 #menu li{
     float: right;
