@@ -1,0 +1,74 @@
+@font-face {
+    font-family: 'Hacen Promoter';
+    src: local('ArbFONTS-Hacen-Promoter-Lt'),
+    local('ArbFONTS Hacen Promoter Lt'),
+    url("font/ArbFONTS-Hacen-Promoter-Lt.ttf") format("truetype"),
+    url("font/ArbFONTS-Hacen-Promoter-Lt.otf") format("OpenType"),
+    url("font/ArbFONTS-Hacen-Promoter-Lt.woff") format("woff"),
+    url("font/ArbFONTS-Hacen-Promoter-Lt.svg") format("svg");}
+
+body {
+<<<<<<< HEAD
+    background-color: #F2EEEC;
+=======
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+>>>>>>> 49277dfa2b0c8e944b6714c710f3f51b33f0cb18
+}
+
+#nav {
+    position: fixed;
+    height: 68px;
+    border-bottom: 1px solid #666666;
+    width: 100%;
+    margin: auto;
+ }
+
+#menu {
+    display: inline-block;
+    list-style-type: none;
+    padding-top: 6px;
+    padding-right: 310px;
+ }
+
+#menu li {
+    float: right;
+    font-family: Hacen Promoter;
+    padding-top: 16px;
+    margin-right: 35px;
+    margin-left: 35px;
+  }
+
+#menu li.divline {
+    padding: 0;
+    margin: 0 auto;
+    border-right: thin solid #666666;
+    height: 20px;
+    margin: 26px 0 ;
+  }
+
+#menu a {
+   font-family: Hacen Promoter;
+   padding: 9px;
+   color: #7c7c7b;
+   font-size: 23px;
+   margin: 0 auto;
+   text-align: center;
+   text-decoration: none;
+  }
+
+#menu a:hover {
+   color: #87c6bd;
+  }
+
+#myBtn {
+   background-color: white;
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   left: 30px;
+   border: none;
+   cursor: pointer;
+   border-radius: 50%;
+  }
