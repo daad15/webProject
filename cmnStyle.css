@@ -34,9 +34,7 @@ body{
         list-style-type: none;
         text-align: center;
         position: relative;
-        padding-top: 6px;
-        padding-left: 30%;
-        padding-right: 30%;}
+        padding-top: 6px;}
 
     #menu li{
         float: right;
