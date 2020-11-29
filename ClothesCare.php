@@ -113,10 +113,7 @@
     color:#383836;
     margin-top: 40px;
 }
-p {cursor: pointer;}
-p:hover {color: #87c6bd;}
 
-a {text-decoration: none;}
 
 </style>
 
