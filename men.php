@@ -8,6 +8,10 @@
 	<script src="common.js"></script>
 	<link rel="stylesheet" href="cmnStyle.css">
   <link rel="stylesheet" href="tableStyle.css">
+	<style>
+		p {cursor: pointer;}
+		p:hover {color: #87c6bd;}
+	</style>
 </head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top-arrow.png" height="25" width="25"></button>
