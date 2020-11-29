@@ -4,13 +4,13 @@
 	<title>Rakez - Clothes Care</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
-<script src="common.js"></script>
+<script src="btn.js"></script>
   <link rel="stylesheet" type="text/css" href="mainStyle.css">
   <link rel="stylesheet" type="text/css" href="tableStyle.css">
-  <link rel="stylesheet" type="text/css" href="cmnStyle.css">
+  <link rel="stylesheet" type="text/css" href="cmnStyle.css">	
 
   <style>
-
+		
 .sectionOne {
   height: 600px;
     position: relative;
@@ -22,21 +22,11 @@
 /**footer**/
 .sectionFour{
   height: 120px;
-<<<<<<< HEAD
   width: 100%;
 } 
 #label{
   margin-top: 30px;
   margin-bottom: 10px;
-=======
-  background-color: #f2eeec;
-}
-.lbl1 img{
-  margin-left: 70px;
-  width:20%;
-  height: auto;
-
->>>>>>> 6bea9ea2f13c13ac60ccdb015f427411ce123153
 }
  #logo{
     display: block;
@@ -67,15 +57,10 @@
 }
 .sectionTwo p {
    font-family: Questv1;
-<<<<<<< HEAD
      font-size: 25px;
      text-align: center; 
-=======
-     font-size: 20px;
-     text-align: center;
->>>>>>> 6bea9ea2f13c13ac60ccdb015f427411ce123153
      margin: 0px;
-     color: #474745;
+     color: #474745; 
 }
 .imgContainer{
    width: 0%;
@@ -106,33 +91,25 @@
 #Quote1{
      font-family: Questv1;
      font-size: 40px;
-     text-align: center;
+     text-align: center; 
      margin: 0px;
      color: #474745;}
 #Quote2{
      font-family: Questv1;
      font-size: 30px;
-     text-align: center;
+     text-align: center; 
      color: #474745;
      margin: 15px 0px 0px  auto;
 }
-<<<<<<< HEAD
     
 #label-4Bg{
   margin-bottom: 20px;
-=======
-
-
-#QTag{
-  display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 30px;
 }
-#icon{
 
->>>>>>> 6bea9ea2f13c13ac60ccdb015f427411ce123153
-}
+p {cursor: pointer;}
+p:hover {color: #87c6bd;}
+
+a {text-decoration: none;}
 
 </style>
 
@@ -145,40 +122,32 @@
        <ul id="menu">
            <li><a href="home.html">الرئيسية</a></li>
            <li class="divline"></li>
-           <li><a href="women.php">جِد مقاسي</a></li>
+           <li><a href="#">جِد مقاسي</a></li>
            <li class="divline"></li>
-           <li><a href="#">العناية</a></li>
+           <li><a href="care.html">العناية</a></li>
            <li class="divline"></li>
            <li><a href="about.html">عن راكز</a></li>
         </ul>
    </div>
  <div class=sectionOne>
-    <a href="home.html"><img src="images/logo.jpg" alt="Rakez Logo" id=logo></a>
-  <div class=Quotescontainer>
+   <img src="images/logo.jpg" name="Rakez Logo" id=logo >
+  <div class=Quotescontainer> 
     <p id=Quote1>لقيت لبس راكز عليك؟</p>
  <p id=Quote2>التزامك بإرشادات العناية يحفظ لك القطعة لأطول وقت</p>
    </div>
-     </div>
-  <div class=sectionTwo>
-<div class=bleachlbl>
+     </div> 
+  <div class=sectionTwo> 
+<div class=bleachlbl>  
       <img src="images/label-1.png" alt="label" id=label>
     <div class=labelBg id=label-1Bg>
        <div class= sec1Container id=sec>
-          <div class=imgContainer><img src="images/bleach.png" ></div>
+          <div class=imgContainer><img src="images/bleach.png" ></div> 
          <div class=txtContainer> <p>استخدم المبيض ــــــ</p></div> </div>
-<<<<<<< HEAD
       <div class= sec2Container id=sec> <div class=imgContainer><img src="images/non-chlorine.png" ></div>  
       <div class=txtContainer><p>لا تستخدم كلور التبييض ــــــ</p></div> </div>  
        <div class= sec3Container id=sec> <div class=imgContainer><img src="images/no-bleaching.png" ></div>
         <div class=txtContainer><p>لا تستخدم مبيض ــــــ</p></div>    
     </div>  
-=======
-      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/bleach.png" ></div>
-      <div class=txtContainer><p>استخدم المبيض</p></div> </div>
-       <div class= sec2Container id=sec> <div class=imgContainer><img src="images/bleach.png" ></div>
-        <div class=txtContainer><p>استخدم المبيض</p></div>
-    </div>
->>>>>>> 6bea9ea2f13c13ac60ccdb015f427411ce123153
 </div>
 </div>    
 <div class=washlbl>
@@ -223,14 +192,9 @@
 
 
 
-<<<<<<< HEAD
         
        
     
-=======
-
-    </div>
->>>>>>> 6bea9ea2f13c13ac60ccdb015f427411ce123153
    </div>
   <div class=sectionThree></div>
    <div class=sectionFour>
