@@ -5,9 +5,8 @@
   <meta charset="UTF-8">
   <meta name="description" content="">
 	<script src="btn.js"></script>
-  <link rel="stylesheet" type="text/css" href="mainStyle.css">
+  <link rel="stylesheet" type="text/css" href="cmnStyle.css">
   <link rel="stylesheet" type="text/css" href="tableStyle.css">
-	<link rel="stylesheet" type="text/css" href="cmnStyle.css">
 	<style>
 
 
