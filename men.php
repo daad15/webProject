@@ -77,6 +77,7 @@
   padding: 2px;
   display: table-cell;
  text-align: center;
+ cursor: pointer;
 }
 
 .iconContainer p{
@@ -90,6 +91,11 @@
   width: 110px;
   height: auto;
 }
+
+p {cursor: pointer;}
+p:hover {color: #87c6bd;}
+
+a {text-decoration: none;}
 
  #logo{
     display: block;
@@ -164,31 +170,28 @@
 <div class=sectionOne id=sectionOne>
    <a href="home.html"><img src="images/logo.jpg" alt="Rakez Logo" id=logo></a>
    <div class= categoryContainer>
-    <a href="SizesPage.php"><img src="images/woman.jpg" alt="woman icon" id=womanIcon></a>
-    <a href="#"><img src="images/man.jpg" alt="man icon" id=manIcon></a>
-    <a href="KidsSizesPage.php"><img src="images/child.jpg" alt="child icon" id=childIcon></a>
-    <p id=label1 onclick="smoothScroll(document.getElementById('sectionTwo'))">نساء</p>
-    <p id=label2 onclick="smoothScroll(document.getElementById('sectionTwo'))">رجال</p>
-    <p id=label3 onclick="smoothScroll(document.getElementById('sectionTwo'))">أطفال</p>
+		 <a href="women.php"><img src="images/woman.jpg" alt="woman icon" id=womanIcon><p id=label1>نساء</p></a>
+ 		<a href="#"><img src="images/man.jpg" alt="man icon" id=manIcon><p id=label2>رجال</p></a>
+ 		<a href="kids.php"><img src="images/child.jpg" alt="child icon" id=childIcon><p id=label3>أطفال</p></a>
    </div>
        <img src="images/bar.jpg" alt="bar" id=bar >
      </div>
   <div class=sectionTwo id=sectionTwo>
    <div class=BgContainer>
      <div class=iconsBackground id=top>
-        <div class=iconContainer><img src="images/thoub.png" alt="thoub icon" id="Mthoub" onclick="smoothScroll(document.getElementById('t_mthoub'))"><p id=thoubtxt onclick="smoothScroll(document.getElementById('t_mthoub'))">ثوب</p></div>
-       <div class=iconContainer><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt" onclick="smoothScroll(document.getElementById('t_mtops'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mtops'))">ملابس علوية</p></div>
-       <div class=iconContainer><img src="images/shirts.png" alt="shirt icon" id="Mshirt" onclick="smoothScroll(document.getElementById('t_mshirt'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mshirt'))">قمصان</p></div>
-       <div class=iconContainer><img src="images/pants.png" alt="pants icon" id="panst" onclick="smoothScroll(document.getElementById('t_mpants'))"><p id=pantstxt onclick="smoothScroll(document.getElementById('t_mpants'))">بناطيل</p></div>
+        <div class=iconContainer><a href="#thoub"><img src="images/thoub.png" alt="thoub icon" id="Mthoub" onclick="smoothScroll(document.getElementById('t_mthoub'))"><p id=thoubtxt onclick="smoothScroll(document.getElementById('t_mthoub'))">ثوب</p></a></div>
+       <div class=iconContainer><a href="#tops"><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt" onclick="smoothScroll(document.getElementById('t_mtops'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mtops'))">ملابس علوية</p></a></div>
+       <div class=iconContainer><a href="#shirts"><img src="images/shirts.png" alt="shirt icon" id="Mshirt" onclick="smoothScroll(document.getElementById('t_mshirt'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mshirt'))">قمصان</p></a></div>
+       <div class=iconContainer><a href="#pants"><img src="images/pants.png" alt="pants icon" id="panst" onclick="smoothScroll(document.getElementById('t_mpants'))"><p id=pantstxt onclick="smoothScroll(document.getElementById('t_mpants'))">بناطيل</p></a></div>
      </div>
      <div class=iconsBackground id=middle>
-       <div class=iconContainer><img src="images/bottom.png" alt="bottoms icon" id="Mbottoms" onclick="smoothScroll(document.getElementById('t_munderwear'))"><p id=bottomstxt onclick="smoothScroll(document.getElementById('t_munderwear'))">ملابس داخلية</p></div>
+       <div class=iconContainer><a href="#underwear"><img src="images/bottom.png" alt="bottoms icon" id="Mbottoms" onclick="smoothScroll(document.getElementById('t_munderwear'))"><p id=bottomstxt onclick="smoothScroll(document.getElementById('t_munderwear'))">ملابس داخلية</p></a></div>
      </div>
       <div class=iconsBackground id=bottom>
-        <div class=iconContainer><img src="images/shmakh.png" alt="arab shmakh icon" id="Mshmakh" onclick="smoothScroll(document.getElementById('t_mshmagh'))"><p id=skirttxt onclick="smoothScroll(document.getElementById('t_mshmagh'))">شماغ</p></div>
-       <div class=iconContainer><img src="images/cap.png" alt="ring icon" id="Mcap" onclick="smoothScroll(document.getElementById('t_mhat'))"><p id=captxt onclick="smoothScroll(document.getElementById('t_mhat'))">قبعة</p></div>
-       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_mbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_mbelt'))">أحزمة</p></div>
-       <div class=iconContainer><img src="images/shoe.png" alt="shoe icon" id="Mshoe" onclick="smoothScroll(document.getElementById('t_mshoes'))"><p id=shoetxt onclick="smoothScroll(document.getElementById('t_mshoes'))">أحذية</p></div>
+        <div class=iconContainer><a href="#shmakh"><img src="images/shmakh.png" alt="arab shmakh icon" id="Mshmakh" onclick="smoothScroll(document.getElementById('t_mshmagh'))"><p id=skirttxt onclick="smoothScroll(document.getElementById('t_mshmagh'))">شماغ</p></a></div>
+       <div class=iconContainer><a href="#hat"><img src="images/cap.png" alt="ring icon" id="Mcap" onclick="smoothScroll(document.getElementById('t_mhat'))"><p id=captxt onclick="smoothScroll(document.getElementById('t_mhat'))">قبعة</p></a></div>
+       <div class=iconContainer><a href="#belts"><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_mbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_mbelt'))">أحزمة</p></a></div>
+       <div class=iconContainer><a href="#shoes"><img src="images/shoe.png" alt="shoe icon" id="Mshoe" onclick="smoothScroll(document.getElementById('t_mshoes'))"><p id=shoetxt onclick="smoothScroll(document.getElementById('t_mshoes'))">أحذية</p></a></div>
 
 
       </div>
@@ -199,7 +202,7 @@
  <!--insert schudels here-->
     <!--top schudels -->
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="thoub">
       <h3 id="t_mthoub"> الثوب  </h3>
          <div class="warpper">
             <input class="radio" id="mth1" name="mthoub" type="radio" checked>
@@ -355,7 +358,7 @@
   </div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="tops">
       <h3 id="t_mtops">الملابس العلوية </h3>
          <div class="warpper">
             <input class="radio" id="mt1" name="mtop" type="radio" checked>
@@ -548,7 +551,7 @@
   </div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="shirts">
       <h3 id="t_mshirt"> القمصان </h3>
          <div class="warpper">
             <input class="radio" id="mshr1" name="mshirt" type="radio" checked>
@@ -733,7 +736,7 @@
   </div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="pants">
       <h3 id="t_mpants"> البناطيل </h3>
          <div class="warpper">
             <input class="radio" id="mp1" name="mpants" type="radio" checked>
@@ -915,7 +918,7 @@
 
     <!--middle schudels -->
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="underwear">
       <h3 id="t_munderwear"> الملابس الداخلية </h3>
             <?php require 'table_queries.php';
             // header
@@ -960,7 +963,7 @@
 
     <!--bottom schudels -->
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="shmakh">
       <h3 id="t_mshmagh"> الشماغ  </h3>
             <?php require 'table_queries.php';
             // header
@@ -981,7 +984,7 @@
   </div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="hat">
       <h3 id="t_mhat"> القبعة </h3>
             <?php require 'table_queries.php';
             // header
@@ -1018,7 +1021,7 @@
   </div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="belts">
      <h3 id="t_mbelt"> الأحزمة </h3>
             <?php require 'table_queries.php';
             // header
@@ -1054,7 +1057,7 @@
   </div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="shoes">
       <h3 id="t_mshoes"> الأحذية </h3>
             <?php require 'table_queries.php';
             // header

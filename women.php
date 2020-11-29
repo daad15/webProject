@@ -74,7 +74,8 @@
   width: 0%;
   padding: 2px;
   display: table-cell;
- text-align: center;
+  text-align: center;
+	cursor: pointer;
 }
 .iconContainer p{
  font-family: Questv1;
@@ -86,6 +87,11 @@
   width: 110px;
   height: auto;
 }
+
+p {cursor: pointer;}
+p:hover {color: #87c6bd;}
+
+a {text-decoration: none;}
 
  #logo{
     display: block;
@@ -157,36 +163,31 @@
 <div class=sectionOne id=sectionOne>
    <a href="home.html"><img src="images/logo.jpg" alt="Rakez Logo" id=logo></a>
    <div class= categoryContainer>
-		 <a href="#"><img src="images/woman.jpg" alt="woman icon" id=womanIcon></a>
-		 <a href="MenSizePage.php"><img src="images/man.jpg" alt="man icon" id=manIcon></a>
-		 <a href="KidsSizesPage.php"><img src="images/child.jpg" alt="child icon" id=childIcon></a>
-    <p id=label1 onclick="smoothScroll(document.getElementById('sectionTwo'))">نساء</p>
-    <p id=label2 onclick="smoothScroll(document.getElementById('sectionTwo'))">رجال</p>
-    <p id=label3 onclick="smoothScroll(document.getElementById('sectionTwo'))">أطفال</p>
+		 <a href="#"><img src="images/woman.jpg" alt="woman icon" id=womanIcon><p id=label1>نساء</p></a>
+		 <a href="men.php"><img src="images/man.jpg" alt="man icon" id=manIcon><p id=label2>رجال</p></a>
+		 <a href="kids.php"><img src="images/child.jpg" alt="child icon" id=childIcon><p id=label3>أطفال</p></a>
    </div>
        <img src="images/bar.jpg" alt="bar" id=bar >
      </div>
   <div class=sectionTwo id=sectionTwo>
       <div class=BgContainer>
      <div class=iconsBackground id=top>
-       <div class=iconContainer><img src="images/abaya.png" alt="abaya icon" id="Wabaya" onclick="smoothScroll(document.getElementById('t_abaya'))" ><p id=abayatxt onclick="smoothScroll(document.getElementById('t_abaya'))">عباءة</p></div>
-       <div class=iconContainer><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt" onclick="smoothScroll(document.getElementById('t_wshirt'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_wshirt'))">ملابس علوية</p></div>
-       <div class=iconContainer><img src="images/dress.png" alt="dress icon" id="Wdress" onclick="smoothScroll(document.getElementById('t_wdress'))"><p id=dresstxt onclick="smoothScroll(document.getElementById('t_wdress'))">فساتين</p></div>
-       <div class=iconContainer><img src="images/slit-skirt.png" alt="skirt icon" id="Wskirt" onclick="smoothScroll(document.getElementById('t_wskirt'))"><p id=skirttxt onclick="smoothScroll(document.getElementById('t_wskirt'))">تنانير</p></div>
-       <div class=iconContainer><img src="images/pants.png" alt="pants icon" id="panst" onclick="smoothScroll(document.getElementById('t_wpants'))"><p id=pantstxt onclick="smoothScroll(document.getElementById('t_wpants'))">بناطيل</p></div>
+       <div class=iconContainer><a href="#abaya"><img src="images/abaya.png" alt="abaya icon" id="Wabaya" onclick="smoothScroll(document.getElementById('t_abaya'))" ><p id=abayatxt onclick="smoothScroll(document.getElementById('t_abaya'))">عباءة</p></a></div>
+       <div class=iconContainer><a href="#tops"><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt" onclick="smoothScroll(document.getElementById('t_wshirt'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_wshirt'))">ملابس علوية</p></a></div>
+       <div class=iconContainer><a href="#dresses"><img src="images/dress.png" alt="dress icon" id="Wdress" onclick="smoothScroll(document.getElementById('t_wdress'))"><p id=dresstxt onclick="smoothScroll(document.getElementById('t_wdress'))">فساتين</p></a></div>
+       <div class=iconContainer><a href="#skirts"><img src="images/slit-skirt.png" alt="skirt icon" id="Wskirt" onclick="smoothScroll(document.getElementById('t_wskirt'))"><p id=skirttxt onclick="smoothScroll(document.getElementById('t_wskirt'))">تنانير</p></a></div>
+       <div class=iconContainer><a href="#pants"><img src="images/pants.png" alt="pants icon" id="panst" onclick="smoothScroll(document.getElementById('t_wpants'))"><p id=pantstxt onclick="smoothScroll(document.getElementById('t_wpants'))">بناطيل</p></a></div>
      </div>
      <div class=iconsBackground id=middle>
-       <div class=iconContainer><img src="images/tights.png" alt="tights icon" id="Wtights" onclick="smoothScroll(document.getElementById('t_tights'))"><p id=tighttxt onclick="smoothScroll(document.getElementById('t_tights'))">جوارب طويلة</p></div>
-       <div class=iconContainer><img src="images/brassiere.png" alt="brassiere icon" id="Wbra" onclick="smoothScroll(document.getElementById('t_wbra'))"><p id=bratxt onclick="smoothScroll(document.getElementById('t_wbra'))">ملابس داخلية علوية</p></div>
-       <div class=iconContainer><img src="images/underwear.png" alt="underwear icon" id="Wunderwear" onclick="smoothScroll(document.getElementById('t_wuderwear'))" ><p id=underweartxt onclick="smoothScroll(document.getElementById('t_wuderwear'))" >لابس داخلية سفلية</p></div>
+       <div class=iconContainer><a href="#longSocks"><img src="images/tights.png" alt="tights icon" id="Wtights" onclick="smoothScroll(document.getElementById('t_tights'))"><p id=tighttxt onclick="smoothScroll(document.getElementById('t_tights'))">جوارب طويلة</p></a></div>
+       <div class=iconContainer><a href="#lingerieTop"><img src="images/brassiere.png" alt="brassiere icon" id="Wbra" onclick="smoothScroll(document.getElementById('t_wbra'))"><p id=bratxt onclick="smoothScroll(document.getElementById('t_wbra'))">ملابس داخلية علوية</p></a></div>
+       <div class=iconContainer><a href="#lingerieBottom"><img src="images/underwear.png" alt="underwear icon" id="Wunderwear" onclick="smoothScroll(document.getElementById('t_wuderwear'))" ><p id=underweartxt onclick="smoothScroll(document.getElementById('t_wuderwear'))" >ملابس داخلية سفلية</p></a></div>
      </div>
       <div class=iconsBackground id=bottom>
-       <div class=iconContainer><img src="images/ring.png" alt="ring icon" id="Wring" onclick="smoothScroll(document.getElementById('t_wring'))"><p id=ringtxt onclick="smoothScroll(document.getElementById('t_wring'))">خاتم</p></div>
-       <div class=iconContainer><img src="images/heels.png" alt="heels icon" id="Wheels" onclick="smoothScroll(document.getElementById('t_wshoes'))"><p id=heelstxt onclick="smoothScroll(document.getElementById('t_wshoes'))">أحذية</p></div>
-       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_wbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_wbelt'))">أحزمة</p></div>
-       <div class=iconContainer id=pregnantCon><img src="images/pregnant.png" alt="pregnancy clothes icon" id="Wpregnant" onclick="smoothScroll(document.getElementById('t_wperg'))"><p id=pregnanttxt onclick="smoothScroll(document.getElementById('t_wperg'))">قياسات حوامل</p></div>
-
-
+       <div class=iconContainer><a href="#rings"><img src="images/ring.png" alt="ring icon" id="Wring" onclick="smoothScroll(document.getElementById('t_wring'))"><p id=ringtxt onclick="smoothScroll(document.getElementById('t_wring'))">خواتم</p></a></div>
+       <div class=iconContainer><a href="#shoes"><img src="images/heels.png" alt="heels icon" id="Wheels" onclick="smoothScroll(document.getElementById('t_wshoes'))"><p id=heelstxt onclick="smoothScroll(document.getElementById('t_wshoes'))">أحذية</p></a></div>
+       <div class=iconContainer><a href="#belts"><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_wbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_wbelt'))">أحزمة</p></a></div>
+       <div class=iconContainer id=pregnantCon><a href="#pregnant"><img src="images/pregnant.png" alt="pregnancy clothes icon" id="Wpregnant" onclick="smoothScroll(document.getElementById('t_wperg'))"><p id=pregnanttxt onclick="smoothScroll(document.getElementById('t_wperg'))">قياسات حوامل</p></a></div>
       </div>
       </div> <!--end of BgContainer-->
      </div> <!--end of sectionTwo-->
@@ -194,7 +195,50 @@
 <div class=sectionThree id=sectionThree>
          <!--insert schudels here-->
 
-    <div class="tableContainer">
+				 <div class="tableContainer" id="abaya">
+				 	<h3 id="t_abaya"> عباءة </h3>
+				 				<?php require 'table_queries.php';
+				 				 //header
+				 		echo "<table id='women_abaya_cm'>
+				 			<tr>
+				 			<th>مقاس العباية </th>
+				 			<th>طول العباية </th>
+				 			<th>عرض العباية </th>
+				 			<th>طول الكم </th>
+				 			</tr> ";
+				 		//result
+				 		while ( $row = mysqli_fetch_array ($women_abaya_cm, MYSQLI_ASSOC) )
+				 		{
+				 			echo "<tr>";
+				 			echo "<td>".$row['wa_size']."</td>";
+				 			echo "<td>".$row['wa_length_cm']."</td>";
+				 			echo "<td>".$row['wa_width_cm']."</td>";
+				 						echo "<td>".$row['wa_sleeve_cm']."</td>";
+				 			echo "</tr>";
+				 		} echo "</table>";
+				 		//header
+				 		echo "<table id='women_abaya_inch' style='display:none'>
+				 			<tr>
+				 			<th>مقاس العباية </th>
+				 			<th>طول العباية  </th>
+				 			<th>عرض العباية </th>
+				 			<th>طول الكم </th>
+				 			</tr> ";
+				 		//result
+				 		while ( $row = mysqli_fetch_array ($women_abaya_inch, MYSQLI_ASSOC) )
+				 		{
+				 			echo "<tr>";
+				 			echo "<td>".$row['wa_size']."</td>";
+				 			echo "<td>".$row['wa_length_in']."</td>";
+				 			echo "<td>".$row['wa_width_in']."</td>";
+				 						echo "<td>".$row['wa_sleeve_in']."</td>";
+				 			echo "</tr>";
+				 		} echo "</table>";
+				 				?>
+				 				<button id="clk1_wabaya" class="buttonSwitch" onclick='tableSwitch("women_abaya_cm","women_abaya_inch"),highlight("clk1_wabaya")'>inch</button>
+				 </div> <!--end container -->
+
+		<div class="tableContainer" id="tops">
     	<h3 id="t_wshirt">ملابس علوية</h3>
          <div class="warpper">
             <input class="radio" id="wt1" name="wtop" type="radio" checked>
@@ -378,7 +422,7 @@
 	</div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="dresses">
     	<h3 id="t_wdress"> الفساتين </h3>
           <div class="warpper">
             <input class="radio" id="wd1" name="wdress" type="radio" checked>
@@ -561,7 +605,7 @@
 	</div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="skirts">
     	<h3 id="t_wskirt"> التنانير </h3>
           <div class="warpper">
             <input class="radio" id="ws1" name="wskirt" type="radio" checked>
@@ -732,7 +776,7 @@
 	</div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="pants">
     	<h3 id="t_wpants"> البناطيل </h3>
           <div class="warpper">
             <input class="radio" id="wp1" name="wpants" type="radio" checked>
@@ -914,54 +958,10 @@
 	</div><!-- end warpper -->
 	</div> <!--end container -->
 
-
-    <div class="tableContainer">
-    	<h3 id="t_abaya"> عباءة </h3>
-         		<?php require 'table_queries.php';
-		         //header
-				echo "<table id='women_abaya_cm'>
-					<tr>
-					<th>مقاس العباية </th>
-					<th>طول العباية </th>
-					<th>عرض العباية </th>
-					<th>طول الكم </th>
-					</tr> ";
-				//result
-				while ( $row = mysqli_fetch_array ($women_abaya_cm, MYSQLI_ASSOC) )
-				{
-					echo "<tr>";
-					echo "<td>".$row['wa_size']."</td>";
-					echo "<td>".$row['wa_length_cm']."</td>";
-					echo "<td>".$row['wa_width_cm']."</td>";
-		            echo "<td>".$row['wa_sleeve_cm']."</td>";
-					echo "</tr>";
-				} echo "</table>";
-				//header
-				echo "<table id='women_abaya_inch' style='display:none'>
-					<tr>
-					<th>مقاس العباية </th>
-					<th>طول العباية  </th>
-					<th>عرض العباية </th>
-					<th>طول الكم </th>
-					</tr> ";
-				//result
-				while ( $row = mysqli_fetch_array ($women_abaya_inch, MYSQLI_ASSOC) )
-				{
-					echo "<tr>";
-					echo "<td>".$row['wa_size']."</td>";
-					echo "<td>".$row['wa_length_in']."</td>";
-					echo "<td>".$row['wa_width_in']."</td>";
-		            echo "<td>".$row['wa_sleeve_in']."</td>";
-					echo "</tr>";
-				} echo "</table>";
-         		?>
-         		<button id="clk1_wabaya" class="buttonSwitch" onclick='tableSwitch("women_abaya_cm","women_abaya_inch"),highlight("clk1_wabaya")'>inch</button>
-	</div> <!--end container -->
-
 <!--middle part -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="longSocks">
     	<h3 id="t_tights"> الجوارب الطويلة </h3>
          		<?php require 'table_queries.php';
          		// headrer
@@ -1002,7 +1002,7 @@
 	</div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="lingerieTop">
     	<h3 id="t_wbra"> الملابس الداخلية العلوية  </h3>
          		<?php require 'table_queries.php';
          		// header
@@ -1046,8 +1046,8 @@
 	</div> <!--end container -->
 
 
-    <div class="tableContainer">
-    	<h3 id="t_wuderwear"> الملابس الداخلية </h3>
+    <div class="tableContainer" id="lingerieBottom">
+    	<h3 id="t_wuderwear"> الملابس الداخلية السفلية</h3>
          		<?php require 'table_queries.php';
 		         // header
 				echo "<table id='women_underwear_cm'>
@@ -1091,7 +1091,7 @@
 
  <!--bottom part -->
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="rings">
     	<h3 id="t_wring"> الخواتم </h3>
          		<?php require 'table_queries.php';
          		//header
@@ -1128,7 +1128,7 @@
 	</div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="shoes">
     	<h3 id="t_wshoes"> الأحذية </h3>
          		<?php require 'table_queries.php';
          		// header
@@ -1173,7 +1173,7 @@
 	</div> <!--end container -->
 
 
-    <div class="tableContainer">
+    <div class="tableContainer" id="belts">
     	<h3 id="t_wbelt"> الأحزمة </h3>
          		<?php require 'table_queries.php';
          		//header
@@ -1210,8 +1210,8 @@
 	</div> <!--end container -->
 
 
-    <div class="tableContainer">
-    	<h3 id="t_wperg">  الحمل </h3>
+    <div class="tableContainer" id="pregnant">
+    	<h3 id="t_wperg"> الحوامل </h3>
          		<?php require 'table_queries.php';
          		//header
 				echo "<table id='women_maternity_cm'>
@@ -1257,13 +1257,11 @@
          		?>
          		<button id="clk1_wmen" class="buttonSwitch" onclick='tableSwitch("women_maternity_cm","women_maternity_inch"),highlight("clk1_wmen")'>inch</button>
 	</div> <!--end container -->
-
-
-
 </div>
-         <div class=sectionFour>
-         <!--footer-->
-           </div>
+
+<div class=sectionFour>
+      <!--footer-->
+ </div>
 
   </div> <!--end of mainPage-->
 <script>

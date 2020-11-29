@@ -75,6 +75,7 @@
   padding: 2px;
   display: table-cell;
  text-align: center;
+ cursor: pointer;
 }
 .iconContainer p{
  font-family: Questv1;
@@ -86,6 +87,11 @@
   width: 110px;
   height: auto;
 }
+
+p {cursor: pointer;}
+p:hover {color: #87c6bd;}
+
+a {text-decoration: none;}
 
  #logo{
     display: block;
@@ -161,12 +167,9 @@ height: auto;
 <div class=sectionOne id=sectionOne>
    <a href="home.html"><img src="images/logo.jpg" alt="Rakez Logo" id=logo></a>
    <div class= categoryContainer>
-		 <a href="SizesPage.php"><img src="images/woman.jpg" alt="woman icon" id=womanIcon></a>
-     <a href="MenSizePage.php"><img src="images/man.jpg" alt="man icon" id=manIcon></a>
-     <a href="#"><img src="images/child.jpg" alt="child icon" id=childIcon></a>
-    <p id=label1 onclick="smoothScroll(document.getElementById('sectionTwo'))">نساء</p>
-    <p id=label2 onclick="smoothScroll(document.getElementById('sectionTwo'))">رجال</p>
-    <p id=label3 onclick="smoothScroll(document.getElementById('sectionTwo'))">أطفال</p>
+		 <a href="women.php"><img src="images/woman.jpg" alt="woman icon" id=womanIcon><p id=label1>نساء</p></a>
+		 <a href="men.php"><img src="images/man.jpg" alt="man icon" id=manIcon><p id=label2>رجال</p></a>
+		 <a href="#"><img src="images/child.jpg" alt="child icon" id=childIcon><p id=label3>أطفال</p></a>
    </div>
        <img src="images/bar.jpg" alt="bar" id=bar >
      </div>
