@@ -68,7 +68,6 @@ function tableSwitch(cm,inch) {
 
  if(tcm.style.display =="none"){
   tcm.style.display = "block";
-  tcm.style.minWidth = "50%" ;
  }
  else{
    tcm.style.display ="none" ;
@@ -76,7 +75,6 @@ function tableSwitch(cm,inch) {
 
   if(tinch.style.display =="none"){
   tinch.style.display = "block";
-  tinch.style.minwidth = "50%";
  }
  else{
    tinch.style.display ="none" ;
