@@ -6,9 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
 	<script src="btn.js"></script>
-  <link rel="mainStyle" href="mainStyle.css">
-  <link rel="stylesheet" href="tableStyle.css">
 	<link rel="stylesheet" href="cmnStyle.css">
+  <link rel="stylesheet" href="tableStyle.css">
 	<style>
 
 .sectionOne {
@@ -34,7 +33,7 @@
   border-radius: 80px;
   margin-left: auto;
   margin-right: auto;
-  height:  auto; 
+  height:  auto;
   max-width: 80%;
   min-width: auto;
 }
@@ -71,12 +70,30 @@
     vertical-align: middle;
     width: 70%; 
 
+<<<<<<< HEAD
+||||||| 85d6b58
+   width: 70%; 
+
+    width: 70%;
+=======
+   width: 70%;
+
+    width: 70%;
+>>>>>>> b4a6c20c898914e16d3068c29b30fbb220b35a19
 }
 
 .iconsBackground { /**sectionTwo icons container with background color**/
   position: relative;
   content: "";
   clear: both;
+<<<<<<< HEAD
+||||||| 85d6b58
+  display: table; 
+
+=======
+  display: table;
+
+>>>>>>> b4a6c20c898914e16d3068c29b30fbb220b35a19
   display: table;
   margin-left: auto;
   margin-right: auto;
@@ -91,7 +108,7 @@
  .categoryContainer p { /**labels style for sectionOne's icons**/
   font-family: Questv1;
   font-size:1.5vw;
-  color: #474745; 
+  color: #474745;
   font-size: 28px;
   color: #474745;
   position: absolute;
@@ -1183,7 +1200,7 @@ function loadmore (clk_r,rows){
 }
 
 function tableSwitch(cm,inch) {
-   var tcm = document.getElementById(cm); 
+   var tcm = document.getElementById(cm);
    var tinch = document.getElementById(inch);
 
    if(tcm.style.display =="none"){
