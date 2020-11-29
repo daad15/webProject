@@ -5,180 +5,9 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
-	<script src="btn.js"></script>
+	<script src="common.js"></script>
 	<link rel="stylesheet" href="cmnStyle.css">
   <link rel="stylesheet" href="tableStyle.css">
-	<style>
-
-.sectionOne {
-  height: 670px;
-  position: relative;
-
-  }
-
-/**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
-.sectionTwo {
-  height: 670px;
-  position: relative;
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 1em;
-}
-
- /**adject section height here*/
-.sectionThree {
-  background-color: #f2eeec;
-  position: relative;
-  border-radius: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  height:  auto;
-  max-width: 80%;
-  min-width: auto;
-}
-
-
-.sectionFour {
-   height: 120px;
- }
-
- .categoryContainer{
-
-  position: relative;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 90px;
-  max-height: 270px;
-  max-width: 800px;
-
-  display: block;
-
-   position: relative;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 90px;
-   height: 270px;
-   width: 800px;
-
-
- }
-
- /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
- .BgContainer{ /**to center the three icon containers "iconBackground" **/
-    display: table-cell;
-    vertical-align: middle;
-    width: 70%; 
-}
-
-.iconsBackground { /**sectionTwo icons container with background color**/
-  position: relative;
-  content: "";
-  clear: both;
-  display: table; 
-  display: table;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  border-radius: 80px;
-  background: #f2eeec;
-  padding: 20px;
-  min-width: 56.25em;
-  max-height: 7.5em;
-}
-
- .categoryContainer p { /**labels style for sectionOne's icons**/
-  font-family: Questv1;
-  font-size:1.5vw;
-  color: #474745;
-  font-size: 28px;
-  color: #474745;
-  position: absolute;
-  top: 180px;}
-
-.iconContainer{ /**container for each clothes icon**/
-  width: 0%;
-  padding: 2px;
-  display: table-cell;
- text-align: center;
- cursor: pointer;
-}
-
-.iconContainer p{
- font-family: Questv1;
-  font-size: 19px;
-  color: #474745;
-  margin: 0;
-}
-
-.iconContainer img{
-  width: 110px;
-  height: auto;
-}
-
-p {cursor: pointer;}
-p:hover {color: #87c6bd;}
-
-a {text-decoration: none;}
-
- #logo{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 120px;
-    height: auto; }
-
-/**gender**/
-#womanIcon{
-   max-width: 225px;
-    height: auto;
-    position: absolute;
-    left: 10px;
-  }
-
-#manIcon{
-   max-width: 185px;
-    height: auto;
-    position: absolute;
-    left: 310px;
-  }
-
- #childIcon{
-   width: 200px;
-    height: auto;
-    position: absolute;
-    left: 550px;
-      }
-
-	#label1{left:120px;}
-	#label2{left:370px;}
-	#label3{left:610px;}
-
-#bar{
-  position: absolute;
-  top: 550px;
-  width: 80%;
-  height: auto;
-  right: 10%;
-  margin-right: : -10px;
-  top: 88%;
-  margin-top: -88px;
-}
-
-/**overwrite some styles**/
-#Mthoub{
-  width: 80px;
-  height: auto;
-}
-
-#top{
-  margin-top: 0px;
-}
-
-#pregnantCon{
- border-left: #383836 dashed 3bpx;
-}
-</style>
 </head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top-arrow.png" height="25" width="25"></button>
@@ -197,7 +26,7 @@ a {text-decoration: none;}
 <div class=sectionOne id=sectionOne>
    <a href="home.html"><img src="images/logo.jpg" alt="Rakez Logo" id=logo></a>
    <div class= categoryContainer>
-		 <a href="women.php"><img src="images/woman.jpg" alt="woman icon" id=womanIcon><p id=label1>نساء</p></a>
+		<a href="women.php"><img src="images/woman.jpg" alt="woman icon" id=womanIcon><p id=label1>نساء</p></a>
  		<a href="#"><img src="images/man.jpg" alt="man icon" id=manIcon><p id=label2>رجال</p></a>
  		<a href="kids.php"><img src="images/child.jpg" alt="child icon" id=childIcon><p id=label3>أطفال</p></a>
    </div>
@@ -206,19 +35,19 @@ a {text-decoration: none;}
   <div class=sectionTwo id=sectionTwo>
    <div class=BgContainer>
      <div class=iconsBackground id=top>
-        <div class=iconContainer><a href="#thoub"><img src="images/thoub.png" alt="thoub icon" id="Mthoub" onclick="smoothScroll(document.getElementById('t_mthoub'))"><p id=thoubtxt onclick="smoothScroll(document.getElementById('t_mthoub'))">ثوب</p></a></div>
-       <div class=iconContainer><a href="#tops"><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt" onclick="smoothScroll(document.getElementById('t_mtops'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mtops'))">ملابس علوية</p></a></div>
-       <div class=iconContainer><a href="#shirts"><img src="images/shirts.png" alt="shirt icon" id="Mshirt" onclick="smoothScroll(document.getElementById('t_mshirt'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mshirt'))">قمصان</p></a></div>
-       <div class=iconContainer><a href="#pants"><img src="images/pants.png" alt="pants icon" id="panst" onclick="smoothScroll(document.getElementById('t_mpants'))"><p id=pantstxt onclick="smoothScroll(document.getElementById('t_mpants'))">بناطيل</p></a></div>
+        <div class=iconContainer><img src="images/thoub.png" alt="thoub icon" id="Mthoub" onclick="smoothScroll(document.getElementById('t_mthoub'))"><p id=thoubtxt onclick="smoothScroll(document.getElementById('t_mthoub'))">ثوب</p></div>
+       <div class=iconContainer><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt" onclick="smoothScroll(document.getElementById('t_mtops'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mtops'))">ملابس علوية</p></div>
+       <div class=iconContainer><img src="images/shirts.png" alt="shirt icon" id="Mshirt" onclick="smoothScroll(document.getElementById('t_mshirt'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mshirt'))">قمصان</p></div>
+       <div class=iconContainer><img src="images/pants.png" alt="pants icon" id="panst" onclick="smoothScroll(document.getElementById('t_mpants'))"><p id=pantstxt onclick="smoothScroll(document.getElementById('t_mpants'))">بناطيل</p></div>
      </div>
      <div class=iconsBackground id=middle>
-       <div class=iconContainer><a href="#underwear"><img src="images/bottom.png" alt="bottoms icon" id="Mbottoms" onclick="smoothScroll(document.getElementById('t_munderwear'))"><p id=bottomstxt onclick="smoothScroll(document.getElementById('t_munderwear'))">ملابس داخلية</p></a></div>
+       <div class=iconContainer><img src="images/bottom.png" alt="bottoms icon" id="Mbottoms" onclick="smoothScroll(document.getElementById('t_munderwear'))"><p id=bottomstxt onclick="smoothScroll(document.getElementById('t_munderwear'))">ملابس داخلية</p></div>
      </div>
       <div class=iconsBackground id=bottom>
-        <div class=iconContainer><a href="#shmakh"><img src="images/shmakh.png" alt="arab shmakh icon" id="Mshmakh" onclick="smoothScroll(document.getElementById('t_mshmagh'))"><p id=skirttxt onclick="smoothScroll(document.getElementById('t_mshmagh'))">شماغ</p></a></div>
-       <div class=iconContainer><a href="#hat"><img src="images/cap.png" alt="ring icon" id="Mcap" onclick="smoothScroll(document.getElementById('t_mhat'))"><p id=captxt onclick="smoothScroll(document.getElementById('t_mhat'))">قبعة</p></a></div>
-       <div class=iconContainer><a href="#belts"><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_mbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_mbelt'))">أحزمة</p></a></div>
-       <div class=iconContainer><a href="#shoes"><img src="images/shoe.png" alt="shoe icon" id="Mshoe" onclick="smoothScroll(document.getElementById('t_mshoes'))"><p id=shoetxt onclick="smoothScroll(document.getElementById('t_mshoes'))">أحذية</p></a></div>
+        <div class=iconContainer><img src="images/shmakh.png" alt="arab shmakh icon" id="Mshmakh" onclick="smoothScroll(document.getElementById('t_mshmagh'))"><p id=skirttxt onclick="smoothScroll(document.getElementById('t_mshmagh'))">شماغ</p></div>
+       <div class=iconContainer><img src="images/cap.png" alt="ring icon" id="Mcap" onclick="smoothScroll(document.getElementById('t_mhat'))"><p id=captxt onclick="smoothScroll(document.getElementById('t_mhat'))">قبعة</p></div>
+       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_mbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_mbelt'))">أحزمة</p></div>
+       <div class=iconContainer><img src="images/shoe.png" alt="shoe icon" id="Mshoe" onclick="smoothScroll(document.getElementById('t_mshoes'))"><p id=shoetxt onclick="smoothScroll(document.getElementById('t_mshoes'))">أحذية</p></div>
 
 
       </div>
@@ -385,7 +214,7 @@ a {text-decoration: none;}
   </div> <!--end container -->
 
 
-    <div class="tableContainer" id="tops">
+    <div class="tableContainer">
       <h3 id="t_mtops">الملابس العلوية </h3>
          <div class="warpper">
             <input class="radio" id="mt1" name="mtop" type="radio" checked>
@@ -578,7 +407,7 @@ a {text-decoration: none;}
   </div> <!--end container -->
 
 
-    <div class="tableContainer" id="shirts">
+    <div class="tableContainer">
       <h3 id="t_mshirt"> القمصان </h3>
          <div class="warpper">
             <input class="radio" id="mshr1" name="mshirt" type="radio" checked>
@@ -763,7 +592,7 @@ a {text-decoration: none;}
   </div> <!--end container -->
 
 
-    <div class="tableContainer" id="pants">
+    <div class="tableContainer">
       <h3 id="t_mpants"> البناطيل </h3>
          <div class="warpper">
             <input class="radio" id="mp1" name="mpants" type="radio" checked>
@@ -777,7 +606,7 @@ a {text-decoration: none;}
          </div>
 
          <div class="panels">
-          <div class="panel" id="mpants" >
+          <div class="panel">
             <?php require 'table_queries.php';
                 // header
         echo "<table id='men_pants_cm'>
@@ -945,7 +774,7 @@ a {text-decoration: none;}
 
     <!--middle schudels -->
 
-    <div class="tableContainer" id="underwear">
+    <div class="tableContainer">
       <h3 id="t_munderwear"> الملابس الداخلية </h3>
             <?php require 'table_queries.php';
             // header
@@ -990,7 +819,7 @@ a {text-decoration: none;}
 
     <!--bottom schudels -->
 
-    <div class="tableContainer" id="shmakh">
+    <div class="tableContainer">
       <h3 id="t_mshmagh"> الشماغ  </h3>
             <?php require 'table_queries.php';
             // header
@@ -1011,7 +840,7 @@ a {text-decoration: none;}
   </div> <!--end container -->
 
 
-    <div class="tableContainer" id="hat">
+    <div class="tableContainer">
       <h3 id="t_mhat"> القبعة </h3>
             <?php require 'table_queries.php';
             // header
@@ -1048,7 +877,7 @@ a {text-decoration: none;}
   </div> <!--end container -->
 
 
-    <div class="tableContainer" id="belts">
+    <div class="tableContainer">
      <h3 id="t_mbelt"> الأحزمة </h3>
             <?php require 'table_queries.php';
             // header
@@ -1084,7 +913,7 @@ a {text-decoration: none;}
   </div> <!--end container -->
 
 
-    <div class="tableContainer" id="shoes">
+    <div class="tableContainer">
       <h3 id="t_mshoes"> الأحذية </h3>
             <?php require 'table_queries.php';
             // header
@@ -1132,88 +961,6 @@ a {text-decoration: none;}
          <!--footer-->
            </div>
 
-  </div> <!--end of mainPage-->
-<script>
-  //code cridit: https://w3schools.com
-document.getElementById("manIcon").onclick = function() {
-		document.getElementById("sectionTwo").style.display = "block";
-		document.getElementById("sectionThree").style.display = "block";
-	}
-
-document.getElementById("label2").onclick = function() {
-			document.getElementById("sectionTwo").style.display = "block";
-			document.getElementById("sectionThree").style.display = "block";
-		}
-
-  //code credit: http://jsfiddle.net/rjSfP/
-window.smoothScroll = function(target) {
-    var scrollContainer = target;
-    do { //find scroll container
-        scrollContainer = scrollContainer.parentNode;
-        if (!scrollContainer) return;
-        scrollContainer.scrollTop += 1;
-    } while (scrollContainer.scrollTop == 0);
-
-    var targetY = 0;
-    do { //find the top of target relatively to the container
-        if (target == scrollContainer) break;
-        targetY += target.offsetTop;
-    } while (target = target.offsetParent);
-
-    scroll = function(c, a, b, i) {
-        i++; if (i > 30) return;
-        c.scrollTop = a + (b - a) / 30 * i;
-        setTimeout(function(){ scroll(c, a, b, i); }, 20);
-    }
-    // start scrolling
-    scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-    //end of code credit
-}
-
-function less (r){
-  var spanLess = document.getElementById(r);
-  spanLess.style.display = "none";
-}
-function loadmore (clk_r,rows){
-  var clkRow = document.getElementById(clk_r);
-  var spanMore = document.getElementById(rows);
-  clkRow.hidden = true ;
-  spanMore.style.display = "block";
-}
-
-function tableSwitch(cm,inch) {
-   var tcm = document.getElementById(cm);
-   var tinch = document.getElementById(inch);
-
-   if(tcm.style.display =="none"){
-    tcm.style.display = "block";
-    tcm.style.width = "100%" ;
-   }
-   else{
-     tcm.style.display ="none" ;
-   }
-
-    if(tinch.style.display =="none"){
-    tinch.style.display = "block";
-    tinch.style.width = "100%";
-   }
-   else{
-     tinch.style.display ="none" ;
-   }
-}
-
-function highlight(btn) {
-
-    var element = document.getElementById(btn);
-    if (element.innerHTML == "inch") {
-       element.style.background = "#DAD4D4";
-       element.innerHTML = "cm";
-    }
-    else{
-    element.style.background = "#FFFFFF";
-    element.innerHTML = "inch";
-  }
-}
-</script>
+</div> <!--end of mainPage-->
 </body>
 </html>
