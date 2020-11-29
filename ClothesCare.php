@@ -4,10 +4,9 @@
 	<title>Rakez - Clothes Care</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
-<script src="btn.js"></script>
-  <link rel="stylesheet" type="text/css" href="mainStyle.css">
+<script src="common.js"></script>
+  <link rel="stylesheet" type="text/css" href="cmnStyle.css">
   <link rel="stylesheet" type="text/css" href="tableStyle.css">
-  <link rel="stylesheet" type="text/css" href="cmnStyle.css">	
 
   <style>
 		
@@ -21,12 +20,13 @@
 }
 /**footer**/
 .sectionFour{
-  height: 120px;
+  height:50px;
   width: 100%;
 } 
 #label{
   margin-top: 30px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  float: right;
 }
  #logo{
     display: block;
@@ -106,6 +106,13 @@
   margin-bottom: 20px;
 }
 
+#footer{
+  text-align: center !important;
+   font-family: 'Questv1';
+   font-size: 20px;
+    color:#383836;
+    margin-top: 40px;
+}
 p {cursor: pointer;}
 p:hover {color: #87c6bd;}
 
@@ -122,7 +129,7 @@ a {text-decoration: none;}
        <ul id="menu">
            <li><a href="home.html">الرئيسية</a></li>
            <li class="divline"></li>
-           <li><a href="#">جِد مقاسي</a></li>
+           <li><a href="#">جد مقاسي</a></li>
            <li class="divline"></li>
            <li><a href="care.html">العناية</a></li>
            <li class="divline"></li>
@@ -138,7 +145,7 @@ a {text-decoration: none;}
      </div> 
   <div class=sectionTwo> 
 <div class=bleachlbl>  
-      <img src="images/label-1.png" alt="label" id=label>
+      <img src="images/label1.png" alt="label" id=label>
     <div class=labelBg id=label-1Bg>
        <div class= sec1Container id=sec>
           <div class=imgContainer><img src="images/bleach.png" ></div> 
@@ -188,19 +195,16 @@ a {text-decoration: none;}
       <div class=txtContainer><p>التجفيف في الظل ــــــ</p></div> </div>  
        <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-dry.png" ></div>
         <div class=txtContainer><p>لا تجفف ــــــ</p></div>              
-        </div></div> 
-
-
-
-        
-       
+        </div></div>   
     
    </div>
   <div class=sectionThree></div>
-   <div class=sectionFour>
-     <!--Footer-->
-   </div>
-       </div>
+    <div class=sectionFour>
+         <!--footer-->
+       <p id=footer>   © كل الحقوق محفوظة , 2020 </p>
+           </div>
 
+       </div>
+<!--all icons credit goes to https://www.flaticon.com/ -->
 </body>
 </html>
