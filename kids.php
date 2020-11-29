@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rakez</title>
+	<title>Rakez - Kids</title>
   <meta charset="UTF-8">
   <meta name="description" content="">
+	<script src="btn.js"></script>
   <link rel="mainStyle" href="mainStyle.css">
   <link rel="stylesheet" type="text/css" href="tableStyle.css">
+	<link rel="stylesheet" type="text/css" href="cmnStyle.css">
 	<style>
 
 
@@ -13,7 +15,7 @@
   height: 670px;
   position: relative;
   }
- 
+
 /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
 .sectionTwo {
   height: 670px;
@@ -23,11 +25,11 @@
 
  /**adject section height here*/
 .sectionThree {
-  background-color: #f2eeec; 
+  background-color: #f2eeec;
   position: relative;
-  height:  2000px; 
+  height:  2000px;
 
-} 
+}
 .sectionFour {
    height: 120px;
  }
@@ -38,19 +40,19 @@
    margin-top: 90px;
       height: 270px;
   width: 800px;
- 
+
  }
  /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
  .BgContainer{ /**to center the three icon containers "iconBackground" **/
     display: table-cell;
     vertical-align: middle;
-    width: 70%; 
+    width: 70%;
 }
 .iconsBackground { /**sectionTwo icons container with background color**/
   position: relative;
       content: "";
   clear: both;
-  display: table; 
+  display: table;
       margin-left: auto;
     margin-right: auto;
     margin-top: 20px;
@@ -61,29 +63,35 @@
   height: 120px;
 }
 
- .categoryContainer p { /**labels style for sectionOne's icons**/ 
+ .categoryContainer p { /**labels style for sectionOne's icons**/
   font-family: Questv1;
   font-size: 28px;
-  color: #474745; 
+  color: #474745;
   position: absolute;
-  top: 180px;} 
+  top: 180px;}
 
 .iconContainer{ /**container for each clothes icon**/
   width: 0%;
   padding: 2px;
   display: table-cell;
  text-align: center;
+ cursor: pointer;
 }
 .iconContainer p{
  font-family: Questv1;
   font-size: 19px;
-  color: #474745; 
-  margin: 0; 
+  color: #474745;
+  margin: 0;
 }
 .iconContainer img{
   width: 110px;
   height: auto;
 }
+
+p {cursor: pointer;}
+p:hover {color: #87c6bd;}
+
+a {text-decoration: none;}
 
  #logo{
     display: block;
@@ -99,7 +107,7 @@
     position: absolute;
     left: 10px;
   }
- 
+
 #manIcon{
    width: 185px;
     height: auto;
@@ -113,10 +121,10 @@
     position: absolute;
     left: 550px;
       }
-#label1{left:70px;}  
-#label2{left:320px;}  
-#label3{left:565px;}  
 
+	#label1{left:120px;}
+	#label2{left:370px;}
+	#label3{left:610px;}
 
 #bar{
   position: absolute;
@@ -143,23 +151,30 @@ height: auto;
 
 </head>
 <body>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top-arrow.png" height="25" width="25"></button>
 <div calss=mainPage>
-
+	<div id="nav">
+			 <ul id="menu">
+					 <li><a href="home.html">الرئيسية</a></li>
+					 <li class="divline"></li>
+					 <li><a href="#">جِد مقاسي</a></li>
+					 <li class="divline"></li>
+					 <li><a href="care.html">العناية</a></li>
+					 <li class="divline"></li>
+					 <li><a href="about.html">عن راكز</a></li>
+				</ul>
+	 </div>
 <div class=sectionOne id=sectionOne>
-   <img src="images/logo.jpg" alt="Rakez Logo" id=logo  >
+   <a href="home.html"><img src="images/logo.jpg" alt="Rakez Logo" id=logo></a>
    <div class= categoryContainer>
-      <img src="images/woman.jpg" alt="woman icon" id=womanIcon onclick="smoothScroll(document.getElementById('sectionTwo'))" >
-    <img src="images/man.jpg" alt="man icon" id=manIcon onclick="smoothScroll(document.getElementById('sectionTwo'))">
-    <img src="images/child.jpg" alt="child icon" id=childIcon onclick="smoothScroll(document.getElementById('sectionTwo'))">
-    <p id=label1 onclick="smoothScroll(document.getElementById('sectionTwo'))">مقاسات نساء</p>
-    <p id=label2 onclick="smoothScroll(document.getElementById('sectionTwo'))">مقاسات رجـال</p>
-    <p id=label3 onclick="smoothScroll(document.getElementById('sectionTwo'))">مقاسات أطفال</p>
+		 <a href="women.php"><img src="images/woman.jpg" alt="woman icon" id=womanIcon><p id=label1>نساء</p></a>
+		 <a href="men.php"><img src="images/man.jpg" alt="man icon" id=manIcon><p id=label2>رجال</p></a>
+		 <a href="#"><img src="images/child.jpg" alt="child icon" id=childIcon><p id=label3>أطفال</p></a>
    </div>
        <img src="images/bar.jpg" alt="bar" id=bar >
-     </div> 
+     </div>
   <div class=sectionTwo id=sectionTwo>
-   <div class=BgContainer> 
+   <div class=BgContainer>
      <div class=iconsBackground id=top>
         <div class=iconContainer><img src="images/babyClothes.png" alt="baby clothes icon" id="KbabyClothes" onclick="smoothScroll(document.getElementById('t_babycloth'))"><p id=babyClothestxt onclick="smoothScroll(document.getElementById('t_babycloth'))">ملابس مواليد</p></div>
        <div class=iconContainer><img src="images/onesie.png" alt="onesie icon" id="Konesie" onclick="smoothScroll(document.getElementById('t_onesie'))"><p id=onesietxt onclick="smoothScroll(document.getElementById('t_onesie'))">ملابس أطفال <br>1-7 سنوات</p></div>
@@ -168,22 +183,22 @@ height: auto;
      </div>
 
       <div class=iconsBackground id=bottom>
-       <div class=iconContainer><img src="images/shoes.png" alt="shoes icon" id="Kshoes"  onclick="smoothScroll(document.getElementById('t_kshoes'))"><p id=shoestxt  onclick="smoothScroll(document.getElementById('t_kshoes'))">أحذية أطفال</p></div>  
-       <div class=iconContainer><img src="images/bonnet.png" alt="bonnet icon" id="Kbonnet" onclick="smoothScroll(document.getElementById('t_kbeany'))"><p id=bonnettxt onclick="smoothScroll(document.getElementById('t_kbeany'))">قبعات المواليد</p></div>        
-        
+       <div class=iconContainer><img src="images/shoes.png" alt="shoes icon" id="Kshoes"  onclick="smoothScroll(document.getElementById('t_kshoes'))"><p id=shoestxt  onclick="smoothScroll(document.getElementById('t_kshoes'))">أحذية أطفال</p></div>
+       <div class=iconContainer><img src="images/bonnet.png" alt="bonnet icon" id="Kbonnet" onclick="smoothScroll(document.getElementById('t_kbeany'))"><p id=bonnettxt onclick="smoothScroll(document.getElementById('t_kbeany'))">قبعات المواليد</p></div>
+
       </div>
       </div> <!--end of BgContainer-->
      </div> <!--end of sectionTwo-->
 
-<div class=sectionThree id=sectionThree> 
+<div class=sectionThree id=sectionThree>
          <!--insert schudels here-->
-<!--top schudels -->       
-  
+<!--top schudels -->
+
   <div class="tableContainer">
     <h3 id="t_babycloth">ملابس المواليد </h3>
     <?php require 'table_queries.php';
     //header
-        echo "<table id='baby_cm'> 
+        echo "<table id='baby_cm'>
         <tr>
         <th> العمر </th>
         <th> الوزن </th>
@@ -223,7 +238,7 @@ height: auto;
       <button id="clk_baby" class="buttonSwitch" onclick='tableSwitch("baby_cm","baby_inch"),highlight("clk_baby")'>inch</button>
   </div> <!--end tableContainer -->
 
- 
+
   <div class="tableContainer">
    <h3 id="t_onesie"> ملابس الأطفال من 1-7 سنوات </h3>
     <?php require 'table_queries.php';
@@ -244,7 +259,7 @@ height: auto;
         echo "<td>".$row['t_age']."</td>";
         echo "<td>".$row['t_height_cm']."</td>";
         echo "<td>".$row['t_weight_kg']."</td>";
-        echo "<td>".$row['t_us']."</td>"; 
+        echo "<td>".$row['t_us']."</td>";
         echo "<td>".$row['t_uk']."</td>";
         echo "<td>".$row['t_eur']."</td>";
         echo "</tr>";
@@ -276,8 +291,8 @@ height: auto;
       <button id="clk_toddler" class="buttonSwitch" onclick='tableSwitch("toddler_cm","toddler_inch"),highlight("clk_toddler")'>inch</button>
   </div> <!--end tableContainer -->
 
- 
-  <div class="tableContainer"> 
+
+  <div class="tableContainer">
     <h3 id="t_kboy"> الأولاد أكبر من 8 سنوات </h3>
     <?php require 'table_queries.php';
     // header
@@ -339,7 +354,7 @@ height: auto;
   </div> <!--end tableContainer -->
 
 
-  <div class="tableContainer">  
+  <div class="tableContainer">
     <h3 id="t_kgirl"> البنات أكثر من 8 سنوات </h3>
     <?php require 'table_queries.php';
     // header
@@ -399,7 +414,7 @@ height: auto;
   </div> <!--end tableContainer -->
 
  <!--bottom schudels -->
- 
+
   <div class="tableContainer">
    <h3 id="t_kshoes"> أحذية الأطفال </h3>
     <?php require 'table_queries.php';
@@ -447,12 +462,12 @@ height: auto;
       echo "<td>".$row['chsh_jp']."</td>";
       echo "</tr>";
     } echo "</table>";
-    
+
       ?>
       <button id="clk_child_shoes" class="buttonSwitch" onclick='tableSwitch("child_shoes_cm","child_shoes_inch"),highlight("clk_child_shoes")'>inch</button>
   </div> <!--end tableContainer -->
-  
-  
+
+
   <div class="tableContainer">
     <h3 id="t_kbeany">قبعات المواليد </h3>
     <?php require 'table_queries.php';
@@ -493,14 +508,14 @@ height: auto;
     <button id="clk_baby_beany" class="buttonSwitch" onclick='tableSwitch("baby_beany_cm","baby_beany_inch"),highlight("clk_baby_beany")'>inch</button>
   </div> <!--end tableContainer -->
 
-      </div>  
-         <div class=sectionFour> 
+      </div>
+         <div class=sectionFour>
          <!--footer-->
            </div>
-  
+
   </div> <!--end of mainPage-->
 <script>
-  //code credit: http://jsfiddle.net/rjSfP/ 
+  //code credit: http://jsfiddle.net/rjSfP/
 window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
@@ -522,19 +537,19 @@ window.smoothScroll = function(target) {
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-    //end of code credit 
+    //end of code credit
 }
 
 function tableSwitch(cm,inch) {
-   var tcm = document.getElementById(cm); 
+   var tcm = document.getElementById(cm);
    var tinch = document.getElementById(inch);
 
    tcm.style.display = (
-       tcm.style.display == "none" ? "block" : "none"); 
+       tcm.style.display == "none" ? "block" : "none");
    tinch.style.display = (
-       tinch.style.display == "none" ? "block" : "none"); 
+       tinch.style.display == "none" ? "block" : "none");
 }
- 
+
 function highlight(btn) {
 
     var element = document.getElementById(btn);

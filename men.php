@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Rakez</title>
+	<title>Rakez - Men</title>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
+	<script src="btn.js"></script>
   <link rel="mainStyle" href="mainStyle.css">
   <link rel="stylesheet" href="tableStyle.css">
+	<link rel="stylesheet" href="cmnStyle.css">
 	<style>
+
 .sectionOne {
   height: 670px;
   position: relative;
 
   }
- 
+
 /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
 .sectionTwo {
   height: 670px;
@@ -26,8 +29,9 @@
 
  /**adject section height here*/
 .sectionThree {
-  background-color: #f2eeec; 
+  background-color: #f2eeec;
   position: relative;
+<<<<<<< HEAD:MenSizePage.php
   
   border-radius: 80px;
   margin-left: auto;
@@ -35,12 +39,17 @@
   height:  auto; 
   max-width: 80%;
   min-width: auto;
+=======
+  height:  2000px;
+}
+>>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
 
-} 
 .sectionFour {
    height: 120px;
  }
+
  .categoryContainer{
+<<<<<<< HEAD:MenSizePage.php
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -49,19 +58,37 @@
   max-width: 800px;
 
   display: block;
+=======
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 90px;
+   height: 270px;
+   width: 800px;
+>>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
 
  }
+
  /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
  .BgContainer{ /**to center the three icon containers "iconBackground" **/
     display: table-cell;
     vertical-align: middle;
+<<<<<<< HEAD:MenSizePage.php
    width: 70%; 
+=======
+    width: 70%;
+>>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
 }
+
 .iconsBackground { /**sectionTwo icons container with background color**/
   position: relative;
   content: "";
   clear: both;
+<<<<<<< HEAD:MenSizePage.php
   display: table; 
+=======
+  display: table;
+>>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -72,29 +99,42 @@
   max-height: 7.5em;
 }
 
- .categoryContainer p { /**labels style for sectionOne's icons**/ 
+ .categoryContainer p { /**labels style for sectionOne's icons**/
   font-family: Questv1;
+<<<<<<< HEAD:MenSizePage.php
   font-size:1.5vw;
   color: #474745; 
+=======
+  font-size: 28px;
+  color: #474745;
+>>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
   position: absolute;
-  top: 180px;} 
+  top: 180px;}
 
 .iconContainer{ /**container for each clothes icon**/
   width: 0%;
   padding: 2px;
   display: table-cell;
  text-align: center;
+ cursor: pointer;
 }
+
 .iconContainer p{
  font-family: Questv1;
   font-size: 19px;
-  color: #474745; 
-  margin: 0; 
+  color: #474745;
+  margin: 0;
 }
+
 .iconContainer img{
   width: 110px;
   height: auto;
 }
+
+p {cursor: pointer;}
+p:hover {color: #87c6bd;}
+
+a {text-decoration: none;}
 
  #logo{
     display: block;
@@ -110,7 +150,7 @@
     position: absolute;
     left: 10px;
   }
- 
+
 #manIcon{
    max-width: 185px;
     height: auto;
@@ -124,10 +164,10 @@
     position: absolute;
     left: 550px;
       }
-#label1{left:70px;}  
-#label2{left:320px;}  
-#label3{left:565px;}  
 
+	#label1{left:120px;}
+	#label2{left:370px;}
+	#label3{left:610px;}
 
 #bar{
   position: absolute;
@@ -139,66 +179,72 @@
   top: 88%;
   margin-top: -88px;
 }
+
 /**overwrite some styles**/
 #Mthoub{
   width: 80px;
   height: auto;
 }
+
 #top{
   margin-top: 0px;
 }
+
 #pregnantCon{
  border-left: #383836 dashed 3bpx;
 }
-
-
 </style>
-
-
 </head>
 <body>
-
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top-arrow.png" height="25" width="25"></button>
 <div calss=mainPage>
-
+	<div id="nav">
+			 <ul id="menu">
+					 <li><a href="home.html">الرئيسية</a></li>
+					 <li class="divline"></li>
+					 <li><a href="#">جِد مقاسي</a></li>
+					 <li class="divline"></li>
+					 <li><a href="care.html">العناية</a></li>
+					 <li class="divline"></li>
+					 <li><a href="about.html">عن راكز</a></li>
+				</ul>
+	 </div>
 <div class=sectionOne id=sectionOne>
-   <img src="images/logo.jpg" alt="Rakez Logo" id=logo  >
+   <a href="home.html"><img src="images/logo.jpg" alt="Rakez Logo" id=logo></a>
    <div class= categoryContainer>
-      <img src="images/woman.jpg" alt="woman icon" id=womanIcon onclick="smoothScroll(document.getElementById('sectionTwo'))" >
-    <img src="images/man.jpg" alt="man icon" id=manIcon onclick="smoothScroll(document.getElementById('sectionTwo'))">
-    <img src="images/child.jpg" alt="child icon" id=childIcon onclick="smoothScroll(document.getElementById('sectionTwo'))">
-    <p id=label1 onclick="smoothScroll(document.getElementById('sectionTwo'))">مقاسات نساء</p>
-    <p id=label2 onclick="smoothScroll(document.getElementById('sectionTwo'))">مقاسات رجـال</p>
-    <p id=label3 onclick="smoothScroll(document.getElementById('sectionTwo'))">مقاسات أطفال</p>
+		 <a href="women.php"><img src="images/woman.jpg" alt="woman icon" id=womanIcon><p id=label1>نساء</p></a>
+ 		<a href="#"><img src="images/man.jpg" alt="man icon" id=manIcon><p id=label2>رجال</p></a>
+ 		<a href="kids.php"><img src="images/child.jpg" alt="child icon" id=childIcon><p id=label3>أطفال</p></a>
    </div>
        <img src="images/bar.jpg" alt="bar" id=bar >
-     </div> 
+     </div>
   <div class=sectionTwo id=sectionTwo>
-   <div class=BgContainer> 
+   <div class=BgContainer>
      <div class=iconsBackground id=top>
-        <div class=iconContainer><img src="images/thoub.png" alt="thoub icon" id="Mthoub" onclick="smoothScroll(document.getElementById('t_mthoub'))"><p id=thoubtxt onclick="smoothScroll(document.getElementById('t_mthoub'))">ثوب</p></div>
-       <div class=iconContainer><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt" onclick="smoothScroll(document.getElementById('t_mtops'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mtops'))">ملابس علوية</p></div>
-       <div class=iconContainer><img src="images/shirts.png" alt="shirt icon" id="Mshirt" onclick="smoothScroll(document.getElementById('t_mshirt'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mshirt'))">قمصان</p></div>
-       <div class=iconContainer><img src="images/pants.png" alt="pants icon" id="panst" onclick="smoothScroll(document.getElementById('t_mpants'))"><p id=pantstxt onclick="smoothScroll(document.getElementById('t_mpants'))">بناطيل</p></div>
+        <div class=iconContainer><a href="#thoub"><img src="images/thoub.png" alt="thoub icon" id="Mthoub" onclick="smoothScroll(document.getElementById('t_mthoub'))"><p id=thoubtxt onclick="smoothScroll(document.getElementById('t_mthoub'))">ثوب</p></a></div>
+       <div class=iconContainer><a href="#tops"><img src="images/Tshirt.png" alt="Tshirt icon" id="shirt" onclick="smoothScroll(document.getElementById('t_mtops'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mtops'))">ملابس علوية</p></a></div>
+       <div class=iconContainer><a href="#shirts"><img src="images/shirts.png" alt="shirt icon" id="Mshirt" onclick="smoothScroll(document.getElementById('t_mshirt'))"><p id=shirttxt onclick="smoothScroll(document.getElementById('t_mshirt'))">قمصان</p></a></div>
+       <div class=iconContainer><a href="#pants"><img src="images/pants.png" alt="pants icon" id="panst" onclick="smoothScroll(document.getElementById('t_mpants'))"><p id=pantstxt onclick="smoothScroll(document.getElementById('t_mpants'))">بناطيل</p></a></div>
      </div>
      <div class=iconsBackground id=middle>
-       <div class=iconContainer><img src="images/bottom.png" alt="bottoms icon" id="Mbottoms" onclick="smoothScroll(document.getElementById('t_munderwear'))"><p id=bottomstxt onclick="smoothScroll(document.getElementById('t_munderwear'))">ملابس داخلية</p></div>
+       <div class=iconContainer><a href="#underwear"><img src="images/bottom.png" alt="bottoms icon" id="Mbottoms" onclick="smoothScroll(document.getElementById('t_munderwear'))"><p id=bottomstxt onclick="smoothScroll(document.getElementById('t_munderwear'))">ملابس داخلية</p></a></div>
      </div>
       <div class=iconsBackground id=bottom>
-        <div class=iconContainer><img src="images/shmakh.png" alt="arab shmakh icon" id="Mshmakh" onclick="smoothScroll(document.getElementById('t_mshmagh'))"><p id=skirttxt onclick="smoothScroll(document.getElementById('t_mshmagh'))">شماغ</p></div>
-       <div class=iconContainer><img src="images/cap.png" alt="ring icon" id="Mcap" onclick="smoothScroll(document.getElementById('t_mhat'))"><p id=captxt onclick="smoothScroll(document.getElementById('t_mhat'))">قبعة</p></div>
-       <div class=iconContainer><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_mbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_mbelt'))">أحزمة</p></div>  
-       <div class=iconContainer><img src="images/shoe.png" alt="shoe icon" id="Mshoe" onclick="smoothScroll(document.getElementById('t_mshoes'))"><p id=shoetxt onclick="smoothScroll(document.getElementById('t_mshoes'))">أحذية</p></div>        
-       
-        
+        <div class=iconContainer><a href="#shmakh"><img src="images/shmakh.png" alt="arab shmakh icon" id="Mshmakh" onclick="smoothScroll(document.getElementById('t_mshmagh'))"><p id=skirttxt onclick="smoothScroll(document.getElementById('t_mshmagh'))">شماغ</p></a></div>
+       <div class=iconContainer><a href="#hat"><img src="images/cap.png" alt="ring icon" id="Mcap" onclick="smoothScroll(document.getElementById('t_mhat'))"><p id=captxt onclick="smoothScroll(document.getElementById('t_mhat'))">قبعة</p></a></div>
+       <div class=iconContainer><a href="#belts"><img src="images/belt.png" alt="belt icon" id="belt" onclick="smoothScroll(document.getElementById('t_mbelt'))"><p id=belttxt onclick="smoothScroll(document.getElementById('t_mbelt'))">أحزمة</p></a></div>
+       <div class=iconContainer><a href="#shoes"><img src="images/shoe.png" alt="shoe icon" id="Mshoe" onclick="smoothScroll(document.getElementById('t_mshoes'))"><p id=shoetxt onclick="smoothScroll(document.getElementById('t_mshoes'))">أحذية</p></a></div>
+
+
       </div>
       </div> <!--end of BgContainer-->
      </div> <!--end of sectionTwo-->
 
-<div class=sectionThree id=sectionThree> 
+<div class=sectionThree id=sectionThree>
  <!--insert schudels here-->
     <!--top schudels -->
-  
-    <div class="tableContainer">
+
+    <div class="tableContainer" id="thoub">
       <h3 id="t_mthoub"> الثوب  </h3>
          <div class="warpper">
             <input class="radio" id="mth1" name="mthoub" type="radio" checked>
@@ -211,7 +257,7 @@
               <label class="tab" id="t_mth3" for="mth3">  الأطفال </label>
          </div>
 
-         <div class="panels"> 
+         <div class="panels">
           <div class="panel" id="m_thoub" >
             <?php require 'table_queries.php';
             //header
@@ -229,7 +275,7 @@
               echo "<td>".$row['mth_length']."</td>";
               echo "<td>".$row['mth_size']."</td>";
               echo "</tr>";
-            } 
+            }
             echo "<tr id='tr_mthoub_clkMore'><td colspan='3'>
                 <a onclick=\"loadmore('tr_mthoub_clkMore','m_thoub_more')\">عرض المزيد</a></td></tr>";
             echo "</table>";
@@ -253,7 +299,7 @@
                   echo "</tr>";
                 }
               echo "<tr><td colspan='3'>
-                <a onclick=\"less('m_thoub_more')\">عرض أقل</a></td></tr>"; 
+                <a onclick=\"less('m_thoub_more')\">عرض أقل</a></td></tr>";
               echo "</table>";
                   ?>
                  </span>
@@ -277,10 +323,10 @@
               echo "<td>".$row['mth_size']."</td>";
               echo "</tr>";
             }echo "<tr id='tr_ythoub_clkMore'><td colspan='3'>
-                <a onclick=\"loadmore('tr_ythoub_clkMore','y_thoub_more')\">عرض المزيد</a></td></tr>"; 
+                <a onclick=\"loadmore('tr_ythoub_clkMore','y_thoub_more')\">عرض المزيد</a></td></tr>";
             echo "</table>";
-                    
-             ?> 
+
+             ?>
              <span id='y_thoub_more' style='display:none'>
           <?php require 'table_queries.php';
           //header
@@ -299,7 +345,7 @@
               echo "<td>".$row['mth_size']."</td>";
               echo "</tr>";
             }echo "<tr><td colspan='3'>
-            <a onclick=\"less('y_thoub_more')\">عرض أقل</a></td></tr>"; 
+            <a onclick=\"less('y_thoub_more')\">عرض أقل</a></td></tr>";
           echo "</table>";
                ?>
              </span>
@@ -323,9 +369,9 @@
                 echo "</tr>";
               }
               echo "<tr id='tr_chthoub_clkMore'><td colspan='3'>
-                  <a onclick=\"loadmore('tr_chthoub_clkMore','ch_thoub_more')\">عرض المزيد</a></td></tr>"; 
+                  <a onclick=\"loadmore('tr_chthoub_clkMore','ch_thoub_more')\">عرض المزيد</a></td></tr>";
               echo "</table>";
-                ?> 
+                ?>
                 <span id='ch_thoub_more' style='display:none'>
                   <?php require 'table_queries.php';
                   //header
@@ -344,17 +390,17 @@
                       echo "<td>".$row['mth_size']."</td>";
                       echo "</tr>";
                     }echo "<tr><td colspan='3'>
-                    <a onclick=\"less('ch_thoub_more')\">عرض أقل</a></td></tr>"; 
+                    <a onclick=\"less('ch_thoub_more')\">عرض أقل</a></td></tr>";
                   echo "</table>";
                    ?>
-               </span> 
+               </span>
           </div><!-- end panel 3 -->
     </div> <!-- end panels -->
   </div><!-- end warpper -->
-  </div> <!--end container -->   
-   
-  
-    <div class="tableContainer">
+  </div> <!--end container -->
+
+
+    <div class="tableContainer" id="tops">
       <h3 id="t_mtops">الملابس العلوية </h3>
          <div class="warpper">
             <input class="radio" id="mt1" name="mtop" type="radio" checked>
@@ -367,13 +413,13 @@
               <label class="tab" id="t_mt3" for="mt3"> مقاسات القصيرة </label>
          </div>
 
-         <div class="panels"> 
+         <div class="panels">
           <div class="panel" id="mtop" >
             <?php require 'table_queries.php';
             // header
             echo "<table id='men_tops_cm'>
               <tr>
-              <th> المقاس العالمي</th>            
+              <th> المقاس العالمي</th>
               <th>المقاس الأوروبي<br>EUR </th>
               <th>المقاس الأمريكي<br>UK <br></th>
                     <th> الصدر</th>
@@ -386,7 +432,7 @@
             while ( $row = mysqli_fetch_array ($men_tops_cm, MYSQLI_ASSOC) )
             {
               echo "<tr>";
-              echo "<td>".$row['mt_int']."</td>";            
+              echo "<td>".$row['mt_int']."</td>";
               echo "<td>".$row['mt_eur']."</td>";
                     echo "<td>".$row['mt_uk']."</td>";
                     echo "<td>".$row['mt_chest_cm']."</td>";
@@ -399,7 +445,7 @@
             // header
             echo "<table id='men_tops_inch' style='display:none'>
               <tr>
-              <th> المقاس العالمي</th>            
+              <th> المقاس العالمي</th>
               <th>المقاس الأوروبي<br>EUR </th>
               <th>المقاس الأمريكي<br>UK </th>
                     <th> الصدر</th>
@@ -412,7 +458,7 @@
             while ( $row = mysqli_fetch_array ($men_tops_inch, MYSQLI_ASSOC) )
             {
               echo "<tr>";
-              echo "<td>".$row['mt_int']."</td>";            
+              echo "<td>".$row['mt_int']."</td>";
               echo "<td>".$row['mt_eur']."</td>";
                     echo "<td>".$row['mt_uk']."</td>";
                     echo "<td>".$row['mt_chest_in']."</td>";
@@ -431,7 +477,7 @@
             // header
               echo "<table id='long_men_tops_cm'>
                 <tr>
-                <th> المقاس العالمي</th>            
+                <th> المقاس العالمي</th>
                 <th>المقاس الأوروبي<br>EUR </th>
                 <th>المقاس الأمريكي<br>UK </th>
                       <th> الصدر</th>
@@ -444,7 +490,7 @@
               while ( $row = mysqli_fetch_array ($long_men_tops_cm, MYSQLI_ASSOC) )
               {
                 echo "<tr>";
-                echo "<td>".$row['mt_int']."</td>";           
+                echo "<td>".$row['mt_int']."</td>";
                 echo "<td>".$row['mt_eur']."</td>";
                       echo "<td>".$row['mt_uk']."</td>";
                       echo "<td>".$row['mt_chest_cm']."</td>";
@@ -457,7 +503,7 @@
               // header
               echo "<table id='long_men_tops_inch' style='display:none'>
                 <tr>
-                <th> المقاس العالمي</th>            
+                <th> المقاس العالمي</th>
                 <th>المقاس الأوروبي<br>EUR </th>
                 <th>المقاس الأمريكي<br>UK </th>
                       <th> الصدر</th>
@@ -470,7 +516,7 @@
               while ( $row = mysqli_fetch_array ($long_men_tops_inch, MYSQLI_ASSOC) )
               {
                 echo "<tr>";
-                echo "<td>".$row['mt_int']."</td>";            
+                echo "<td>".$row['mt_int']."</td>";
                 echo "<td>".$row['mt_eur']."</td>";
                       echo "<td>".$row['mt_uk']."</td>";
                       echo "<td>".$row['mt_chest_in']."</td>";
@@ -481,7 +527,7 @@
                 echo "</tr>";
               } echo "</table>";
                    ?>
-            <button id="clk2_mtop" class="buttonSwitch" onclick='tableSwitch("long_men_tops_cm","long_men_tops_inch"),highlight("clk2_mtop")'>inch</button>   
+            <button id="clk2_mtop" class="buttonSwitch" onclick='tableSwitch("long_men_tops_cm","long_men_tops_inch"),highlight("clk2_mtop")'>inch</button>
           </div> <!-- end panel 2 -->
 
           <div class="panel" id="short_top" >
@@ -489,7 +535,7 @@
                 // header
                 echo "<table id='short_men_tops_cm'>
                   <tr>
-                  <th> المقاس العالمي</th>            
+                  <th> المقاس العالمي</th>
                   <th>المقاس الأوروبي<br>EUR </th>
                   <th>المقاس الأمريكي<br>UK </th>
                         <th> الصدر</th>
@@ -502,7 +548,7 @@
                 while ( $row = mysqli_fetch_array ($short_men_tops_cm, MYSQLI_ASSOC) )
                 {
                   echo "<tr>";
-                  echo "<td>".$row['mt_int']."</td>";            
+                  echo "<td>".$row['mt_int']."</td>";
                   echo "<td>".$row['mt_eur']."</td>";
                         echo "<td>".$row['mt_uk']."</td>";
                         echo "<td>".$row['mt_chest_cm']."</td>";
@@ -515,7 +561,7 @@
                 // header
                 echo "<table id='short_men_tops_inch' style='display:none;'>
                   <tr>
-                  <th> المقاس العالمي</th>            
+                  <th> المقاس العالمي</th>
                   <th>المقاس الأوروبي<br>EUR </th>
                   <th>المقاس الأمريكي<br>UK </th>
                         <th> الصدر</th>
@@ -528,7 +574,7 @@
                 while ( $row = mysqli_fetch_array ($short_men_tops_inch, MYSQLI_ASSOC) )
                 {
                   echo "<tr>";
-                  echo "<td>".$row['mt_int']."</td>";            
+                  echo "<td>".$row['mt_int']."</td>";
                   echo "<td>".$row['mt_eur']."</td>";
                         echo "<td>".$row['mt_uk']."</td>";
                         echo "<td>".$row['mt_chest_in']."</td>";
@@ -540,14 +586,14 @@
                 } echo "</table>";
                   ?>
 
-                 <button id="clk3_mtop" class="buttonSwitch" onclick='tableSwitch("short_men_tops_cm","short_men_tops_inch"),highlight("clk3_mtop")'>inch</button>   
+                 <button id="clk3_mtop" class="buttonSwitch" onclick='tableSwitch("short_men_tops_cm","short_men_tops_inch"),highlight("clk3_mtop")'>inch</button>
           </div><!-- end panel 3 -->
     </div> <!-- end panels -->
   </div><!-- end warpper -->
   </div> <!--end container -->
 
-  
-    <div class="tableContainer">
+
+    <div class="tableContainer" id="shirts">
       <h3 id="t_mshirt"> القمصان </h3>
          <div class="warpper">
             <input class="radio" id="mshr1" name="mshirt" type="radio" checked>
@@ -560,13 +606,13 @@
               <label class="tab" id="t_mshr3" for="mshr3"> مقاسات القصيرة </label>
          </div>
 
-         <div class="panels"> 
+         <div class="panels">
           <div class="panel" id="mshirt" >
             <?php require 'table_queries.php';
             // header
               echo "<table id='men_shirt_cm'>
                 <tr>
-                <th> المقاس العالمي</th>            
+                <th> المقاس العالمي</th>
                 <th>المقاس الأوروبي<br>EUR </th>
                 <th>المقاس الأمريكي<br>UK </th>
                       <th> الصدر</th>
@@ -576,7 +622,7 @@
               while ( $row = mysqli_fetch_array ($men_shirt_cm, MYSQLI_ASSOC) )
               {
                 echo "<tr>";
-                echo "<td>".$row['mshr_int']."</td>";            
+                echo "<td>".$row['mshr_int']."</td>";
                 echo "<td>".$row['mshr_eur']."</td>";
                       echo "<td>".$row['mshr_uk']."</td>";
                       echo "<td>".$row['mshr_chest_cm']."</td>";
@@ -586,7 +632,7 @@
               // header
               echo "<table id='men_shirt_inch' style='display:none'>
                 <tr>
-                <th> المقاس العالمي</th>            
+                <th> المقاس العالمي</th>
                 <th>المقاس الأوروبي<br>EUR </th>
                 <th>المقاس الأمريكي<br>UK </th>
                       <th> الصدر</th>
@@ -596,7 +642,7 @@
               while ( $row = mysqli_fetch_array ($men_shirt_inch, MYSQLI_ASSOC) )
               {
                 echo "<tr>";
-                echo "<td>".$row['mshr_int']."</td>";            
+                echo "<td>".$row['mshr_int']."</td>";
                 echo "<td>".$row['mshr_eur']."</td>";
                       echo "<td>".$row['mshr_uk']."</td>";
                       echo "<td>".$row['mshr_chest_in']."</td>";
@@ -604,7 +650,7 @@
 
                 echo "</tr>";
               } echo "</table>";
-                  
+
               ?>
               <button id="clk1_mshirt" class="buttonSwitch" onclick='tableSwitch("men_shirt_cm","men_shirt_inch"),highlight("clk1_mshirt")'>inch</button>
             </div> <!-- end panel 1 -->
@@ -614,7 +660,7 @@
               // header
               echo "<table id='long_men_shirt_cm'>
                 <tr>
-                <th> المقاس العالمي</th>            
+                <th> المقاس العالمي</th>
                 <th>المقاس الأوروبي<br>EUR </th>
                 <th>المقاس الأمريكي<br>UK </th>
                       <th> الصدر</th>
@@ -627,7 +673,7 @@
               while ( $row = mysqli_fetch_array ($long_men_shirt_cm, MYSQLI_ASSOC) )
               {
                 echo "<tr>";
-                echo "<td>".$row['mshr_int']."</td>";            
+                echo "<td>".$row['mshr_int']."</td>";
                 echo "<td>".$row['mshr_eur']."</td>";
                       echo "<td>".$row['mshr_uk']."</td>";
                       echo "<td>".$row['mshr_chest_cm']."</td>";
@@ -640,7 +686,7 @@
               // header
               echo "<table id='long_men_shirt_inch' style='display:none'>
                 <tr>
-                <th> المقاس العالمي</th>            
+                <th> المقاس العالمي</th>
                 <th>المقاس الأوروبي<br>EUR </th>
                 <th>المقاس الأمريكي<br>UK </th>
                       <th> الصدر</th>
@@ -653,7 +699,7 @@
               while ( $row = mysqli_fetch_array ($long_men_shirt_inch, MYSQLI_ASSOC) )
               {
                 echo "<tr>";
-                echo "<td>".$row['mshr_int']."</td>";            
+                echo "<td>".$row['mshr_int']."</td>";
                 echo "<td>".$row['mshr_eur']."</td>";
                       echo "<td>".$row['mshr_uk']."</td>";
                       echo "<td>".$row['mshr_chest_in']."</td>";
@@ -663,9 +709,9 @@
                       echo "<td>".$row['mshr_height_in']."</td>";
                 echo "</tr>";
               } echo "</table>";
-             
+
                ?>
-              <button id="clk2_mshirt" class="buttonSwitch" onclick='tableSwitch("long_men_shirt_cm","long_men_shirt_inch"),highlight("clk2_mshirt")'>inch</button>   
+              <button id="clk2_mshirt" class="buttonSwitch" onclick='tableSwitch("long_men_shirt_cm","long_men_shirt_inch"),highlight("clk2_mshirt")'>inch</button>
             </div> <!-- end panel 2 -->
 
           <div class="panel" id="short_shirt" >
@@ -673,7 +719,7 @@
             // header
             echo "<table id='short_men_shirt_cm'>
               <tr>
-              <th> المقاس العالمي</th>            
+              <th> المقاس العالمي</th>
               <th>المقاس الأوروبي<br>EUR </th>
               <th>المقاس الأمريكي<br>UK </th>
                     <th> الصدر</th>
@@ -686,7 +732,7 @@
             while ( $row = mysqli_fetch_array ($short_men_shirt_cm, MYSQLI_ASSOC) )
             {
               echo "<tr>";
-              echo "<td>".$row['mshr_int']."</td>";            
+              echo "<td>".$row['mshr_int']."</td>";
               echo "<td>".$row['mshr_eur']."</td>";
                     echo "<td>".$row['mshr_uk']."</td>";
                     echo "<td>".$row['mshr_chest_cm']."</td>";
@@ -696,11 +742,11 @@
                     echo "<td>".$row['mshr_height_cm']."</td>";
               echo "</tr>";
             } echo "</table>";
-        
+
             // header
             echo "<table id='short_men_shirt_inch' style='display:none'>
               <tr>
-              <th> المقاس العالمي</th>            
+              <th> المقاس العالمي</th>
               <th>المقاس الأوروبي<br>EUR </th>
               <th>المقاس الأمريكي<br>UK </th>
                     <th> الصدر</th>
@@ -713,7 +759,7 @@
             while ( $row = mysqli_fetch_array ($short_men_shirt_inch, MYSQLI_ASSOC) )
             {
               echo "<tr>";
-              echo "<td>".$row['mshr_int']."</td>";            
+              echo "<td>".$row['mshr_int']."</td>";
               echo "<td>".$row['mshr_eur']."</td>";
                     echo "<td>".$row['mshr_uk']."</td>";
                     echo "<td>".$row['mshr_chest_in']."</td>";
@@ -725,14 +771,14 @@
             } echo "</table>";
               ?>
 
-               <button id="clk3_mshirt" class="buttonSwitch" onclick='tableSwitch("short_men_shirt_cm","short_men_shirt_inch"),highlight("clk3_mshirt")'>inch</button>   
+               <button id="clk3_mshirt" class="buttonSwitch" onclick='tableSwitch("short_men_shirt_cm","short_men_shirt_inch"),highlight("clk3_mshirt")'>inch</button>
           </div><!-- end panel 3 -->
     </div> <!-- end panels -->
   </div><!-- end warpper -->
   </div> <!--end container -->
 
-  
-    <div class="tableContainer">
+
+    <div class="tableContainer" id="pants">
       <h3 id="t_mpants"> البناطيل </h3>
          <div class="warpper">
             <input class="radio" id="mp1" name="mpants" type="radio" checked>
@@ -745,13 +791,13 @@
               <label class="tab" id="t_mp3" for="mp3"> مقاسات القصيرة </label>
          </div>
 
-         <div class="panels"> 
+         <div class="panels">
           <div class="panel" id="mpants" >
             <?php require 'table_queries.php';
                 // header
         echo "<table id='men_pants_cm'>
           <tr>
-          <th> المقاس العالمي</th>            
+          <th> المقاس العالمي</th>
           <th>المقاس الأوروبي<br>EUR </th>
           <th>المقاس الأمريكي<br>UK </th>
                 <th> الخصر</th>
@@ -762,7 +808,7 @@
         while ( $row = mysqli_fetch_array ($men_pants_cm, MYSQLI_ASSOC) )
         {
           echo "<tr>";
-          echo "<td>".$row['mp_int']."</td>";            
+          echo "<td>".$row['mp_int']."</td>";
           echo "<td>".$row['mp_eur']."</td>";
                 echo "<td>".$row['mp_uk']."</td>";
                 echo "<td>".$row['mp_waist_cm']."</td>";
@@ -774,7 +820,7 @@
         // header
         echo "<table id='men_pants_inch' style='display:none'>
           <tr>
-          <th> المقاس العالمي</th>            
+          <th> المقاس العالمي</th>
           <th>المقاس الأوروبي<br>EUR </th>
           <th>المقاس الأمريكي<br>UK </th>
                 <th> الخصر</th>
@@ -785,7 +831,7 @@
         while ( $row = mysqli_fetch_array ($men_pants_inch, MYSQLI_ASSOC) )
         {
           echo "<tr>";
-          echo "<td>".$row['mp_int']."</td>";            
+          echo "<td>".$row['mp_int']."</td>";
           echo "<td>".$row['mp_eur']."</td>";
                 echo "<td>".$row['mp_uk']."</td>";
                 echo "<td>".$row['mp_waist_in']."</td>";
@@ -794,7 +840,7 @@
           echo "</tr>";
         } echo "</table>";
 
-            
+
             ?>
             <button id="clk1_mpants" class="buttonSwitch" onclick='tableSwitch("men_pants_cm","men_pants_inch"),highlight("clk1_mpants")'>inch</button>
           </div> <!-- end panel 1 -->
@@ -804,7 +850,7 @@
               // header
         echo "<table id='long_men_pants_cm'>
           <tr>
-          <th> المقاس العالمي</th>            
+          <th> المقاس العالمي</th>
           <th>المقاس الأوروبي<br>EUR</th>
           <th> المقاس الأمريكي<br>UK </th>
                 <th> الخصر</th>
@@ -816,7 +862,7 @@
         while ( $row = mysqli_fetch_array ($long_men_pants_cm, MYSQLI_ASSOC) )
         {
           echo "<tr>";
-          echo "<td>".$row['mp_int']."</td>";            
+          echo "<td>".$row['mp_int']."</td>";
           echo "<td>".$row['mp_eur']."</td>";
                 echo "<td>".$row['mp_uk']."</td>";
                 echo "<td>".$row['mp_waist_cm']."</td>";
@@ -828,7 +874,7 @@
         // header
         echo "<table id='long_men_pants_inch' style='display:none'>
           <tr>
-          <th> المقاس العالمي</th>            
+          <th> المقاس العالمي</th>
           <th>المقاس الأوروبي<br>EUR</th>
           <th> المقاس الأمريكي<br>UK </th>
                 <th> الخصر</th>
@@ -840,7 +886,7 @@
         while ( $row = mysqli_fetch_array ($long_men_pants_inch, MYSQLI_ASSOC) )
         {
           echo "<tr>";
-          echo "<td>".$row['mp_int']."</td>";            
+          echo "<td>".$row['mp_int']."</td>";
           echo "<td>".$row['mp_eur']."</td>";
                 echo "<td>".$row['mp_uk']."</td>";
                 echo "<td>".$row['mp_waist_in']."</td>";
@@ -851,7 +897,7 @@
         } echo "</table>";
 
              ?>
-            <button id="clk2_mpants" class="buttonSwitch" onclick='tableSwitch("long_men_pants_cm","long_men_pants_inch"),highlight("clk2_mpants")'>inch</button>   
+            <button id="clk2_mpants" class="buttonSwitch" onclick='tableSwitch("long_men_pants_cm","long_men_pants_inch"),highlight("clk2_mpants")'>inch</button>
           </div> <!-- end panel 2 -->
 
         <div class="panel" id="short_pants" >
@@ -859,7 +905,7 @@
           // header
         echo "<table id='short_men_pants_cm'>
           <tr>
-          <th> المقاس العالمي</th>            
+          <th> المقاس العالمي</th>
           <th>المقاس الأوروبي<br>EUR</th>
           <th> المقاس الأمريكي<br>UK </th>
                 <th> الخصر</th>
@@ -871,7 +917,7 @@
         while ( $row = mysqli_fetch_array ($short_men_pants_cm, MYSQLI_ASSOC) )
         {
           echo "<tr>";
-          echo "<td>".$row['mp_int']."</td>";            
+          echo "<td>".$row['mp_int']."</td>";
           echo "<td>".$row['mp_eur']."</td>";
                 echo "<td>".$row['mp_uk']."</td>";
                 echo "<td>".$row['mp_waist_cm']."</td>";
@@ -883,7 +929,7 @@
         // header
         echo "<table id='short_men_pants_inch' style='display:none'>
           <tr>
-          <th> المقاس العالمي</th>            
+          <th> المقاس العالمي</th>
           <th>المقاس الأوروبي<br>EUR</th>
           <th> المقاس الأمريكي<br>UK </th>
                 <th> الخصر</th>
@@ -895,7 +941,7 @@
         while ( $row = mysqli_fetch_array ($short_men_pants_inch, MYSQLI_ASSOC) )
         {
           echo "<tr>";
-          echo "<td>".$row['mp_int']."</td>";            
+          echo "<td>".$row['mp_int']."</td>";
           echo "<td>".$row['mp_eur']."</td>";
                 echo "<td>".$row['mp_uk']."</td>";
                 echo "<td>".$row['mp_waist_in']."</td>";
@@ -906,15 +952,15 @@
         } echo "</table>";
           ?>
 
-               <button id="clk3_mpants" class="buttonSwitch" onclick='tableSwitch("short_men_pants_cm","short_men_pants_inch"),highlight("clk3_mpants")'>inch</button>   
+               <button id="clk3_mpants" class="buttonSwitch" onclick='tableSwitch("short_men_pants_cm","short_men_pants_inch"),highlight("clk3_mpants")'>inch</button>
         </div><!-- end panel 3 -->
     </div> <!-- end panels -->
   </div><!-- end warpper -->
   </div> <!--end container -->
 
     <!--middle schudels -->
-  
-    <div class="tableContainer">
+
+    <div class="tableContainer" id="underwear">
       <h3 id="t_munderwear"> الملابس الداخلية </h3>
             <?php require 'table_queries.php';
             // header
@@ -931,7 +977,7 @@
           echo "<tr>";
                 echo "<td>".$row['mun_int']."</td>";
                 echo "<td>".$row['mun_eur']."</td>";
-                echo "<td>".$row['mun_uk']."</td>";            
+                echo "<td>".$row['mun_uk']."</td>";
                 echo "<td>".$row['mun_waist_cm']."</td>";
           echo "</tr>";
         } echo "</table>";
@@ -958,8 +1004,8 @@
   </div> <!--end container -->
 
     <!--bottom schudels -->
-  
-    <div class="tableContainer">
+
+    <div class="tableContainer" id="shmakh">
       <h3 id="t_mshmagh"> الشماغ  </h3>
             <?php require 'table_queries.php';
             // header
@@ -979,8 +1025,8 @@
             ?>
   </div> <!--end container -->
 
- 
-    <div class="tableContainer"> 
+
+    <div class="tableContainer" id="hat">
       <h3 id="t_mhat"> القبعة </h3>
             <?php require 'table_queries.php';
             // header
@@ -1011,13 +1057,13 @@
                 echo "<td>".$row['mh_head_in']."</td>";
           echo "</tr>";
         } echo "</table>";
-            
+
             ?>
             <button id="clk1_mhat" class="buttonSwitch" onclick='tableSwitch("men_hat_cm","men_hat_inch"),highlight("clk1_mhat")'>inch</button>
   </div> <!--end container -->
 
- 
-    <div class="tableContainer">
+
+    <div class="tableContainer" id="belts">
      <h3 id="t_mbelt"> الأحزمة </h3>
             <?php require 'table_queries.php';
             // header
@@ -1052,8 +1098,8 @@
             <button id="clk1_mbelt" class="buttonSwitch" onclick='tableSwitch("men_belt_cm","men_belt_inch"),highlight("clk1_mbelt")'>inch</button>
   </div> <!--end container -->
 
- 
-    <div class="tableContainer"> 
+
+    <div class="tableContainer" id="shoes">
       <h3 id="t_mshoes"> الأحذية </h3>
             <?php require 'table_queries.php';
             // header
@@ -1096,14 +1142,25 @@
             <button id="clk1_mshoes" class="buttonSwitch" onclick='tableSwitch("men_shoes_cm","men_shoes_inch"),highlight("clk1_mshoes")'>inch</button>
   </div> <!--end container -->
 
-</div>  
-         <div class=sectionFour> 
+</div>
+         <div class=sectionFour>
          <!--footer-->
            </div>
-  
+
   </div> <!--end of mainPage-->
 <script>
-  //code credit: http://jsfiddle.net/rjSfP/ 
+  //code cridit: https://w3schools.com
+document.getElementById("manIcon").onclick = function() {
+		document.getElementById("sectionTwo").style.display = "block";
+		document.getElementById("sectionThree").style.display = "block";
+	}
+
+document.getElementById("label2").onclick = function() {
+			document.getElementById("sectionTwo").style.display = "block";
+			document.getElementById("sectionThree").style.display = "block";
+		}
+
+  //code credit: http://jsfiddle.net/rjSfP/
 window.smoothScroll = function(target) {
     var scrollContainer = target;
     do { //find scroll container
@@ -1125,7 +1182,7 @@ window.smoothScroll = function(target) {
     }
     // start scrolling
     scroll(scrollContainer, scrollContainer.scrollTop, targetY, 0);
-    //end of code credit 
+    //end of code credit
 }
 
 function less (r){
@@ -1133,16 +1190,17 @@ function less (r){
   spanLess.style.display = "none";
 }
 function loadmore (clk_r,rows){
-  var clkRow = document.getElementById(clk_r); 
+  var clkRow = document.getElementById(clk_r);
   var spanMore = document.getElementById(rows);
   clkRow.hidden = true ;
   spanMore.style.display = "block";
 }
 
 function tableSwitch(cm,inch) {
-   var tcm = document.getElementById(cm); 
+   var tcm = document.getElementById(cm);
    var tinch = document.getElementById(inch);
 
+<<<<<<< HEAD:MenSizePage.php
    if(tcm.style.display =="none"){
     tcm.style.display = "block";
     tcm.style.width = "100%" ;
@@ -1158,8 +1216,14 @@ function tableSwitch(cm,inch) {
    else{
      tinch.style.display ="none" ;
    }
+=======
+   tcm.style.display = (
+       tcm.style.display == "none" ? "block" : "none");
+   tinch.style.display = (
+       tinch.style.display == "none" ? "block" : "none");
+>>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
 }
- 
+
 function highlight(btn) {
 
     var element = document.getElementById(btn);
@@ -1172,7 +1236,6 @@ function highlight(btn) {
     element.innerHTML = "inch";
   }
 }
-
 </script>
 </body>
 </html>
