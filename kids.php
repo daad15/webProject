@@ -10,6 +10,9 @@
 	<style>
 		p {cursor: pointer;}
 		p:hover {color: #87c6bd;}
+		#menu{
+			right: 25.1%;
+		}
 	</style>
 </head>
 <body>

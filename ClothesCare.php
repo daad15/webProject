@@ -15,7 +15,7 @@
     position: relative;
 }
 .sectionTwo {
-  height: 1200px;
+  height: auto;
     position: relative;
 }
 
@@ -123,7 +123,7 @@
    <img src="images/logo.jpg" name="Rakez Logo" id=logo >
   <div class=Quotescontainer>
     <p id=Quote1>لقيت لبس راكز عليك؟</p>
- <p id=Quote2>التزامك بإرشادات العناية يحفظ لك القطعة لأطول وقت</p>
+ <p id=Quote2>التزامك بإرشادات العناية يحفظ لك القطعة <br> لأطول وقت</p>
    </div>
      </div>
   <div class=sectionTwo>
