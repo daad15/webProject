@@ -1,15 +1,14 @@
 /* font credit goes to www.atrissi.com
  Copyright (c) 2015 by Tarek Atrissi Design. All rights reserved. */
-
- @font-face {
+ @font-face{
    font-family: 'Questv1';
    src: local('Questv1-Bold_0'),
         local('Questv1 Bold 0'),
          url("font/Questv1-Bold_0.otf") format("OpenType"),
          url("font/Questv1-Bold_0.woff") format("woff"),
          url("font/Questv1-Bold_0.woff2") format("woff2");}
-         
-@font-face {
+
+@font-face{
     font-family: 'Hacen Promoter';
     src: local('ArbFONTS-Hacen-Promoter-Lt'),
     local('ArbFONTS Hacen Promoter Lt'),
@@ -18,62 +17,55 @@
     url("font/ArbFONTS-Hacen-Promoter-Lt.woff") format("woff"),
     url("font/ArbFONTS-Hacen-Promoter-Lt.svg") format("svg");}
 
-body {
+body{
 <<<<<<< HEAD
     background-color: #F2EEEC;
 =======
     margin: 0;
     padding: 0;
     font-size: 100%;
->>>>>>> 49277dfa2b0c8e944b6714c710f3f51b33f0cb18
-}
+>>>>>>> 49277dfa2b0c8e944b6714c710f3f51b33f0cb18}
 
-#nav {
+#nav{
     position: relative;
     height: 68px;
     border-bottom: 1px solid #666666;
-    width: 100%;
-    margin: auto;
- }
+    width: 100%;}
 
-#menu {
+#menu{
     display: inline-block;
     list-style-type: none;
     padding-top: 6px;
-    padding-right: 310px;
- }
+    padding-right: 25%;
+    padding-left:25%;}
 
-#menu li {
+#menu li{
     float: right;
     font-family: Hacen Promoter;
     padding-top: 16px;
     margin-right: 35px;
-    margin-left: 35px;
-  }
+    margin-left: 35px;}
 
-#menu li.divline {
+#menu li.divline{
     padding: 0;
     margin: 0 auto;
     border-right: thin solid #666666;
     height: 20px;
-    margin: 26px 0 ;
-  }
+    margin: 26px 0 ;}
 
-#menu a {
+#menu a{
    font-family: Hacen Promoter;
    padding: 9px;
    color: #7c7c7b;
    font-size: 23px;
    margin: 0 auto;
    text-align: center;
-   text-decoration: none;
-  }
+   text-decoration: none;}
 
-#menu a:hover {
-   color: #87c6bd;
-  }
+#menu a:hover{
+   color: #87c6bd;}
 
-#myBtn {
+#myBtn{
    background-color: white;
    position: fixed;
    bottom: 20px;
@@ -81,5 +73,158 @@ body {
    border: none;
    cursor: pointer;
    border-radius: 50%;
-   z-index: 1000;
-  }
+   z-index: 1000;}
+
+
+  /* Size pages Style */
+.sectionOne{
+   height: 670px;
+   position: relative;}
+
+  /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
+.sectionTwo{
+   height: auto;
+   position: relative;
+   display: table;
+   margin-left: auto;
+   margin-right: auto;}
+
+   /**adject section height here*/
+.sectionThree{
+   background-color: #f2eeec;
+   position: relative;
+   height:  auto;}
+
+.sectionFour{
+   position: relative;
+   height: 120px;}
+
+.categoryContainer{
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 90px;
+   max-height: 270px;
+   max-width: 800px;
+   display: block;
+   position: relative;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 90px;
+   height: 270px;
+   width: 800px;}
+
+   /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
+.BgContainer{ /**to center the three icon containers "iconBackground" **/
+   display: table-cell;
+   vertical-align: middle;
+   width: 70%;
+   padding-bottom: 40px}
+
+.iconsBackground{ /**sectionTwo icons container with background color**/
+   position: relative;
+   content: "";
+   clear: both;
+   display: table;
+   margin-left: auto;
+   margin-right: auto;
+   margin-top: 20px;
+   border-radius: 80px;
+   background: #f2eeec;
+   padding: 20px;
+   min-width: 56.25em;
+   max-height: 7.5em;}
+
+.categoryContainer p{ /**labels style for sectionOne's icons**/
+   font-family: Questv1;
+   font-size:1.5vw;
+   color: #474745;
+   font-size: 28px;
+   color: #474745;
+   position: absolute;
+   top: 180px;}
+
+.iconContainer{ /**container for each clothes icon**/
+   width: 0%;
+   padding: 2px;
+   display: table-cell;
+   text-align: center;
+   cursor: pointer;}
+
+.iconContainer p{
+   font-family: Questv1;
+   font-size: 19px;
+   color: #474745;
+   margin: 0;}
+
+.iconContainer img{
+   width: 110px;
+   height: auto;}
+
+p {cursor: pointer;}
+p:hover {color: #87c6bd;}
+
+a {text-decoration: none;}
+
+#logo{
+   display: block;
+   margin-left: auto;
+   margin-right: auto;
+   width: 120px;
+   height: auto;}
+
+/**gender**/
+#womanIcon{
+   max-width: 225px;
+   height: auto;
+   position: absolute;
+   left: 10px;}
+
+#manIcon{
+   max-width: 185px;
+   height: auto;
+   position: absolute;
+   left: 310px;}
+
+#childIcon{
+   width: 200px;
+   height: auto;
+   position: absolute;
+   left: 550px;}
+
+#label1{left:120px;}
+#label2{left:370px;}
+#label3{left:610px;}
+
+#bar{
+   position: absolute;
+   top: 550px;
+   width: 80%;
+   height: auto;
+   right: 10%;
+   margin-right: : -10px;
+   top: 88%;
+   margin-top: -88px;}
+
+  /**overwrite some styles**/
+#Mthoub{
+   width: 80px;
+   height: auto;}
+
+#top{
+   margin-top: 0px;}
+
+#pregnantCon{
+   border-left: #383836 dashed 3bpx;}
+
+#Konesie{
+   width: 150px;
+   height: auto;}
+
+#Kbonnet{
+   width: 100px;
+   height: auto;}
+
+#Wring{
+   width: 70px;
+   height: auto;}
