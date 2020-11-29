@@ -8,6 +8,10 @@
 	<script src="common.js"></script>
 	<link rel="stylesheet" href="cmnStyle.css">
   <link rel="stylesheet" href="tableStyle.css">
+	<style>
+		p {cursor: pointer;}
+		p:hover {color: #87c6bd;}
+	</style>
 </head>
 <body>
 <button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top-arrow.png" height="25" width="25"></button>
@@ -16,9 +20,9 @@
 			 <ul id="menu">
 					 <li><a href="home.html">الرئيسية</a></li>
 					 <li class="divline"></li>
-					 <li><a href="#">جِد مقاسي</a></li>
+					 <li><a href="#">جد مقاسي</a></li>
 					 <li class="divline"></li>
-					 <li><a href="care.html">العناية</a></li>
+					 <li><a href="ClothesCarePage.html">العناية</a></li>
 					 <li class="divline"></li>
 					 <li><a href="about.html">عن راكز</a></li>
 				</ul>
@@ -957,8 +961,9 @@
   </div> <!--end container -->
 
 </div>
-         <div class=sectionFour>
+         <div class=sectionFour style="text-align: center !important; font-family: 'Questv1';font-size: medium;">
          <!--footer-->
+          © كل الحقوق محفوظة , 2020 
            </div>
 
 </div> <!--end of mainPage-->

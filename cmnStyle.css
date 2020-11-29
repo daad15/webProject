@@ -35,6 +35,8 @@ body{
 #menu{
     display: inline-block;
     list-style-type: none;
+    text-align: center;
+    position:relative;
     padding-top: 6px;
     padding-right: 25%;
     padding-left:25%;}
@@ -160,9 +162,6 @@ body{
 .iconContainer img{
    width: 110px;
    height: auto;}
-
-p {cursor: pointer;}
-p:hover {color: #87c6bd;}
 
 a {text-decoration: none;}
 
