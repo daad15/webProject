@@ -367,8 +367,9 @@
   </div> <!--end tableContainer -->
 
       </div>
-         <div class=sectionFour>
+         <div class=sectionFour style="text-align: center !important; font-family: 'Questv1';font-size: medium;">
          <!--footer-->
+          © كل الحقوق محفوظة , 2020 
            </div>
 
 </div> <!--end of mainPage-->
