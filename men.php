@@ -3,6 +3,7 @@
 <head>
 	<title>Rakez - Men</title>
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="">
 	<script src="btn.js"></script>
   <link rel="stylesheet" type="text/css" href="mainStyle.css">
@@ -13,6 +14,7 @@
 .sectionOne {
   height: 670px;
   position: relative;
+
   }
 
 /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
@@ -20,20 +22,39 @@
   height: 670px;
   position: relative;
   display: table;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
 }
 
  /**adject section height here*/
 .sectionThree {
   background-color: #f2eeec;
   position: relative;
-  height:  2000px;
+  border-radius: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  height:  auto; 
+  max-width: 80%;
+  min-width: auto;
 }
+
 
 .sectionFour {
    height: 120px;
  }
 
  .categoryContainer{
+
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 90px;
+  max-height: 270px;
+  max-width: 800px;
+
+  display: block;
+
    position: relative;
    margin-left: auto;
    margin-right: auto;
@@ -41,12 +62,16 @@
    height: 270px;
    width: 800px;
 
+
  }
 
  /**code credit for this class https://www.youtube.com/watch?v=FVmL_esftkQ&feature=youtu.be **/
  .BgContainer{ /**to center the three icon containers "iconBackground" **/
     display: table-cell;
     vertical-align: middle;
+
+   width: 70%; 
+
     width: 70%;
 }
 
@@ -54,6 +79,8 @@
   position: relative;
   content: "";
   clear: both;
+  display: table; 
+
   display: table;
   margin-left: auto;
   margin-right: auto;
@@ -61,12 +88,14 @@
   border-radius: 80px;
   background: #f2eeec;
   padding: 20px;
-  width: 900px;
-  height: 120px;
+  max-width: 56.25em;
+  max-height: 7.5em;
 }
 
  .categoryContainer p { /**labels style for sectionOne's icons**/
   font-family: Questv1;
+  font-size:1.5vw;
+  color: #474745; 
   font-size: 28px;
   color: #474745;
   position: absolute;
@@ -106,14 +135,14 @@ a {text-decoration: none;}
 
 /**gender**/
 #womanIcon{
-   width: 225px;
+   max-width: 225px;
     height: auto;
     position: absolute;
     left: 10px;
   }
 
 #manIcon{
-   width: 185px;
+   max-width: 185px;
     height: auto;
     position: absolute;
     left: 310px;
@@ -133,9 +162,12 @@ a {text-decoration: none;}
 #bar{
   position: absolute;
   top: 550px;
-  left: 0px;
-  width: 1330px;
+  width: 80%;
   height: auto;
+  right: 10%;
+  margin-right: : -10px;
+  top: 88%;
+  margin-top: -88px;
 }
 
 /**overwrite some styles**/
@@ -517,7 +549,7 @@ a {text-decoration: none;}
                   echo "</tr>";
                 } echo "</table>";
                 // header
-                echo "<table id='short_men_tops_inch' style='display:none'>
+                echo "<table id='short_men_tops_inch' style='display:none;'>
                   <tr>
                   <th> المقاس العالمي</th>
                   <th>المقاس الأوروبي<br>EUR </th>
@@ -924,7 +956,7 @@ a {text-decoration: none;}
             // header
         echo "<table id='men_underwear_cm'>
           <tr>
-                <th>المقاس العلمي</th>
+                <th>المقاس العالمي</th>
                 <th> المقاس الأوروبي<br>EUR </th>
                 <th>المقاس الأمريكي<br>UK</th>
                 <th> الخصر </th>
@@ -942,7 +974,7 @@ a {text-decoration: none;}
         // header
         echo "<table id='men_underwear_inch'style='display:none'>
           <tr>
-                <th>المقاس العلمي</th>
+                <th>المقاس العالمي</th>
                 <th> المقاس الأوروبي<br>EUR </th>
                 <th>المقاس الأمريكي<br>UK</th>
                 <th> الخصر </th>
@@ -990,7 +1022,7 @@ a {text-decoration: none;}
             // header
         echo "<table id='men_hat_cm'>
           <tr>
-                <th>المقاس العلمي</th>
+                <th>المقاس العالمي</th>
                 <th>محيط الرأس</th>
           </tr> ";
         // result
@@ -1004,7 +1036,7 @@ a {text-decoration: none;}
         // header
         echo "<table id='men_hat_inch' style='display:none'>
           <tr>
-                <th>المقاس العلمي</th>
+                <th>المقاس العالمي</th>
                 <th>محيط الرأس</th>
           </tr> ";
         // result
@@ -1155,13 +1187,24 @@ function loadmore (clk_r,rows){
 }
 
 function tableSwitch(cm,inch) {
-   var tcm = document.getElementById(cm);
+   var tcm = document.getElementById(cm); 
    var tinch = document.getElementById(inch);
 
-   tcm.style.display = (
-       tcm.style.display == "none" ? "block" : "none");
-   tinch.style.display = (
-       tinch.style.display == "none" ? "block" : "none");
+   if(tcm.style.display =="none"){
+    tcm.style.display = "block";
+    tcm.style.width = "100%" ;
+   }
+   else{
+     tcm.style.display ="none" ;
+   }
+
+    if(tinch.style.display =="none"){
+    tinch.style.display = "block";
+    tinch.style.width = "100%";
+   }
+   else{
+     tinch.style.display ="none" ;
+   }
 }
 
 function highlight(btn) {
