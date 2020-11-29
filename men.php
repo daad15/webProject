@@ -18,7 +18,7 @@
 					 <li class="divline"></li>
 					 <li><a href="#">جِد مقاسي</a></li>
 					 <li class="divline"></li>
-					 <li><a href="care.html">العناية</a></li>
+					 <li><a href="ClothesCarePage.html">العناية</a></li>
 					 <li class="divline"></li>
 					 <li><a href="about.html">عن راكز</a></li>
 				</ul>
