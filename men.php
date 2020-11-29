@@ -69,31 +69,13 @@
     display: table-cell;
     vertical-align: middle;
     width: 70%; 
-
-<<<<<<< HEAD
-||||||| 85d6b58
-   width: 70%; 
-
-    width: 70%;
-=======
-   width: 70%;
-
-    width: 70%;
->>>>>>> b4a6c20c898914e16d3068c29b30fbb220b35a19
 }
 
 .iconsBackground { /**sectionTwo icons container with background color**/
   position: relative;
   content: "";
   clear: both;
-<<<<<<< HEAD
-||||||| 85d6b58
   display: table; 
-
-=======
-  display: table;
-
->>>>>>> b4a6c20c898914e16d3068c29b30fbb220b35a19
   display: table;
   margin-left: auto;
   margin-right: auto;
