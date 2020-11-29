@@ -31,25 +31,21 @@
 .sectionThree {
   background-color: #f2eeec;
   position: relative;
-<<<<<<< HEAD:MenSizePage.php
-  
   border-radius: 80px;
   margin-left: auto;
   margin-right: auto;
   height:  auto; 
   max-width: 80%;
   min-width: auto;
-=======
-  height:  2000px;
 }
->>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
+
 
 .sectionFour {
    height: 120px;
  }
 
  .categoryContainer{
-<<<<<<< HEAD:MenSizePage.php
+
   position: relative;
   margin-left: auto;
   margin-right: auto;
@@ -58,14 +54,14 @@
   max-width: 800px;
 
   display: block;
-=======
+
    position: relative;
    margin-left: auto;
    margin-right: auto;
    margin-top: 90px;
    height: 270px;
    width: 800px;
->>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
+
 
  }
 
@@ -73,22 +69,19 @@
  .BgContainer{ /**to center the three icon containers "iconBackground" **/
     display: table-cell;
     vertical-align: middle;
-<<<<<<< HEAD:MenSizePage.php
+
    width: 70%; 
-=======
+
     width: 70%;
->>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
 }
 
 .iconsBackground { /**sectionTwo icons container with background color**/
   position: relative;
   content: "";
   clear: both;
-<<<<<<< HEAD:MenSizePage.php
   display: table; 
-=======
+
   display: table;
->>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
   margin-left: auto;
   margin-right: auto;
   margin-top: 20px;
@@ -101,13 +94,10 @@
 
  .categoryContainer p { /**labels style for sectionOne's icons**/
   font-family: Questv1;
-<<<<<<< HEAD:MenSizePage.php
   font-size:1.5vw;
   color: #474745; 
-=======
   font-size: 28px;
   color: #474745;
->>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
   position: absolute;
   top: 180px;}
 
@@ -1197,10 +1187,9 @@ function loadmore (clk_r,rows){
 }
 
 function tableSwitch(cm,inch) {
-   var tcm = document.getElementById(cm);
+   var tcm = document.getElementById(cm); 
    var tinch = document.getElementById(inch);
 
-<<<<<<< HEAD:MenSizePage.php
    if(tcm.style.display =="none"){
     tcm.style.display = "block";
     tcm.style.width = "100%" ;
@@ -1216,12 +1205,6 @@ function tableSwitch(cm,inch) {
    else{
      tinch.style.display ="none" ;
    }
-=======
-   tcm.style.display = (
-       tcm.style.display == "none" ? "block" : "none");
-   tinch.style.display = (
-       tinch.style.display == "none" ? "block" : "none");
->>>>>>> f58e291d75490d5cebe2f5a41b4bde68424e834c:men.php
 }
 
 function highlight(btn) {
