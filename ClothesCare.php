@@ -18,11 +18,7 @@
   height: 1200px;
     position: relative;
 }
-/**footer**/
-.sectionFour{
-  height:50px;
-  width: 100%;
-}
+
 #label{
   margin-top: 30px;
   margin-bottom: 20px;
@@ -105,16 +101,6 @@
 #label-4Bg{
   margin-bottom: 20px;
 }
-
-#footer{
-  text-align: center !important;
-   font-family: 'Questv1';
-   font-size: 20px;
-    color:#383836;
-    margin-top: 40px;
-}
-
-
 </style>
 
 
@@ -193,9 +179,7 @@
        <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-dry.png" ></div>
         <div class=txtContainer><p>لا تجفف ــــــ</p></div>
         </div></div>
-
    </div>
-  <div class=sectionThree></div>
     <div class=sectionFour>
          <!--footer-->
        <p id=footer>   © كل الحقوق محفوظة , 2020 </p>

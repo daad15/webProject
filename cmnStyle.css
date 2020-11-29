@@ -94,9 +94,10 @@ body{
    position: relative;
    height:  auto;}
 
-.sectionFour{
-   position: relative;
-   height: 120px;}
+   /**footer**/
+   .sectionFour{
+     height: auto;
+     width: 100%;}
 
 .categoryContainer{
    position: relative;
@@ -168,6 +169,14 @@ a {text-decoration: none;}
    margin-right: auto;
    width: 120px;
    height: auto;}
+
+   #footer{
+     text-align: center !important;
+      font-family: 'Questv1';
+      font-size: 20px;
+       color:#383836;
+       margin-top: 40px;
+   }
 
 /**gender**/
 #womanIcon{

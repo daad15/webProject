@@ -961,9 +961,9 @@
   </div> <!--end container -->
 
 </div>
-         <div class=sectionFour style="text-align: center !important; font-family: 'Questv1';font-size: medium;">
-         <!--footer-->
-          © كل الحقوق محفوظة , 2020
+          <!--footer-->
+				 <div class="sectionFour">
+          <p id=footer>   © كل الحقوق محفوظة , 2020 </p>
            </div>
 
 </div> <!--end of mainPage-->
