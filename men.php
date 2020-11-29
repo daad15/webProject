@@ -69,18 +69,14 @@
  .BgContainer{ /**to center the three icon containers "iconBackground" **/
     display: table-cell;
     vertical-align: middle;
+    width: 70%; 
 
-   width: 70%; 
-
-    width: 70%;
 }
 
 .iconsBackground { /**sectionTwo icons container with background color**/
   position: relative;
   content: "";
   clear: both;
-  display: table; 
-
   display: table;
   margin-left: auto;
   margin-right: auto;
@@ -88,7 +84,7 @@
   border-radius: 80px;
   background: #f2eeec;
   padding: 20px;
-  max-width: 56.25em;
+  min-width: 56.25em;
   max-height: 7.5em;
 }
 
