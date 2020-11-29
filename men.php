@@ -606,7 +606,7 @@
          </div>
 
          <div class="panels">
-          <div class="panel">
+          <div class="panel" id="mpants">
             <?php require 'table_queries.php';
                 // header
         echo "<table id='men_pants_cm'>
