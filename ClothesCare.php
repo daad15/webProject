@@ -200,8 +200,8 @@
          <!--footer-->
        <p id=footer>   © كل الحقوق محفوظة , 2020 </p>
            </div>
+<!--all icons credit goes to https://www.flaticon.com/ -->
 
        </div>
-<!--all icons credit goes to https://www.flaticon.com/ -->
 </body>
 </html>
