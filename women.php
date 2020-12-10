@@ -13,6 +13,10 @@
 		#menu{
 			right: 25.1%;
 		}
+	  #pregnantCon{
+      border-right: #383836 dashed 3px;
+      border-left: none;
+    } 
 	</style>
 </head>
 <body>

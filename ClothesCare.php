@@ -106,8 +106,8 @@
 
 </head>
 <body>
-<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top-arrow.png" height="25" width="25"></button>
-<div calss=mainPage>
+<button onclick="topFunction()" id="myBtn" title="Go to top"><img src="images/top-arrow.png" alt="top-arrow" height="25" width="25"></button>
+<div>
   <div id="nav">
        <ul id="menu">
            <li><a href="home.html">الرئيسية</a></li>
@@ -120,7 +120,7 @@
         </ul>
    </div>
  <div class=sectionOne>
-   <img src="images/logo.jpg" name="Rakez Logo" id=logo >
+   <img src="images/logo.jpg" alt="Rakez Logo" id=logo >
   <div class=Quotescontainer>
     <p id=Quote1>لقيت لبس راكز عليك؟</p>
  <p id=Quote2>التزامك بإرشادات العناية يحفظ لك القطعة <br> لأطول وقت</p>
@@ -131,11 +131,11 @@
       <img src="images/label1.png" alt="label" id=label>
     <div class=labelBg id=label-1Bg>
        <div class= sec1Container id=sec>
-          <div class=imgContainer><img src="images/bleach.png" ></div>
+          <div class=imgContainer><img src="images/bleach.png" alt="bleachIcon" ></div>
          <div class=txtContainer> <p>استخدم المبيض ــــــ</p></div> </div>
-      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/non-chlorine.png" ></div>
+      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/non-chlorine.png" alt="chlorineIcon"></div>
       <div class=txtContainer><p>لا تستخدم كلور التبييض ــــــ</p></div> </div>
-       <div class= sec3Container id=sec> <div class=imgContainer><img src="images/no-bleaching.png" ></div>
+       <div class= sec3Container id=sec> <div class=imgContainer><img src="images/no-bleaching.png" alt="bleachingIcon"></div>
         <div class=txtContainer><p>لا تستخدم مبيض ــــــ</p></div>
     </div>
 </div>
@@ -146,9 +146,9 @@
  <div class= sec1Container id=sec>
           <div class=imgContainer><img src="images/hand-wash.png" ></div>
          <div class=txtContainer> <p>غسيل يدوي ــــــ</p></div> </div>
-      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/machine-wash.png" ></div>
+      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/machine-wash.png" alt="washIcon"></div>
       <div class=txtContainer><p>غسيل آلي ــــــ</p></div> </div>
-       <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-wash.png" ></div>
+       <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-wash.png" alt="noWashIcon"></div>
         <div class=txtContainer><p>لا تغسل ــــــ</p></div>
 
 
@@ -158,34 +158,37 @@
  <img src="images/label3.png" alt="label" id=label>
         <div class=labelBg id=label-3Bg>
  <div class= sec1Container id=sec>
-          <div class=imgContainer><img src="images/iron.png" ></div>
+          <div class=imgContainer><img src="images/iron.png" alt="ironIcon"></div>
          <div class=txtContainer> <p>كوي ــــــ</p></div> </div>
-      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/iron2.png" ></div>
+      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/iron2.png" alt="lowheat"></div>
       <div class=txtContainer><p>كوي بدرجة حرارة متوسطة ــــــ</p></div> </div>
-       <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-iron.png" ></div>
+       <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-iron.png" alt="noIronIcon"></div>
         <div class=txtContainer><p>لا تكوي ــــــ</p></div>
-
-        </div></div>
+        </div>
+			</div>
+		</div>
 
   <div class=drylbl>
  <img src="images/label4.png" alt="label" id=label>
         <div class=labelBg id=label-4Bg>
 
           <div class= sec1Container id=sec>
-          <div class=imgContainer><img src="images/drying1.png" ></div>
+          <div class=imgContainer><img src="images/drying1.png" alt="dryingIcon"></div>
          <div class=txtContainer> <p>التجفيف على الحبل ــــــ</p></div> </div>
-      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/drying.png" ></div>
+      <div class= sec2Container id=sec> <div class=imgContainer><img src="images/drying.png" alt="dryInShadowIcon"></div>
       <div class=txtContainer><p>التجفيف في الظل ــــــ</p></div> </div>
-       <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-dry.png" ></div>
+       <div class= sec3Container id=sec> <div class=imgContainer><img src="images/do-not-dry.png" alt="noDryingIcon"></div>
         <div class=txtContainer><p>لا تجفف ــــــ</p></div>
         </div></div>
    </div>
+ </div>
+</div>
+
     <div class=sectionFour>
          <!--footer-->
        <p id=footer>   © كل الحقوق محفوظة , 2020 </p>
            </div>
 <!--all icons credit goes to https://www.flaticon.com/ -->
-
-       </div>
+ </div>
 </body>
 </html>

@@ -39,7 +39,7 @@ body{
 
     #menu li{
         float: right;
-        font-family: Hacen Promoter;
+        font-family: "Hacen Promoter";
         padding-top: 16px;
         margin-right: 25px;
         margin-left: 25px;}
@@ -54,7 +54,7 @@ body{
         height: 15px;}
 
     #menu a{
-       font-family: Hacen Promoter;
+       font-family: "Hacen Promoter";
        padding: 9px;
        color: #7c7c7b;
        font-size: 23px;
@@ -219,9 +219,6 @@ a {text-decoration: none;}
 
 #top{
    margin-top: 0px;}
-
-#pregnantCon{
-   border-left: #383836 dashed 3bpx;}
 
 #Konesie{
    width: 150px;
