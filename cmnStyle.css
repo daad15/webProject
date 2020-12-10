@@ -2,20 +2,22 @@
  Copyright (c) 2015 by Tarek Atrissi Design. All rights reserved. */
  @font-face{
    font-family: 'Questv1';
-   src: local('Questv1-Bold_0'),
-        local('Questv1 Bold 0'),
+   src: url("font/Questv1-Bold_0.eot?#iefix") format("embedded-opentype"),
+          url("font/Questv1-Bold_0.ttf") format("truetype"),
          url("font/Questv1-Bold_0.otf") format("OpenType"),
          url("font/Questv1-Bold_0.woff") format("woff"),
-         url("font/Questv1-Bold_0.woff2") format("woff2");}
+         url("font/Questv1-Bold_0.woff2") format("woff2"),
+         url("font/Questv1-Bold_0.svg#Questv1-Bold_0") format("svg");
+ }
 
 @font-face{
     font-family: 'Hacen Promoter';
-    src: local('ArbFONTS-Hacen-Promoter-Lt'),
-    local('ArbFONTS Hacen Promoter Lt'),
+    src :url("font/ArbFONTS-Hacen-Promoter-Lt.eot?#iefix") format('embedded-opentype'),
     url("font/ArbFONTS-Hacen-Promoter-Lt.ttf") format("truetype"),
     url("font/ArbFONTS-Hacen-Promoter-Lt.otf") format("OpenType"),
     url("font/ArbFONTS-Hacen-Promoter-Lt.woff") format("woff"),
     url("font/ArbFONTS-Hacen-Promoter-Lt.svg") format("svg");}
+/** font-face code credit: https://blog.fontspring.com/2011/02/the-new-bulletproof-font-face-syntax/ **/
 
 body{
     background-color: white;
@@ -44,12 +46,9 @@ body{
         margin-right: 25px;
         margin-left: 25px;}
 
-    #menu li.divline{
+    #menu .divline{
         padding: 0;
-        margin-top: 31px;
-        margin-bottom: 0px;
-        margin-left: auto;
-        margin-right: auto;
+        margin: 31px auto 0px auto ;
         border-right: thin solid #666666;
         height: 15px;}
 
@@ -108,10 +107,6 @@ body{
    max-height: 270px;
    max-width: 800px;
    display: block;
-   position: relative;
-   margin-left: auto;
-   margin-right: auto;
-   margin-top: 90px;
    height: 270px;
    width: 800px;}
 
@@ -139,7 +134,6 @@ body{
 .categoryContainer p{ /**labels style for sectionOne's icons**/
    font-family: Questv1;
    font-size:1.5vw;
-   color: #474745;
    font-size: 28px;
    color: #474745;
    position: absolute;
@@ -172,7 +166,7 @@ a {text-decoration: none;}
    height: auto;}
 
    #footer{
-     text-align: center !important;
+     text-align: center;
       font-family: 'Questv1';
       font-size: 20px;
        color:#383836;
@@ -205,11 +199,11 @@ a {text-decoration: none;}
 #bar{
    position: absolute;
    top: 550px;
+   top: 88%;
    width: 80%;
    height: auto;
    right: 10%;
-   margin-right: : -10px;
-   top: 88%;
+   margin-right: -10px;
    margin-top: -88px;}
 
   /**overwrite some styles**/
@@ -219,6 +213,8 @@ a {text-decoration: none;}
 
 #top{
    margin-top: 0px;}
+
+
 
 #Konesie{
    width: 150px;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="rtl">
 <head>
 	<title>Rakez - Kids</title>
   <meta charset="UTF-8">
